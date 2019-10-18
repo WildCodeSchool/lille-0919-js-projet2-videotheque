@@ -1,0 +1,31 @@
+/* Black Table */
+.around {
+  background-color: antiquewhite;
+  height: 100vh;
+}
+
+/*
+div {
+  border: black solid 1px;
+}
+*/
+
+.movieTitleContainer {
+  background-color: green;
+  height: 180px;
+  border: black solid 1px;
+  display: flex;
+}
+
+.movieMainJacket {
+  background-color: yellow;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movieMainJAcketImg {
+  width: 80px;
+  height: 120px;
+}

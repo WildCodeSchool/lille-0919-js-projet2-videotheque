@@ -1,9 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import MoviePage from "./components/MoviePage";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <MoviePage />
+    </div>
+  );
 }
 
 export default App;
