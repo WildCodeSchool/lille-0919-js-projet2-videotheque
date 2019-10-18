@@ -4,7 +4,7 @@ import MainPageCard from "./MainPageCard";
 
 function MainPage() {
   return (
-    <div>
+    <div className="main-poster">
       {moviePoster.map(item => (
         <MainPageCard image={item.image} />
       ))}
@@ -13,6 +13,33 @@ function MainPage() {
 }
 
 const moviePoster = [
+  {
+    image: "Images/shinning.jpeg"
+  },
+  {
+    image: "Images/shinning.jpeg"
+  },
+  {
+    image: "Images/shinning.jpeg"
+  },
+  {
+    image: "Images/shinning.jpeg"
+  },
+  {
+    image: "Images/shinning.jpeg"
+  },
+  {
+    image: "Images/shinning.jpeg"
+  },
+  {
+    image: "Images/shinning.jpeg"
+  },
+  {
+    image: "Images/shinning.jpeg"
+  },
+  {
+    image: "Images/shinning.jpeg"
+  },
   {
     image: "Images/shinning.jpeg"
   }
