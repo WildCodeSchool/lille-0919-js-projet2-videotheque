@@ -9,6 +9,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  max-width: 910px;
 }
 
 .title {
@@ -20,11 +21,18 @@
   background-color: grey;
   height: 15vh;
   width: 80vw;
-  margin: 20px;
+  margin: 20px 0;
+  max-width: 900px;
 }
 
 @media screen and (max-width: 600px) {
   .trailer-homepage {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .main-poster {
+    width: 90vw;
   }
 }

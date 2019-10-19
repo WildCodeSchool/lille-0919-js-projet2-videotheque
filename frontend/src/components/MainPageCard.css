@@ -6,10 +6,23 @@
   margin: auto;
 }
 
-.single-movie-poster {
-  border: 5px solid black;
+.div-poster:hover {
+  transform: scale(1.05);
+  transition: transform 500ms;
+  cursor: pointer;
 }
 
-.single-movie-poster:hover {
-  transform: scale(1.15);
+.single-movie-poster {
+  border: 2px;
+  height: auto;
+  width: auto;
+  margin-top: 2px;
+}
+
+/* DESKTOP VERSION */
+
+@media screen and (min-width: 900px) {
+  .div-poster {
+    margin-bottom: 30px;
+  }
 }
