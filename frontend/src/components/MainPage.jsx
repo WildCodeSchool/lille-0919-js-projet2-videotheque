@@ -4,44 +4,46 @@ import MainPageCard from "./MainPageCard";
 
 function MainPage() {
   return (
-    <div className="main-poster">
-      {moviePoster.map(item => (
-        <MainPageCard image={item.image} />
-      ))}
+    <div className="main-homepage">
+      <div className="trailer-homepage">
+        <div className="trailer">HELLO</div>
+      </div>
+      <div className="main-poster">
+        {moviePoster.map(item => (
+          <MainPageCard image={item.image} />
+        ))}
+      </div>
     </div>
   );
 }
 
 const moviePoster = [
   {
-    image: "Images/shinning.jpeg"
+    image: "Pictures/shinning.jpeg"
   },
   {
-    image: "Images/shinning.jpeg"
+    image: "Pictures/shinning.jpeg"
   },
   {
-    image: "Images/shinning.jpeg"
+    image: "Pictures/shinning.jpeg"
   },
   {
-    image: "Images/shinning.jpeg"
+    image: "Pictures/shinning.jpeg"
   },
   {
-    image: "Images/shinning.jpeg"
+    image: "Pictures/shinning.jpeg"
   },
   {
-    image: "Images/shinning.jpeg"
+    image: "Pictures/shinning.jpeg"
   },
   {
-    image: "Images/shinning.jpeg"
+    image: "Pictures/shinning.jpeg"
   },
   {
-    image: "Images/shinning.jpeg"
+    image: "Pictures/shinning.jpeg"
   },
   {
-    image: "Images/shinning.jpeg"
-  },
-  {
-    image: "Images/shinning.jpeg"
+    image: "Pictures/shinning.jpeg"
   }
 ];
 

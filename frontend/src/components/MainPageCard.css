@@ -2,12 +2,14 @@
   background-color: black;
 }
 
-@media screen and (max-width: 600px) {
-  .div-poster {
-    margin: auto;
-  }
+.div-poster {
+  margin: auto;
+}
 
-  img {
-    border: 5px solid black;
-  }
+.single-movie-poster {
+  border: 5px solid black;
+}
+
+.single-movie-poster:hover {
+  transform: scale(1.15);
 }
