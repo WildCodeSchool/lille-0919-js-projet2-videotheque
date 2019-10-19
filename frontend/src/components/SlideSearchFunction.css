@@ -33,7 +33,7 @@
   }
   #searchingBarre {
     width: 80%;
-    margin: 20px 9%;
+    margin: 20px auto;
     display: block;
   }
 }
