@@ -113,4 +113,20 @@ const MovieList = [
   }
 ];
 
+const ListMovies = () => (
+  <div>
+    <h1>Genre</h1>
+    {MovieList.map(movie => (
+      <Movie
+        key={movie.title}
+        title={movie.title}
+        genre={movie.genre}
+        duration={movie.duration}
+        picture={movie.picture}
+        synopsis={movie.synopsis}
+      />
+    ))}
+  </div>
+);
+
 export default ListMovies;
