@@ -17,18 +17,14 @@ const topBar = () => (
               <img
                 id="logoUser"
                 alt="logoUser"
-                src={require("./components/logoUser.jpg")}
+                src="logoUser.jpg"
                 onclick="location.href='http://www.allocine.fr/film/fichefilm_gen_cfilm=61282.html'"
               />
             </a>
           </li>
           <li>
             <button className="searchBarButton">
-              <img
-                id="pictoLoupe"
-                alt="pictoLoupe"
-                src={require("./components/pictoLoupe.png")}
-              />
+              <img id="pictoLoupe" alt="pictoLoupe" src="pictoLoupe.png" />
             </button>
           </li>
         </ul>
