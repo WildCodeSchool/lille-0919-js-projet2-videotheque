@@ -1,9 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
+import ActorsList from "./components/actorsList";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <ActorsList />
+    </div>
+  );
 }
 
 export default App;
