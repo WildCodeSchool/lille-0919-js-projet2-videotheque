@@ -11,12 +11,14 @@ class Genre extends React.Component {
   render() {
     return (
       <div className="genre">
-        <img
-          key={this.props.genreName}
-          alt={this.props.genreName}
-          src={this.props.genreBackground}
-        />
-        <h1>{this.props.genreName}</h1>
+        <a href=" ">
+          <img
+            key={this.props.genreName}
+            alt={this.props.genreName}
+            src={this.props.genreBackground}
+          />
+          <h1>{this.props.genreName}</h1>
+        </a>
       </div>
     );
   }
