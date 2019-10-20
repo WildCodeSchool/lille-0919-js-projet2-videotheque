@@ -1,7 +1,10 @@
-h1 {
+.ListMovies h1 {
   background-color: black;
   color: silver;
   font-size: 2em;
   text-align: center;
   padding-top: 0.5em;
+}
+.ListMovies a {
+  text-decoration: none;
 }

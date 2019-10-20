@@ -114,17 +114,19 @@ const MovieList = [
 ];
 
 const ListMovies = () => (
-  <div>
+  <div className="ListMovies">
     <h1>Genre</h1>
     {MovieList.map(movie => (
-      <Movie
-        key={movie.title}
-        title={movie.title}
-        genre={movie.genre}
-        duration={movie.duration}
-        picture={movie.picture}
-        synopsis={movie.synopsis}
-      />
+      <a href=" ">
+        <Movie
+          key={movie.title}
+          title={movie.title}
+          genre={movie.genre}
+          duration={movie.duration}
+          picture={movie.picture}
+          synopsis={movie.synopsis}
+        />
+      </a>
     ))}
   </div>
 );
