@@ -1,5 +1,5 @@
-#searchingBarre,
-.GenreList {
+.noEntrySearch,
+.enterYourSearch {
   display: none;
 }
 
@@ -10,6 +10,7 @@
   }
 
   .enterYourSearch {
+    display: block;
     width: 80%;
     height: calc(100vh - 100px);
     border-radius: 5px;
@@ -23,6 +24,7 @@
     overflow: scroll;
   }
   .noEntrySearch {
+    display: block;
     width: 0%;
     background-color: black;
     position: absolute;

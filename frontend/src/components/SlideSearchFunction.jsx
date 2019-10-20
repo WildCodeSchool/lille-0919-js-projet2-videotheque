@@ -25,7 +25,7 @@ class SlideSearchFunction extends React.Component {
           className={this.state.searching ? "noEntrySearch" : "enterYourSearch"}
         >
           <input id="searchingBarre" type="text" placeholder="Search.."></input>
-          <GenreList className="GenreList" />
+          <GenreList />
         </div>
       </div>
     );
