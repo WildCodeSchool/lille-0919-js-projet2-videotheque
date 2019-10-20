@@ -1,9 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
+import topBar from "./components/topBar";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <topBar />
+    </div>
+  );
 }
 
 export default App;

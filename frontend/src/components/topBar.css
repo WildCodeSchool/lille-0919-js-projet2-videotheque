@@ -1,0 +1,53 @@
+.topBar {
+  position: fixed;
+  width: 100%;
+  background: black;
+  height: 53px;
+}
+.topBar_navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+header #logoUser {
+  width: 25px;
+  margin-top: 4px;
+}
+header #pictoLoupe {
+  width: 25px;
+  margin-top: 4px;
+}
+
+.topBar_logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.topBar_navigation_items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.topBar_navigation_items li {
+  padding: 0 0.5rem;
+}
+
+.topBar_navigation_items a {
+  color: white;
+}
+
+.searchBarButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.searchBarButton:focus {
+  outline: none;
+}
