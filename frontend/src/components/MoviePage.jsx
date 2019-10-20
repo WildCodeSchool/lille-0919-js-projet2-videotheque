@@ -24,6 +24,11 @@ const MoviePage = () => (
         <p>
           <span className="oneRedWord">Runtime</span> 1h30
         </p>
+        <div className="movieIconsContainer">
+          <img className="moviePlusIcons" src="./plusIcon.png" />
+          <img className="movieLikeIcons" src="./likeIcon.png" />
+          <img className="movieNavetIcons" src="./navetIcon.png" />
+        </div>
       </div>
     </div>
     <hr></hr>

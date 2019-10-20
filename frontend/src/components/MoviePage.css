@@ -1,4 +1,7 @@
 /* Black Table */
+* {
+  background-color: black;
+}
 
 .around {
   background-color: antiquewhite;
@@ -6,14 +9,12 @@
 }
 
 .movieTitleContainer {
-  background-color: green;
   height: 150px;
   display: flex;
   flex-direction: row;
 }
 
 .movieMainJacket {
-  background-color: rgb(128, 98, 185);
   width: 110px;
   display: flex;
   justify-content: center;
@@ -28,7 +29,6 @@
 }
 
 .movieDescription {
-  background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,6 +37,14 @@
   font-size: 12px;
   color: white;
   font-family: sans-serif;
+}
+
+.movieIconsContainer {
+  height: 22px;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 h2 {
@@ -51,4 +59,16 @@ h2 {
   font-weight: bold;
   font-size: 12px;
   font-family: sans-serif;
+}
+
+.moviePlusIcons {
+  width: 21px;
+}
+
+.movieLikeIcons {
+  width: 24px;
+}
+
+.movieNavetIcons {
+  width: 16px;
 }
