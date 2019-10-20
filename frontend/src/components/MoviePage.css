@@ -72,3 +72,32 @@ h2 {
 .movieNavetIcons {
   width: 16px;
 }
+
+.synopsisContainer {
+  background-color: black;
+  height: 20%;
+}
+
+hr {
+  color: white;
+  padding-top: 0;
+  margin: 0 22px 0 22px;
+  border: 1;
+  width: 90%;
+}
+
+h3 {
+  font-family: sans-serif;
+  color: red;
+  font-weight: bold;
+  padding: 20px 0px 0px 20px;
+}
+
+.synopsisContainer p {
+  color: white;
+  text-align: justify;
+  padding: 10px 20px 20px 20px;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: sans-serif;
+}

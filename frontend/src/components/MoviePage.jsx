@@ -31,7 +31,22 @@ const MoviePage = () => (
         </div>
       </div>
     </div>
-    <hr></hr>
+    <div className="synopsisContainer">
+      <hr />
+      <h3>Synopsis</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit
+        facilisis arcu, non euismod nulla elementum nec. Sed et ullamcorper
+        massa. Vivamus laoreet dolor id aliquet placerat. Vivamus faucibus porta
+        neque et faucibus. Quisque lobortis aliquet orci, a facilisis sem
+        imperdiet a. Fusce in enim dui. Praesent vulputate tellus ut libero
+        tempor molestie. Vivamus turpis massa, mattis eu luctus sed, egestas non
+        nunc. Proin ut mauris id odio vestibulum porttitor in sit amet erat.
+        Nullam magna nulla, cursus eget nunc quis, tempus faucibus sapien. Fusce
+        vestibulum consectetur sagittis. Phasellus arcu augue, lobortis sed diam
+        vel, viverra vulputate ipsum. Fusce...
+      </p>
+    </div>
   </div>
 );
 
