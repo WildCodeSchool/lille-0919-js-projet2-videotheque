@@ -6,7 +6,7 @@ function MainPageCard(props) {
     <div className="div-poster">
       <img
         className="single-movie-poster"
-        src={props.image}
+        src={props.picture}
         alt="Movie Poster"
       />
     </div>

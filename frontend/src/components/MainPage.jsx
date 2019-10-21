@@ -1,50 +1,21 @@
 import React from "react";
 import "./MainPage.css";
 import MainPageCard from "./MainPageCard";
+import movieList from "../DataBaseMovie";
 
 function MainPage() {
   return (
     <div className="main-homepage">
       <div className="trailer-homepage">
-        <div className="trailer">HELLO</div>
+        <div className="trailer">MOVIE TRAILER</div>
       </div>
       <div className="main-poster">
-        {moviePoster.map(item => (
-          <MainPageCard image={item.image} />
+        {movieList.map(item => (
+          <MainPageCard picture={item.picture} />
         ))}
       </div>
     </div>
   );
 }
-
-const moviePoster = [
-  {
-    image: "Pictures/shinning.jpeg"
-  },
-  {
-    image: "Pictures/shinning.jpeg"
-  },
-  {
-    image: "Pictures/shinning.jpeg"
-  },
-  {
-    image: "Pictures/shinning.jpeg"
-  },
-  {
-    image: "Pictures/shinning.jpeg"
-  },
-  {
-    image: "Pictures/shinning.jpeg"
-  },
-  {
-    image: "Pictures/shinning.jpeg"
-  },
-  {
-    image: "Pictures/shinning.jpeg"
-  },
-  {
-    image: "Pictures/shinning.jpeg"
-  }
-];
 
 export default MainPage;
