@@ -3,7 +3,7 @@ import Movie from "./Movie";
 import movieList from "../DataBaseMovie";
 import "./ListMovies.css";
 
-const ListMovies = () => (
+function ListMovies() {
   <div className="ListMovies">
     <h1>Genre</h1>
     {movieList
@@ -22,7 +22,6 @@ const ListMovies = () => (
           />
         </a>
       ))}
-  </div>
-);
-
+  </div>;
+}
 export default ListMovies;
