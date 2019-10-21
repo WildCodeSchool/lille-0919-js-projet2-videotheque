@@ -1,20 +1,14 @@
 import React from "react";
-import "./actorsList.css";
+import "./ActorsList.css";
 
 const list = [
-  /*{
-    name: "Todd Phillips",
-    role: "director",
-    image: "./pictures/todd.jpg"
-  },*/
-
   {
     name: "Joaquin Phoenix",
-    role: "Arthur Fleck/Joker",
+    role: "Arthur Fleck",
     image: "./pictures/joaquin.jpg"
   },
   {
-    name: "Robert De Niro",
+    name: "Robert DeNiro",
     role: "Murray Franklin",
     image: "./pictures/robert.jpg"
   },
@@ -48,7 +42,6 @@ function ActorsList() {
 }
 
 function Actor(props) {
-  console.log(props);
   return (
     <li>
       <img src={props.image} />

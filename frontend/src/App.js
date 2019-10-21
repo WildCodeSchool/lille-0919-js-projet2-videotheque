@@ -1,5 +1,5 @@
 import React from "react";
-import ActorsList from "./components/actorsList";
+import ActorsList from "./components/ActorsList";
 import "./App.css";
 
 function App() {
