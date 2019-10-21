@@ -3,32 +3,32 @@
   background-color: black;
 }
 
-.around {
+#around {
   background-color: antiquewhite;
   height: 100vh;
 }
 
-.movieTitleContainer {
+#movieTitleContainer {
   height: 150px;
   display: flex;
   flex-direction: row;
 }
 
-.movieMainJacket {
+#movieMainJacket {
   width: 110px;
   display: flex;
   justify-content: center;
   padding: 0px;
 }
 
-.movieMainJacketImg {
+#movieMainJacketImg {
   width: 80px;
   height: 120px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.movieDescription {
+#movieDescription {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,7 +39,7 @@
   font-family: sans-serif;
 }
 
-.movieIconsContainer {
+#movieIconsContainer {
   height: 22px;
   width: 80px;
   display: flex;
@@ -61,29 +61,24 @@ h2 {
   font-family: sans-serif;
 }
 
-.moviePlusIcons {
+#moviePlusIcons {
   width: 21px;
 }
 
-.movieLikeIcons {
+#movieLikeIcons {
   width: 24px;
 }
 
-.movieNavetIcons {
+#movieNavetIcons {
   width: 16px;
-}
-
-.synopsisContainer {
-  background-color: black;
-  height: 20%;
 }
 
 hr {
   color: white;
   padding-top: 0;
-  margin: 0 22px 0 22px;
+  margin: 0 20px;
   border: 1;
-  width: 90%;
+  width: calc(100%-40);
 }
 
 h3 {
@@ -93,7 +88,7 @@ h3 {
   padding: 20px 0px 0px 20px;
 }
 
-.synopsisContainer p {
+#synopsisContainer p {
   color: white;
   text-align: justify;
   padding: 10px 20px 20px 20px;

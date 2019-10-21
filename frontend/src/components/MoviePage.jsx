@@ -2,15 +2,15 @@ import React from "react";
 import "./MoviePage.css";
 
 const MoviePage = () => (
-  <div className="around">
-    <div className="movieTitleContainer">
-      <div className="movieMainJacket">
+  <div id="around">
+    <div id="movieTitleContainer">
+      <div id="movieMainJacket">
         <img
-          className="movieMainJacketImg"
+          id="movieMainJacketImg"
           src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
         ></img>
       </div>
-      <div className="movieDescription">
+      <div id="movieDescription">
         <h2>Film title</h2>
         <p>
           <span className="oneRedWord">By</span> John Café
@@ -24,14 +24,14 @@ const MoviePage = () => (
         <p>
           <span className="oneRedWord">Runtime</span> 1h30
         </p>
-        <div className="movieIconsContainer">
-          <img className="moviePlusIcons" src="./plusIcon.png" />
-          <img className="movieLikeIcons" src="./likeIcon.png" />
-          <img className="movieNavetIcons" src="./navetIcon.png" />
+        <div id="movieIconsContainer">
+          <img id="moviePlusIcons" src="./plusIcon.png" />
+          <img id="movieLikeIcons" src="./likeIcon.png" />
+          <img id="movieNavetIcons" src="./navetIcon.png" />
         </div>
       </div>
     </div>
-    <div className="synopsisContainer">
+    <div id="synopsisContainer">
       <hr />
       <h3>Synopsis</h3>
       <p>
