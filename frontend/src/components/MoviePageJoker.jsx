@@ -3,7 +3,7 @@ import MoviePage from "./MoviePage";
 import movieList from "../DataBaseMovie";
 
 const MoviePageJoker = () => (
-  <div className="MoviePageJoker">
+  <div>
     {movieList
       .filter(toto => {
         return toto.title === "Joker";
