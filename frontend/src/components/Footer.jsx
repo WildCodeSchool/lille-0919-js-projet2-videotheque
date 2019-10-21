@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import Twitter from "./twitter.svg";
+import Copyright from "./copyright.svg";
 
 function Footer() {
   return (
@@ -8,14 +10,14 @@ function Footer() {
         <li a href="contact_us">
           Contact us
         </li>
-        <li a href="twitter">
-          Twitter
+        <li a href="cgu">
+          CGU
         </li>
-        <li a href="about_us">
-          About us
+        <li a href="twitter">
+          <img src={Twitter} />
         </li>
         <li a href="copyright">
-          Copyright
+          <img src={Copyright} />
         </li>
       </ul>
     </div>
