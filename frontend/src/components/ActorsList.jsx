@@ -1,4 +1,5 @@
 import React from "react";
+import Actor from "./Actor";
 import "./ActorsList.css";
 
 const list = [
@@ -38,16 +39,6 @@ function ActorsList() {
         })}
       </ul>
     </div>
-  );
-}
-
-function Actor(props) {
-  return (
-    <li>
-      <img src={props.image} />
-      <p className="actorName">{props.name}</p>
-      <p>{props.role}</p>
-    </li>
   );
 }
 
