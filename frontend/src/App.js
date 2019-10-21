@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import MoviePage from "./components/MoviePage";
+import MoviePageJoker from "./components/MoviePageJoker";
 
 function App() {
   return (
     <div className="App">
-      <MoviePage />
+      <MoviePageJoker />
     </div>
   );
 }

@@ -1,6 +1,5 @@
-/* Black Table */
 * {
-  background-color: black;
+  background-color: rgb(20, 20, 20);
 }
 
 #around {
@@ -97,4 +96,38 @@ h3 {
   font-size: 13px;
   line-height: 16px;
   font-family: sans-serif;
+}
+/* Desktop */
+@media screen and (min-width: 960px) {
+  #movieMainJacket {
+    width: 280px;
+    padding: 0px;
+  }
+
+  #movieMainJacketImg {
+    width: 180px;
+    height: 240px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #movieTitleContainer {
+    height: 240px;
+    /* padding-bottom: 10px; */
+  }
+
+  #movieDescription {
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .oneRedWord {
+    font-size: 18px;
+  }
 }
