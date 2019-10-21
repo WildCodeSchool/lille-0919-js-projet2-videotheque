@@ -1,7 +1,7 @@
 import React from "react";
 import "./topBar.css";
 
-const topBar = () => (
+const TopBar = () => (
   <header className="topBar">
     <nav className="topBar_navigation">
       <div className="topBar_logo">
@@ -18,7 +18,7 @@ const topBar = () => (
                 id="logoUser"
                 alt="logoUser"
                 src="logoUser.jpg"
-                onclick="location.href='http://www.allocine.fr/film/fichefilm_gen_cfilm=61282.html'"
+                onclick="location.href='user connexion link'"
               />
             </a>
           </li>
@@ -33,11 +33,4 @@ const topBar = () => (
   </header>
 );
 
-export default topBar;
-
-/*<img
-  id="logoWebsite"
-  alt="logoWebsite"
-  src=""
-  onclick="location.href='http://www.allocine.fr/film/fichefilm_gen_cfilm=61282.html'"
-  />*/
+export default TopBar;

@@ -1,11 +1,11 @@
 import React from "react";
-import topBar from "./components/topBar";
+import TopBar from "./components/TopBar";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <topBar />
+      <TopBar />
     </div>
   );
 }
