@@ -2,20 +2,48 @@ import React from "react";
 import "./actorsList.css";
 
 const list = [
-  { name: "Joaquin Phoenix", image: "./public/pictures/joaquin.png" },
-  { name: "Robert De Niro", image: "./public/pictures/robert.jpg" },
-  { name: "Zazie Beetz", image: "./public/pictures/zazie.jpg" },
-  { name: "Frances Conroy", image: "./public/pictures/frances.jpg" },
-  { name: "Brett Cullen", image: "./public/pictures/brett.jpg" }
+  /*{
+    name: "Todd Phillips",
+    role: "director",
+    image: "./pictures/todd.jpg"
+  },*/
+
+  {
+    name: "Joaquin Phoenix",
+    role: "Arthur Fleck/Joker",
+    image: "./pictures/joaquin.jpg"
+  },
+  {
+    name: "Robert De Niro",
+    role: "Murray Franklin",
+    image: "./pictures/robert.jpg"
+  },
+  { name: "Zazie Beetz", role: "Sophie Dumond", image: "./pictures/zazie.jpg" },
+  {
+    name: "Frances Conroy",
+    role: "Penny Fleck",
+    image: "./pictures/frances.jpg"
+  },
+  { name: "Brett Cullen", role: "Thomas Wayne", image: "./pictures/brett.jpg" }
 ];
 
 function ActorsList() {
   return (
-    <ul className="actorsList">
-      {list.map((person, i) => {
-        return <Actor key={i} name={person.name} image={person.image} />;
-      })}
-    </ul>
+    <div>
+      <h1>HEADLINE</h1>
+      <ul className="actorsList">
+        {list.map((person, i) => {
+          return (
+            <Actor
+              key={i}
+              name={person.name}
+              image={person.image}
+              role={person.role}
+            />
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 
@@ -23,8 +51,9 @@ function Actor(props) {
   console.log(props);
   return (
     <li>
-      <h1>{props.name}</h1>
       <img src={props.image} />
+      <p className="actorName">{props.name}</p>
+      <p>{props.role}</p>
     </li>
   );
 }
