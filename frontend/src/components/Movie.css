@@ -1,26 +1,56 @@
-.Movie {
-  width: 100%;
-  height: 40%;
-  display: flex;
-  padding: 5% 0;
-  background-color: black;
+@media only screen and (max-width: 600px) {
+  .Movie {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    padding: 5% 0;
+    background-color: black;
+  }
+  .Movie .avatar {
+    width: 9em;
+    height: 11em;
+    margin: auto;
+  }
+  .Movie .infos {
+    width: 50%;
+    height: 11em;
+    overflow: hidden;
+    margin: auto;
+    color: white;
+  }
+  .Movie .infos h2 {
+    font-weight: bold;
+    color: red;
+  }
+  .Movie .infos .synopsis {
+    text-align: justify;
+  }
 }
-.Movie .avatar {
-  width: 9em;
-  height: 11em;
-  margin: auto;
-}
-.Movie .infos {
-  width: 50%;
-  height: 11em;
-  overflow: hidden;
-  margin: auto;
-  color: white;
-}
-.Movie .infos h2 {
-  font-weight: bold;
-  color: red;
-}
-.Movie .infos .synopsis {
-  text-align: justify;
+@media only screen and (min-width: 600px) {
+  .Movie {
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    background-color: black;
+  }
+  .Movie .avatar {
+    width: 18em;
+    height: 24em;
+    margin: auto;
+  }
+
+  .Movie .infos {
+    width: 50%;
+    height: 24em;
+    overflow: hidden;
+    margin: 1em;
+    color: white;
+  }
+  .Movie .infos h2 {
+    font-weight: bold;
+    color: red;
+  }
+  .Movie .infos .synopsis {
+    text-align: justify;
+  }
 }

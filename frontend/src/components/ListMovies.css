@@ -1,4 +1,5 @@
 .ListMovies h1 {
+  width: 100%;
   background-color: black;
   color: silver;
   font-size: 2em;
@@ -7,4 +8,9 @@
 }
 .ListMovies a {
   text-decoration: none;
+  width: 49%;
+}
+.ListMovies {
+  display: flex;
+  flex-wrap: wrap;
 }
