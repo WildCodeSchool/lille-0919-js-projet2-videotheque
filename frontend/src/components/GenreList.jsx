@@ -42,12 +42,14 @@ const GenresList = [
   }
 ];
 
-const GenreList = () => (
-  <div>
-    {GenresList.map(genre => (
-      <Genre genreName={genre.name} genreBackground={genre.background} />
-    ))}
-  </div>
-);
+function GenreList() {
+  return (
+    <div>
+      {GenresList.map(genre => (
+        <Genre genreName={genre.name} genreBackground={genre.background} />
+      ))}
+    </div>
+  );
+}
 
 export default GenreList;
