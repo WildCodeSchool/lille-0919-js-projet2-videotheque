@@ -23,6 +23,15 @@
   width: 80vw;
   margin: 20px 0;
   max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-play {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
 }
 
 @media screen and (max-width: 600px) {

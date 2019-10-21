@@ -7,7 +7,13 @@ function MainPage() {
   return (
     <div className="main-homepage">
       <div className="trailer-homepage">
-        <div className="trailer">MOVIE TRAILER</div>
+        <div className="trailer">
+          <img
+            className="icon-play"
+            src="Pictures/icon-play.svg"
+            alt="Video Player"
+          />
+        </div>
       </div>
       <div className="main-poster">
         {movieList.map(item => (
