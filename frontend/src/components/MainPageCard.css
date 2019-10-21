@@ -13,7 +13,7 @@
 }
 
 .single-movie-poster {
-  height: 200px;
+  height: auto;
   width: 150px;
   margin: 2px auto;
 }
@@ -23,5 +23,32 @@
 @media screen and (min-width: 900px) {
   .div-poster {
     margin: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .div-poster {
+    width: 50%;
+  }
+  .single-movie-poster {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 600px) {
+  .div-poster {
+    width: 33%;
+  }
+  .single-movie-poster {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 746px) {
+  .div-poster {
+    width: 25%;
+  }
+  .single-movie-poster {
+    width: 95%;
   }
 }

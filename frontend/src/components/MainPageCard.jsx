@@ -3,13 +3,13 @@ import "./MainPageCard.css";
 
 function MainPageCard(props) {
   return (
-    <div className="div-poster">
+    <a className="div-poster">
       <img
         className="single-movie-poster"
         src={props.picture}
         alt="Movie Poster"
       />
-    </div>
+    </a>
   );
 }
 
