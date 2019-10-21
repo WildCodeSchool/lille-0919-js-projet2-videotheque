@@ -6,18 +6,22 @@ import "./ListMovies.css";
 const ListMovies = () => (
   <div className="ListMovies">
     <h1>Genre</h1>
-    {movieList.map(movie => (
-      <a href=" ">
-        <Movie
-          key={movie.title}
-          title={movie.title}
-          genre={movie.genre}
-          duration={movie.duration}
-          picture={movie.picture}
-          synopsis={movie.synopsis}
-        />
-      </a>
-    ))}
+    {movieList
+      .filter(toto => {
+        return toto.genre === "Horror";
+      })
+      .map(movie => (
+        <a href=" ">
+          <Movie
+            key={movie.title}
+            title={movie.title}
+            genre={movie.genre}
+            duration={movie.duration}
+            picture={movie.picture}
+            synopsis={movie.synopsis}
+          />
+        </a>
+      ))}
   </div>
 );
 
