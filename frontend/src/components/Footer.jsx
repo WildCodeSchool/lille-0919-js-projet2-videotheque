@@ -5,16 +5,16 @@ function Footer() {
   return (
     <div className="Footer">
       <ul>
-        <li a href="contact_us">
+        <li a href="">
           Contact us
         </li>
-        <li a href="cgu">
+        <li a href="">
           CGU
         </li>
-        <li a href="twitter">
+        <li a href="">
           <img src="./pictures/twitter.svg" />
         </li>
-        <li a href="copyright">
+        <li a href="">
           <img src="./pictures/copyright.svg" />
         </li>
       </ul>
