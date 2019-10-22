@@ -4,7 +4,7 @@
   background: black;
   height: 53px;
 }
-.topBar_navigation {
+.topBarNavigation {
   display: flex;
   height: 100%;
   align-items: center;
@@ -19,7 +19,7 @@ header #pictoLoupe {
   margin-top: 4px;
 }
 
-.topBar_logo a {
+.topBarLogo a {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
@@ -29,17 +29,17 @@ header #pictoLoupe {
   flex: 1;
 }
 
-.topBar_navigation_items ul {
+.topBarNavigationItems ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-.topBar_navigation_items li {
+.topBarNavigationItems li {
   padding: 0 0.5rem;
 }
 
-.topBar_navigation_items a {
+.topBarNavigationItems a {
   color: white;
 }
 

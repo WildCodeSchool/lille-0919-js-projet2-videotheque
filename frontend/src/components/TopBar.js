@@ -3,17 +3,17 @@ import "./topBar.css";
 
 const TopBar = () => (
   <header className="topBar">
-    <nav className="topBar_navigation">
-      <div className="topBar_logo">
+    <nav className="topBarNavigation">
+      <div className="topBarLogo">
         <a href="homeWebsite">MyMovies</a>
       </div>
 
       <div className="spacer" />
 
-      <div className="topBar_navigation_items">
+      <div className="topBarNavigationItems">
         <ul>
           <li>
-            <a href="userConnexion">
+            <a href=" ">
               <img
                 id="logoUser"
                 alt="logoUser"
