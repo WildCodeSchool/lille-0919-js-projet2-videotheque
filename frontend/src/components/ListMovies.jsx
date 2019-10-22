@@ -8,8 +8,8 @@ function ListMovies() {
     <div className="ListMovies">
       <h1>Genre</h1>
       {movieList
-        .filter(toto => {
-          return toto.genre === "Horror";
+        .filter(movie => {
+          return movie.genre === "Horror";
         })
         .map(movie => (
           <a href=" ">
