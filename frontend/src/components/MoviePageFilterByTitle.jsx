@@ -2,11 +2,11 @@ import React from "react";
 import MoviePage from "./MoviePage";
 import movieList from "../DataBaseMovie";
 
-const MoviePageJoker = () => (
+const MoviePageFilterByTitle = () => (
   <div>
     {movieList
-      .filter(toto => {
-        return toto.title === "Joker";
+      .filter(movie => {
+        return movie.title === "Joker";
       })
       .map(moviePage => (
         <MoviePage
@@ -19,9 +19,10 @@ const MoviePageJoker = () => (
           duration={moviePage.duration}
           picture={moviePage.picture}
           synopsis={moviePage.synopsis}
+          trailer={moviePage.trailer}
         />
       ))}
   </div>
 );
 
-export default MoviePageJoker;
+export default MoviePageFilterByTitle;
