@@ -12,7 +12,7 @@ class SlideSearchFunction extends React.Component {
   render() {
     return (
       <div>
-        <button //button search should be in the topBar after merge
+        <button
           className="searchBarButton"
           onClick={event => {
             let newSearching = !this.state.searching;
