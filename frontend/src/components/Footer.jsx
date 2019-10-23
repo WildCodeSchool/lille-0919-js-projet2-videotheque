@@ -12,10 +12,10 @@ function Footer() {
           CGU
         </li>
         <li a href="">
-          <img src="./pictures/twitter.svg" />
+          <img src="./pictures/twitter.svg" alt="twitter" />
         </li>
         <li a href="">
-          <img src="./pictures/copyright.svg" />
+          <img src="./pictures/copyright.svg" alt="copyright" />
         </li>
       </ul>
     </div>
