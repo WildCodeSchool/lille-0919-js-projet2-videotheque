@@ -9,7 +9,7 @@ function Footer() {
           Contact us
         </li>
         <li a href="">
-          CGU
+          Terms of use
         </li>
         <li a href="">
           <img src="./pictures/twitter.svg" />
