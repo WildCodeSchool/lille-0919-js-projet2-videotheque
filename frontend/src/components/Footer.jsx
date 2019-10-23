@@ -14,9 +14,6 @@ function Footer() {
         <li a href="">
           <img src="./pictures/twitter.svg" />
         </li>
-        <li a href="">
-          <img src="./pictures/copyright.svg" />
-        </li>
       </ul>
     </div>
   );
