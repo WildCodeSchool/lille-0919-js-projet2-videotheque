@@ -12,7 +12,7 @@ function Footer() {
           Terms of use
         </li>
         <li a href="">
-          <img src="./pictures/twitter.svg" />
+          <img src="./pictures/twitter.svg" alt="twitter logo" />
         </li>
       </ul>
     </div>
