@@ -1,11 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./topBar.css";
 
 const TopBar = () => (
   <header className="topBar">
     <nav className="topBarNavigation">
       <div className="topBarLogo">
-        <a href="homeWebsite">MyMovies</a>
+        <NavLink activeClassName="active" to="/">
+          MyMovies
+        </NavLink>
       </div>
 
       <div className="spacer" />
@@ -13,14 +16,14 @@ const TopBar = () => (
       <div className="topBarNavigationItems">
         <ul>
           <li>
-            <a href=" ">
+            <NavLink activeClassName="active" to="/">
               <img
                 id="logoUser"
                 alt="logoUser"
                 src="logoUser.jpg"
                 onclick="location.href='user connexion link'"
               />
-            </a>
+            </NavLink>
           </li>
           <li>
             <button className="searchBarButton">
