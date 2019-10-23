@@ -3,6 +3,7 @@ import TopBar from "./components/TopBar";
 import ActorsList from "./components/ActorsList";
 import MainPage from "./components/MainPage";
 import Footer from "./components/Footer";
+import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
 import "./App.css";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <TopBar />
       <MainPage />
+      <MoviePageFilterByTitle />
       <ActorsList />
       <Footer />
     </div>
