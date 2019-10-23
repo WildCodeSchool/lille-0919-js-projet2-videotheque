@@ -4,6 +4,9 @@ import "./MoviePage.css";
 function MoviePage(props) {
   return (
     <div id="around">
+      <div id="movieTrailerContainer">
+        <img src={props.trailerThumb} />
+      </div>
       <div id="movieTitleContainer">
         <div id="movieMainJacket">
           <img

@@ -6,6 +6,17 @@
   height: 100vh;
 }
 
+#movieTrailerContainer {
+  padding-bottom: 10px;
+  height: auto;
+  width: 100%;
+}
+
+#movieTrailerContainer img {
+  width: 100%;
+  height: auto;
+}
+
 #movieTitleContainer {
   height: 150px;
   display: flex;
@@ -113,6 +124,21 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #movieTrailerContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    height: auto;
+    width: 78%;
+  }
+
+  #movieTrailerContainer img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    max-width: 130vh;
   }
 
   #movieTitleContainer {

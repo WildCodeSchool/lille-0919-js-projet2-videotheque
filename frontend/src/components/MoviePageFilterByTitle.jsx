@@ -20,6 +20,7 @@ const MoviePageFilterByTitle = () => (
           picture={moviePage.picture}
           synopsis={moviePage.synopsis}
           trailer={moviePage.trailer}
+          trailerThumb={moviePage.trailerThumb}
         />
       ))}
   </div>

@@ -120,7 +120,8 @@ const movieList = [
     by: "John Café",
     trailer:
       "https://www.youtube.com/embed/t433PEQGErc?modestbranding=1&autohide=1&showinfo=0&controls=0",
-    trailerThumb: ""
+    trailerThumb:
+      "https://image.tmdb.org/t/p/original/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg"
   }
 ];
 
