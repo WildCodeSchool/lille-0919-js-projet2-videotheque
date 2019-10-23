@@ -7,7 +7,8 @@ class MoviePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalIsOpen: false
+      modalIsOpen: false,
+      img: "play.png"
     };
 
     this.openModal = this.openModal.bind(this);
@@ -40,7 +41,28 @@ class MoviePage extends React.Component {
           </button>
         </Modal>
         <div id="movieTrailerContainer">
-          <img src={this.props.trailerThumb} onClick={this.openModal} />
+          <img
+            src={this.props.trailerThumb}
+            className="trailerThumb"
+            onClick={this.openModal}
+          />
+          <div>
+            <img
+              className="playIconOver"
+              src={this.state.img}
+              onClick={this.openModal}
+              onMouseEnter={() => {
+                this.setState({
+                  img: "playHover.png"
+                });
+              }}
+              onMouseOut={() => {
+                this.setState({
+                  img: "play.png"
+                });
+              }}
+            />
+          </div>
         </div>
         <div id="movieTitleContainer">
           <div id="movieMainJacket">

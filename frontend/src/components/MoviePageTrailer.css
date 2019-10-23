@@ -1,3 +1,16 @@
+.playIconOver {
+  position: absolute;
+  background-color: transparent;
+  width: 10%;
+  top: 35%;
+  left: 44%;
+}
+
+.trailerThumb {
+  width: 100%;
+  height: auto;
+}
+
 .customStyles {
   position: absolute;
   background-color: black;
@@ -18,6 +31,17 @@ iframe {
 
 .closeTrailer {
   width: 100px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 6px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: -2px;
+  cursor: pointer;
 }
 
 /* Desktop */
@@ -35,6 +59,21 @@ iframe {
 
 /* Desktop */
 @media screen and (min-width: 960px) {
+  .trailerThumb {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    max-width: 130vh;
+  }
+
+  .playIconOver {
+    position: absolute;
+    background-color: transparent;
+    width: 60px;
+    top: 40%;
+    left: 47%;
+  }
+
   .customStyles {
     height: 70%;
     width: 80%;
