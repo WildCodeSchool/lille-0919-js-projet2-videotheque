@@ -3,7 +3,8 @@
 }
 
 #around {
-  height: 100vh;
+  height: auto;
+  margin-top: 50px;
 }
 
 #movieTrailerContainer {

@@ -1,0 +1,47 @@
+.customStyles {
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 80%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.closeTrailer {
+  width: 100px;
+}
+
+/* Desktop */
+@media screen and (min-width: 460px) {
+  .customStyles {
+    height: 50%;
+    width: 80%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+  .customStyles {
+    height: 70%;
+    width: 80%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
