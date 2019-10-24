@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <TopBar />
-      <MainPage />
       <SignInForm />
+      <MainPage />
       <MoviePageFilterByTitle />
       <ActorsList />
       <Footer />

@@ -11,35 +11,44 @@ class SignInForm extends Component {
 
   render() {
     return (
-      <div className="SignIn">
-        <label htmlFor="title">E-mail</label>
-        <input
-          id="title"
-          type="text"
-          value={this.state.title}
-          onChange={event => {
-            this.setState({ mail: event.target.value });
-          }}
-        />
-        <label htmlFor="title">Username</label>
-        <input
-          id="title"
-          type="text"
-          value={this.state.title}
-          onChange={event => {
-            this.setState({ username: event.target.value });
-          }}
-        />
-        <label htmlFor="title">Password</label>
-        <input
-          id="title"
-          type="text"
-          value={this.state.title}
-          onChange={event => {
-            this.setState({ password: event.target.value });
-          }}
-        />
-      </div>
+      <container className="container">
+        <div className="SignIn">
+          <h1>Sign In</h1>
+          <label className="label">E-mail</label>
+          <input
+            type="text"
+            value={this.state.title}
+            onChange={event => {
+              this.setState({ mail: event.target.value });
+            }}
+          />
+          <label className="label">Username</label>
+          <input
+            type="text"
+            value={this.state.title}
+            onChange={event => {
+              this.setState({ username: event.target.value });
+            }}
+          />
+          <label className="label">Password</label>
+          <input
+            type="text"
+            value={this.state.title}
+            onChange={event => {
+              this.setState({ password: event.target.value });
+            }}
+          />
+          <label className="label">Confirm password</label>
+          <input
+            type="text"
+            value={this.state.title}
+            onChange={event => {
+              this.setState({ password: event.target.value });
+            }}
+          />
+          <button type="submit">Submit !</button>
+        </div>
+      </container>
     );
   }
 }

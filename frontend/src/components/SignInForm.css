@@ -1,0 +1,42 @@
+.SignIn {
+  background: rgb(187, 184, 184);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+}
+input {
+  margin-top: 1%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  margin-left: 3%;
+  border-radius: 20px;
+  background-color: white;
+}
+.label {
+  color: black;
+  background-color: rgb(187, 184, 184);
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+button {
+  margin: 10%;
+  color: white;
+  background-color: yellowgreen;
+  border-radius: 20px;
+}
+h1 {
+  color: black;
+  background-color: rgb(187, 184, 184);
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
