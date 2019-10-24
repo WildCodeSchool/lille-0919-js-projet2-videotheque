@@ -4,6 +4,7 @@
 .div-poster {
   width: 12vw;
   height: 16vw;
+  overflow: hidden;
 }
 .div-poster:hover {
   transform: scale(1.05);
