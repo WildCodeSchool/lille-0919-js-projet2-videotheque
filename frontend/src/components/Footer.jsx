@@ -7,21 +7,17 @@ function Footer() {
     <div className="Footer">
       <ul>
         <li>
-          {" "}
           <Link to="/">Contact us</Link>
         </li>
         <li>
-          {" "}
           <Link to="/">CGU</Link>
         </li>
         <li>
-          {" "}
           <Link to="/">
             <img src="./pictures/twitter.svg" alt="twitter" />
           </Link>
         </li>
         <li>
-          {" "}
           <Link to="/">
             <img src="./pictures/copyright.svg" alt="copyright" />
           </Link>
