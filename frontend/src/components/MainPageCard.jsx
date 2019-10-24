@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./MainPageCard.css";
 
 function MainPageCard(props) {
   return (
-    <a className="div-poster">
+    <Link to="/movieSheet" className="div-poster">
       <img
         className="single-movie-poster"
         src={props.picture}
         alt="Movie Poster"
       />
-    </a>
+    </Link>
   );
 }
 
