@@ -10,7 +10,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 910px;
+  width: 100%;
 }
 
 .title {
@@ -38,11 +38,5 @@
 @media screen and (max-width: 600px) {
   .trailer-homepage {
     display: none;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .main-poster {
-    width: 90vw;
   }
 }
