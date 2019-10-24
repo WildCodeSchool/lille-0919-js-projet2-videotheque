@@ -1,9 +1,7 @@
 .Footer {
-  background-color: #7c6d6d;
+  background-color: black;
   height: 50px;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 ul {
   display: flex;
