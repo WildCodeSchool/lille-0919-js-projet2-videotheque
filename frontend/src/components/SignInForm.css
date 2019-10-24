@@ -66,7 +66,7 @@
   .submitButton {
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 10%;
+    margin-top: 5%;
     color: white;
     background-color: yellowgreen;
     border-radius: 20px;
@@ -87,6 +87,38 @@
 }
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
+  .signInInput {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+  }
+  .submitButton {
+    margin-left: 60%;
+    margin-right: 20%;
+    margin-top: 2%;
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+  }
+  .signIn {
+    background: rgb(187, 184, 184);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
