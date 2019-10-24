@@ -14,5 +14,8 @@ ul {
   height: 100%;
 }
 img {
-  width: 20px;
+  width: 30px;
+}
+li {
+  color: white;
 }
