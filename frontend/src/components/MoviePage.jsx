@@ -1,6 +1,6 @@
 import React from "react";
 import "./MoviePage.css";
-import "./MoviePageTrailer.css";
+import "./MoviePageModalTrailer.css";
 import Modal from "react-modal";
 
 class MoviePage extends React.Component {
@@ -26,31 +26,26 @@ class MoviePage extends React.Component {
       <div id="around">
         <Modal
           isOpen={this.state.modalIsOpen}
-          className="customStyles"
+          className="modalStyle"
           contentLabel="Example Modal"
           onRequestClose={this.closeModal}
         >
           <iframe
-            src="https://www.youtube.com/embed/t433PEQGErc"
+            src={this.props.trailer}
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowfullscreen="1"
           ></iframe>
           <button className="closeTrailer" onClick={this.closeModal}>
             close
           </button>
         </Modal>
-        <div id="movieTrailerContainer">
-          <img
-            src={this.props.trailerThumb}
-            className="trailerThumb"
-            onClick={this.openModal}
-          />
+        <div id="movieTrailerContainer" onClick={this.openModal}>
+          <img src={this.props.trailerThumb} className="trailerThumb" />
           <div>
             <img
               className="playIconOver"
               src={this.state.img}
-              onClick={this.openModal}
               onMouseEnter={() => {
                 this.setState({
                   img: "playHover.png"
@@ -85,11 +80,11 @@ class MoviePage extends React.Component {
                 <span className="oneRedWord">Genre</span> {this.props.genre}
               </p>
               <p>
-                <span className="oneRedWord">Released at</span>{" "}
+                <span className="oneRedWord">Released at</span>
                 {this.props.releasedDate}
               </p>
               <p>
-                <span className="oneRedWord">Runtime</span>{" "}
+                <span className="oneRedWord">Runtime</span>
                 {this.props.duration}
               </p>
             </div>
