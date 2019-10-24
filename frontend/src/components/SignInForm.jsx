@@ -12,10 +12,11 @@ class SignInForm extends Component {
   render() {
     return (
       <container className="container">
-        <div className="SignIn">
-          <h1>Sign In</h1>
+        <div className="signIn">
+          <h1 className="form">Sign In</h1>
           <label className="label">E-mail</label>
           <input
+            id="signInInput"
             type="text"
             value={this.state.title}
             onChange={event => {
@@ -24,6 +25,7 @@ class SignInForm extends Component {
           />
           <label className="label">Username</label>
           <input
+            id="signInInput"
             type="text"
             value={this.state.title}
             onChange={event => {
@@ -32,6 +34,7 @@ class SignInForm extends Component {
           />
           <label className="label">Password</label>
           <input
+            id="signInInput"
             type="text"
             value={this.state.title}
             onChange={event => {
@@ -40,6 +43,7 @@ class SignInForm extends Component {
           />
           <label className="label">Confirm password</label>
           <input
+            id="signInInput"
             type="text"
             value={this.state.title}
             onChange={event => {
