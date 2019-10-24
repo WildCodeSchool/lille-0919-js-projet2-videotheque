@@ -16,7 +16,7 @@ class SignInForm extends Component {
           <h1 className="form">Sign In</h1>
           <label className="label">E-mail</label>
           <input
-            id="signInInput"
+            className="signInInput"
             type="text"
             value={this.state.title}
             onChange={event => {
@@ -25,7 +25,7 @@ class SignInForm extends Component {
           />
           <label className="label">Username</label>
           <input
-            id="signInInput"
+            className="signInInput"
             type="text"
             value={this.state.title}
             onChange={event => {
@@ -34,7 +34,7 @@ class SignInForm extends Component {
           />
           <label className="label">Password</label>
           <input
-            id="signInInput"
+            className="signInInput"
             type="text"
             value={this.state.title}
             onChange={event => {
@@ -43,14 +43,16 @@ class SignInForm extends Component {
           />
           <label className="label">Confirm password</label>
           <input
-            id="signInInput"
+            className="signInInput"
             type="text"
             value={this.state.title}
             onChange={event => {
               this.setState({ password: event.target.value });
             }}
           />
-          <button type="submit">Submit !</button>
+          <button type="submit" className="submitButton">
+            Submit !
+          </button>
         </div>
       </container>
     );
