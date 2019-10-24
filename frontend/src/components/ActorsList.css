@@ -1,8 +1,7 @@
 .actorsList {
-  display: flex;
-  background: black;
   color: white;
   padding: 10px;
+  padding: 10px 20px 20px 20px;
 }
 h1 {
   color: red;
@@ -14,7 +13,7 @@ h1 {
 }
 
 .actorsList ul {
-  display: flex;
+  display: inline-block;
 }
 
 .actorsList li {
@@ -36,4 +35,11 @@ h1 {
   color: red;
   font-weight: bold;
   padding: 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .actorsList {
+    width: 40%;
+    margin: auto;
+  }
 }
