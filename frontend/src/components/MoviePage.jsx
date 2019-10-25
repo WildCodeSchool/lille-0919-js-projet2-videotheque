@@ -1,5 +1,6 @@
 import React from "react";
 import "./MoviePage.css";
+import ActorsList from "./ActorsList";
 
 function MoviePage(props) {
   return (
@@ -44,6 +45,7 @@ function MoviePage(props) {
         <h3>Synopsis</h3>
         <p>{props.synopsis}</p>
       </div>
+      <ActorsList />
     </div>
   );
 }
