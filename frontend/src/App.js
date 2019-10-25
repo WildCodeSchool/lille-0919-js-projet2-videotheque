@@ -13,13 +13,10 @@ function App() {
     <div className="App">
       <TopBar />
       <SlideSearchFunction />
-      <MainPage />
-      <MoviePageFilterByTitle />
-      <ActorsList />
-      <ListMovies />
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/movieSheet" component={MoviePageFilterByTitle} />
+        <Route path="/listMovies" component={ListMovies} />
       </Switch>
       <Footer />
     </div>
