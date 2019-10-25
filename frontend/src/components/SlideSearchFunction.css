@@ -1,0 +1,38 @@
+.noEntrySearch,
+.enterYourSearch {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .searchBarButton {
+    margin-left: 0;
+  }
+
+  .enterYourSearch {
+    display: block;
+    width: 80%;
+    height: calc(100vh - 100px);
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    transition-duration: 1s;
+    transform: translate(-10px, 0);
+    overflow: scroll;
+  }
+  .noEntrySearch {
+    display: block;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    right: -2px;
+    transition-duration: 1s;
+  }
+  #searchingBarre {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+  }
+}
