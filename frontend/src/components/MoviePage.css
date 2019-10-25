@@ -3,7 +3,8 @@
 }
 
 #around {
-  height: 100vh;
+  height: auto;
+  padding-top: 55px;
 }
 
 #movieTitleContainer {
