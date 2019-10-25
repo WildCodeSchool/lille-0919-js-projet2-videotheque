@@ -2,6 +2,7 @@ import React from "react";
 import "./MoviePage.css";
 import "./MoviePageModalTrailer.css";
 import Modal from "react-modal";
+import ActorsList from "./ActorsList";
 
 class MoviePage extends React.Component {
   constructor(props) {
@@ -96,6 +97,10 @@ class MoviePage extends React.Component {
               <img id="movieLikeIcons" src="./likeIcon.png" />
               <img id="movieNavetIcons" src="./navetIcon.png" />
             </div>
+          <div id="movieIconsContainer">
+            <img id="moviePlusIcons" src="./plusIcon.png" alt="add" />
+            <img id="movieLikeIcons" src="./likeIcon.png" alt="like" />
+            <img id="movieNavetIcons" src="./navetIcon.png" alt="navet" />
           </div>
         </div>
         <div id="synopsisContainer">
@@ -106,6 +111,14 @@ class MoviePage extends React.Component {
       </div>
     );
   }
+      <div id="synopsisContainer">
+        <hr />
+        <h3>Synopsis</h3>
+        <p>{props.synopsis}</p>
+      </div>
+      <ActorsList />
+    </div>
+  );
 }
 
 export default MoviePage;

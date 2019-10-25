@@ -1,0 +1,42 @@
+.main-homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.main-poster {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  color: grey;
+}
+
+.trailer {
+  color: white;
+  background-color: grey;
+  height: 15vh;
+  width: 80vw;
+  margin: 20px 0;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-play {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+}
+
+@media screen and (max-width: 600px) {
+  .trailer-homepage {
+    display: none;
+  }
+}
