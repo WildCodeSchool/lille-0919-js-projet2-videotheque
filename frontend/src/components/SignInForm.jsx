@@ -7,6 +7,7 @@ class SignInForm extends Component {
     this.state = { mail: "Awesome Mail" };
     this.state = { username: "Awesome Username" };
     this.state = { password: "Awesome Password" };
+    this.state = { confPassword: "Awesome confPassword" };
   }
 
   render() {
@@ -45,9 +46,9 @@ class SignInForm extends Component {
           <input
             className="signInInput"
             type="text"
-            value={this.state.password}
+            value={this.state.confPassword}
             onChange={event => {
-              this.setState({ password: event.target.value });
+              this.setState({ confPassword: event.target.value });
             }}
           />
           <button type="submit" className="submitButton">
