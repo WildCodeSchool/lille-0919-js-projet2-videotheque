@@ -18,7 +18,7 @@ class SignInForm extends Component {
           <input
             className="signInInput"
             type="text"
-            value={this.state.title}
+            value={this.state.mail}
             onChange={event => {
               this.setState({ mail: event.target.value });
             }}
@@ -27,7 +27,7 @@ class SignInForm extends Component {
           <input
             className="signInInput"
             type="text"
-            value={this.state.title}
+            value={this.state.username}
             onChange={event => {
               this.setState({ username: event.target.value });
             }}
@@ -36,7 +36,7 @@ class SignInForm extends Component {
           <input
             className="signInInput"
             type="text"
-            value={this.state.title}
+            value={this.state.password}
             onChange={event => {
               this.setState({ password: event.target.value });
             }}
@@ -45,7 +45,7 @@ class SignInForm extends Component {
           <input
             className="signInInput"
             type="text"
-            value={this.state.title}
+            value={this.state.password}
             onChange={event => {
               this.setState({ password: event.target.value });
             }}
