@@ -71,20 +71,23 @@ class MoviePage extends React.Component {
             <div id="movieDescription">
               <h2>{this.props.title}</h2>
               <p>
-                <span className="oneRedWord">By</span> {this.props.by}
+                <span className="oneRedWord">By </span>
+                {this.props.by}
               </p>
               <p>
-                <span className="oneRedWord">With</span> {this.props.with}...
+                <span className="oneRedWord">With </span>
+                {this.props.with}...
               </p>
               <p>
-                <span className="oneRedWord">Genre</span> {this.props.genre}
+                <span className="oneRedWord">Genre </span>
+                {this.props.genre}
               </p>
               <p>
-                <span className="oneRedWord">Released at</span>
+                <span className="oneRedWord">Released at </span>
                 {this.props.releasedDate}
               </p>
               <p>
-                <span className="oneRedWord">Runtime</span>
+                <span className="oneRedWord">Runtime </span>
                 {this.props.duration}
               </p>
             </div>
