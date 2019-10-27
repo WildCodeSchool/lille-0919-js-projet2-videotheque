@@ -15,12 +15,13 @@ function App() {
       <SlideSearchFunction />
       <MainPage />
       <MoviePageFilterByTitle />
-      <ActorsList />
+
       <ListMovies />
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/movieSheet" component={MoviePageFilterByTitle} />
       </Switch>
+
       <Footer />
     </div>
   );
