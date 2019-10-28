@@ -13,6 +13,7 @@
 .ListMovies {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 50px;
 }
 @media only screen and (max-width: 600px) {
   .ListMovies {
