@@ -15,7 +15,6 @@ function App() {
       <SlideSearchFunction />
       <MainPage />
       <MoviePageFilterByTitle />
-      <ActorsList />
       <ListMovies />
       <Switch>
         <Route exact path="/" component={MainPage} />

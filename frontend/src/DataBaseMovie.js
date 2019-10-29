@@ -121,9 +121,6 @@ const movieList = [
     trailer: "https://www.youtube.com/embed/t433PEQGErc",
     trailerThumb:
       "https://image.tmdb.org/t/p/original/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg"
-    trailer:
-      "https://www.youtube.com/embed/t433PEQGErc?modestbranding=1&autohide=1&showinfo=0&controls=0",
-    trailerThumb: ""
   },
   {
     title: "Doctor Sleep",
@@ -367,9 +364,9 @@ const movieList = [
     releasedDate: "1 january, 2019",
     with: "Anna Blanders, Jim Carrey",
     by: "John Café",
-    trailer:
-      "https://www.youtube.com/embed/t433PEQGErc?modestbranding=1&autohide=1&showinfo=0&controls=0",
-    trailerThumb: ""
+    trailer: "https://www.youtube.com/embed/t433PEQGErc",
+    trailerThumb:
+      "https://image.tmdb.org/t/p/original/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg"
   },
   {
     title: "Joker",
@@ -382,9 +379,9 @@ const movieList = [
     releasedDate: "1 january, 2019",
     with: "Anna Blanders, Jim Carrey",
     by: "John Café",
-    trailer:
-      "https://www.youtube.com/embed/t433PEQGErc?modestbranding=1&autohide=1&showinfo=0&controls=0",
-    trailerThumb: ""
+    trailer: "https://www.youtube.com/embed/t433PEQGErc",
+    trailerThumb:
+      "https://image.tmdb.org/t/p/original/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg"
   }
 ];
 
