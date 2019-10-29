@@ -14,7 +14,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/movieSheet" component={MoviePageFilterByTitle} />
-        <Route path="/listMovies" component={ListMovies} />
+        <Route path="/listMovies/:genreName" component={ListMovies} />
       </Switch>
       <Footer />
     </div>
