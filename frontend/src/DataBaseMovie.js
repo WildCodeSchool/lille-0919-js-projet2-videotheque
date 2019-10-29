@@ -40,7 +40,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/o_club300-overlay-ok.png_0_se/medias/nmedia/18/70/03/08/19109117.jpg",
     duration: "1h30",
-    genre: "comedy",
+    genre: "Comedy",
     synopsis:
       "Au réveil d'un enterrement de vie de garçon bien arrosé, les trois amis du fiancé se rendent compte qu'il a disparu 40 heures avant la cérémonie de mariage. Ils vont alors devoir faire fi de leur gueule de bois et rassembler leurs bribes de souvenirs pour comprendre ce qui s'est passé."
   },
@@ -49,7 +49,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/64/74/53/18889951.jpg",
     duration: "1h46",
-    genre: "comedy",
+    genre: "Comedy",
     synopsis:
       "Philippe Abrams est directeur de la poste de Salon-de-Provence. Il est marié à Julie, dont le caractère dépressif lui rend la vie impossible. Pour lui faire plaisir, Philippe fraude afin d'obtenir une mutation sur la Côte d'Azur. Mais il est démasqué: il sera muté à Bergues, petite ville du Nord. Pour les Abrams, sudistes pleins de préjugés, le Nord c'est l'horreur, une région glacée, peuplée d'êtres rustres, éructant un langage incompréhensible, le 'cheutimi'. Philippe ira seul. A sa grande surprise, il découvre un endroit charmant, une équipe chaleureuse, des gens accueillants, et se fait un ami : Antoine, le facteur et le carillonneur du village, à la mère possessive et aux amours contrariées. Quand Philippe revient à Salon, Julie refuse de croire qu'il se plait dans le Nord. Elle pense même qu'il lui ment pour la ménager. Pour la satisfaire et se simplifier la vie, Philippe lui fait croire qu'en effet, il vit un enfer à Bergues. Dès lors, sa vie s'enfonce dans un mensonge confortable... "
   },
@@ -58,7 +58,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/35/41/59/18422600.jpg",
     duration: "2h05",
-    genre: "sf",
+    genre: "Sci-fi & Fantasy",
     synopsis:
       "Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle. Capturée par les troupes de choc de l'Empereur menées par le sombre et impitoyable Dark Vador, la princesse Leia Organa dissimule les plans de l'Etoile Noire, une station spatiale invulnérable, à son droïde R2-D2 avec pour mission de les remettre au Jedi Obi-Wan Kenobi. Accompagné de son fidèle compagnon, le droïde de protocole C-3PO, R2-D2 s'échoue sur la planète Tatooine et termine sa quête chez le jeune Luke Skywalker. Rêvant de devenir pilote mais confiné aux travaux de la ferme, ce dernier se lance à la recherche de ce mystérieux Obi-Wan Kenobi, devenu ermite au coeur des montagnes désertiques de Tatooine... "
   },
@@ -67,7 +67,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/35/41/59/18422600.jpg",
     duration: "2h05",
-    genre: "sf",
+    genre: "Sci-fi & Fantasy",
     synopsis:
       "Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle. Capturée par les troupes de choc de l'Empereur menées par le sombre et impitoyable Dark Vador, la princesse Leia Organa dissimule les plans de l'Etoile Noire, une station spatiale invulnérable, à son droïde R2-D2 avec pour mission de les remettre au Jedi Obi-Wan Kenobi. Accompagné de son fidèle compagnon, le droïde de protocole C-3PO, R2-D2 s'échoue sur la planète Tatooine et termine sa quête chez le jeune Luke Skywalker. Rêvant de devenir pilote mais confiné aux travaux de la ferme, ce dernier se lance à la recherche de ce mystérieux Obi-Wan Kenobi, devenu ermite au coeur des montagnes désertiques de Tatooine... "
   },
@@ -76,7 +76,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/pictures/19/04/03/14/15/2748213.jpg",
     duration: "1h45",
-    genre: "family",
+    genre: "Kids & Family",
     synopsis:
       "Après la disparition mystérieuse de Harry Goodman, un détective privé, son fils Tim va tenter de découvrir ce qui s’est passé.  Le détective Pikachu, ancien partenaire de Harry, participe alors à l’enquête : un super-détective adorable à la sagacité hilarante, qui en laisse plus d’un perplexe, dont lui-même. Constatant qu’ils sont particulièrement bien assortis, Tim et Pikachu unissent leurs forces dans une aventure palpitante pour résoudre cet insondable mystère.  À la recherche d’indices dans les rues peuplées de néons de la ville de Ryme – métropole moderne et tentaculaire où humains et Pokémon vivent côte à côte dans un monde en live-action très réaliste –, ils rencontrent plusieurs personnages Pokémon et découvrent alors un complot choquant qui pourrait bien détruire cette coexistence pacifique et menacer l’ensemble de leur univers. "
   },
@@ -85,7 +85,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/pictures/19/04/03/14/15/2748213.jpg",
     duration: "1h45",
-    genre: "family",
+    genre: "Kids & Family",
     synopsis:
       "Après la disparition mystérieuse de Harry Goodman, un détective privé, son fils Tim va tenter de découvrir ce qui s’est passé.  Le détective Pikachu, ancien partenaire de Harry, participe alors à l’enquête : un super-détective adorable à la sagacité hilarante, qui en laisse plus d’un perplexe, dont lui-même. Constatant qu’ils sont particulièrement bien assortis, Tim et Pikachu unissent leurs forces dans une aventure palpitante pour résoudre cet insondable mystère.  À la recherche d’indices dans les rues peuplées de néons de la ville de Ryme – métropole moderne et tentaculaire où humains et Pokémon vivent côte à côte dans un monde en live-action très réaliste –, ils rencontrent plusieurs personnages Pokémon et découvrent alors un complot choquant qui pourrait bien détruire cette coexistence pacifique et menacer l’ensemble de leur univers. "
   },
@@ -94,7 +94,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/64/25/05/19199449.jpg",
     duration: "",
-    genre: "anime",
+    genre: "Animation",
     synopsis:
       "Mise en images pour le cinema d'une bande dessinee apocalyptique sur les débuts du XXIe siecle dans la megapole de Neo-Tokyo au Japon. Tetsuo, un adolescent ayant vécu une enfance difficile, est la victime d'expériences visant à développer les capacités psychiques qui dorment en chacun de nous. Ainsi doté d'une puissance que lui meme ne peut imaginer, Tetsuo décide de partir en guerre contre le monde qui l'a opprimé. Dès lors, Il se retrouve au coeur d'une légende populaire qui annonce le retour prochain d'Akira, un enfant aux pouvoirs extra-ordinaires censé délivrer Tokyo du chaos... "
   },
@@ -103,7 +103,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/64/25/05/19199449.jpg",
     duration: "",
-    genre: "anime",
+    genre: "Animation",
     synopsis:
       "Mise en images pour le cinema d'une bande dessinee apocalyptique sur les débuts du XXIe siecle dans la megapole de Neo-Tokyo au Japon. Tetsuo, un adolescent ayant vécu une enfance difficile, est la victime d'expériences visant à développer les capacités psychiques qui dorment en chacun de nous. Ainsi doté d'une puissance que lui meme ne peut imaginer, Tetsuo décide de partir en guerre contre le monde qui l'a opprimé. Dès lors, Il se retrouve au coeur d'une légende populaire qui annonce le retour prochain d'Akira, un enfant aux pouvoirs extra-ordinaires censé délivrer Tokyo du chaos... "
   },
@@ -163,7 +163,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/o_club300-overlay-ok.png_0_se/medias/nmedia/18/70/03/08/19109117.jpg",
     duration: "1h30",
-    genre: "comedy",
+    genre: "Comedy",
     synopsis:
       "Au réveil d'un enterrement de vie de garçon bien arrosé, les trois amis du fiancé se rendent compte qu'il a disparu 40 heures avant la cérémonie de mariage. Ils vont alors devoir faire fi de leur gueule de bois et rassembler leurs bribes de souvenirs pour comprendre ce qui s'est passé."
   },
@@ -172,7 +172,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/64/74/53/18889951.jpg",
     duration: "1h46",
-    genre: "comedy",
+    genre: "Comedy",
     synopsis:
       "Philippe Abrams est directeur de la poste de Salon-de-Provence. Il est marié à Julie, dont le caractère dépressif lui rend la vie impossible. Pour lui faire plaisir, Philippe fraude afin d'obtenir une mutation sur la Côte d'Azur. Mais il est démasqué: il sera muté à Bergues, petite ville du Nord. Pour les Abrams, sudistes pleins de préjugés, le Nord c'est l'horreur, une région glacée, peuplée d'êtres rustres, éructant un langage incompréhensible, le 'cheutimi'. Philippe ira seul. A sa grande surprise, il découvre un endroit charmant, une équipe chaleureuse, des gens accueillants, et se fait un ami : Antoine, le facteur et le carillonneur du village, à la mère possessive et aux amours contrariées. Quand Philippe revient à Salon, Julie refuse de croire qu'il se plait dans le Nord. Elle pense même qu'il lui ment pour la ménager. Pour la satisfaire et se simplifier la vie, Philippe lui fait croire qu'en effet, il vit un enfer à Bergues. Dès lors, sa vie s'enfonce dans un mensonge confortable... "
   },
@@ -181,7 +181,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/35/41/59/18422600.jpg",
     duration: "2h05",
-    genre: "sf",
+    genre: "Sci-fi & Fantasy",
     synopsis:
       "Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle. Capturée par les troupes de choc de l'Empereur menées par le sombre et impitoyable Dark Vador, la princesse Leia Organa dissimule les plans de l'Etoile Noire, une station spatiale invulnérable, à son droïde R2-D2 avec pour mission de les remettre au Jedi Obi-Wan Kenobi. Accompagné de son fidèle compagnon, le droïde de protocole C-3PO, R2-D2 s'échoue sur la planète Tatooine et termine sa quête chez le jeune Luke Skywalker. Rêvant de devenir pilote mais confiné aux travaux de la ferme, ce dernier se lance à la recherche de ce mystérieux Obi-Wan Kenobi, devenu ermite au coeur des montagnes désertiques de Tatooine... "
   },
@@ -190,7 +190,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/35/41/59/18422600.jpg",
     duration: "2h05",
-    genre: "sf",
+    genre: "Sci-fi & Fantasy",
     synopsis:
       "Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle. Capturée par les troupes de choc de l'Empereur menées par le sombre et impitoyable Dark Vador, la princesse Leia Organa dissimule les plans de l'Etoile Noire, une station spatiale invulnérable, à son droïde R2-D2 avec pour mission de les remettre au Jedi Obi-Wan Kenobi. Accompagné de son fidèle compagnon, le droïde de protocole C-3PO, R2-D2 s'échoue sur la planète Tatooine et termine sa quête chez le jeune Luke Skywalker. Rêvant de devenir pilote mais confiné aux travaux de la ferme, ce dernier se lance à la recherche de ce mystérieux Obi-Wan Kenobi, devenu ermite au coeur des montagnes désertiques de Tatooine... "
   },
@@ -199,7 +199,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/pictures/19/04/03/14/15/2748213.jpg",
     duration: "1h45",
-    genre: "family",
+    genre: "Kids & Family",
     synopsis:
       "Après la disparition mystérieuse de Harry Goodman, un détective privé, son fils Tim va tenter de découvrir ce qui s’est passé.  Le détective Pikachu, ancien partenaire de Harry, participe alors à l’enquête : un super-détective adorable à la sagacité hilarante, qui en laisse plus d’un perplexe, dont lui-même. Constatant qu’ils sont particulièrement bien assortis, Tim et Pikachu unissent leurs forces dans une aventure palpitante pour résoudre cet insondable mystère.  À la recherche d’indices dans les rues peuplées de néons de la ville de Ryme – métropole moderne et tentaculaire où humains et Pokémon vivent côte à côte dans un monde en live-action très réaliste –, ils rencontrent plusieurs personnages Pokémon et découvrent alors un complot choquant qui pourrait bien détruire cette coexistence pacifique et menacer l’ensemble de leur univers. "
   },
@@ -208,7 +208,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/pictures/19/04/03/14/15/2748213.jpg",
     duration: "1h45",
-    genre: "family",
+    genre: "Kids & Family",
     synopsis:
       "Après la disparition mystérieuse de Harry Goodman, un détective privé, son fils Tim va tenter de découvrir ce qui s’est passé.  Le détective Pikachu, ancien partenaire de Harry, participe alors à l’enquête : un super-détective adorable à la sagacité hilarante, qui en laisse plus d’un perplexe, dont lui-même. Constatant qu’ils sont particulièrement bien assortis, Tim et Pikachu unissent leurs forces dans une aventure palpitante pour résoudre cet insondable mystère.  À la recherche d’indices dans les rues peuplées de néons de la ville de Ryme – métropole moderne et tentaculaire où humains et Pokémon vivent côte à côte dans un monde en live-action très réaliste –, ils rencontrent plusieurs personnages Pokémon et découvrent alors un complot choquant qui pourrait bien détruire cette coexistence pacifique et menacer l’ensemble de leur univers. "
   },
@@ -217,7 +217,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/64/25/05/19199449.jpg",
     duration: "",
-    genre: "anime",
+    genre: "Animation",
     synopsis:
       "Mise en images pour le cinema d'une bande dessinee apocalyptique sur les débuts du XXIe siecle dans la megapole de Neo-Tokyo au Japon. Tetsuo, un adolescent ayant vécu une enfance difficile, est la victime d'expériences visant à développer les capacités psychiques qui dorment en chacun de nous. Ainsi doté d'une puissance que lui meme ne peut imaginer, Tetsuo décide de partir en guerre contre le monde qui l'a opprimé. Dès lors, Il se retrouve au coeur d'une légende populaire qui annonce le retour prochain d'Akira, un enfant aux pouvoirs extra-ordinaires censé délivrer Tokyo du chaos... "
   },
@@ -226,7 +226,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/64/25/05/19199449.jpg",
     duration: "",
-    genre: "anime",
+    genre: "Animation",
     synopsis:
       "Mise en images pour le cinema d'une bande dessinee apocalyptique sur les débuts du XXIe siecle dans la megapole de Neo-Tokyo au Japon. Tetsuo, un adolescent ayant vécu une enfance difficile, est la victime d'expériences visant à développer les capacités psychiques qui dorment en chacun de nous. Ainsi doté d'une puissance que lui meme ne peut imaginer, Tetsuo décide de partir en guerre contre le monde qui l'a opprimé. Dès lors, Il se retrouve au coeur d'une légende populaire qui annonce le retour prochain d'Akira, un enfant aux pouvoirs extra-ordinaires censé délivrer Tokyo du chaos... "
   },
@@ -286,7 +286,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/o_club300-overlay-ok.png_0_se/medias/nmedia/18/70/03/08/19109117.jpg",
     duration: "1h30",
-    genre: "comedy",
+    genre: "Comedy",
     synopsis:
       "Au réveil d'un enterrement de vie de garçon bien arrosé, les trois amis du fiancé se rendent compte qu'il a disparu 40 heures avant la cérémonie de mariage. Ils vont alors devoir faire fi de leur gueule de bois et rassembler leurs bribes de souvenirs pour comprendre ce qui s'est passé."
   },
@@ -295,7 +295,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/medias/nmedia/18/64/74/53/18889951.jpg",
     duration: "1h46",
-    genre: "comedy",
+    genre: "Comedy",
     synopsis:
       "Philippe Abrams est directeur de la poste de Salon-de-Provence. Il est marié à Julie, dont le caractère dépressif lui rend la vie impossible. Pour lui faire plaisir, Philippe fraude afin d'obtenir une mutation sur la Côte d'Azur. Mais il est démasqué: il sera muté à Bergues, petite ville du Nord. Pour les Abrams, sudistes pleins de préjugés, le Nord c'est l'horreur, une région glacée, peuplée d'êtres rustres, éructant un langage incompréhensible, le 'cheutimi'. Philippe ira seul. A sa grande surprise, il découvre un endroit charmant, une équipe chaleureuse, des gens accueillants, et se fait un ami : Antoine, le facteur et le carillonneur du village, à la mère possessive et aux amours contrariées. Quand Philippe revient à Salon, Julie refuse de croire qu'il se plait dans le Nord. Elle pense même qu'il lui ment pour la ménager. Pour la satisfaire et se simplifier la vie, Philippe lui fait croire qu'en effet, il vit un enfer à Bergues. Dès lors, sa vie s'enfonce dans un mensonge confortable... "
   },
@@ -304,7 +304,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/35/41/59/18422600.jpg",
     duration: "2h05",
-    genre: "sf",
+    genre: "Sci-fi & Fantasy",
     synopsis:
       "Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle. Capturée par les troupes de choc de l'Empereur menées par le sombre et impitoyable Dark Vador, la princesse Leia Organa dissimule les plans de l'Etoile Noire, une station spatiale invulnérable, à son droïde R2-D2 avec pour mission de les remettre au Jedi Obi-Wan Kenobi. Accompagné de son fidèle compagnon, le droïde de protocole C-3PO, R2-D2 s'échoue sur la planète Tatooine et termine sa quête chez le jeune Luke Skywalker. Rêvant de devenir pilote mais confiné aux travaux de la ferme, ce dernier se lance à la recherche de ce mystérieux Obi-Wan Kenobi, devenu ermite au coeur des montagnes désertiques de Tatooine... "
   },
@@ -313,7 +313,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/35/41/59/18422600.jpg",
     duration: "2h05",
-    genre: "sf",
+    genre: "Sci-fi & Fantasy",
     synopsis:
       "Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle. Capturée par les troupes de choc de l'Empereur menées par le sombre et impitoyable Dark Vador, la princesse Leia Organa dissimule les plans de l'Etoile Noire, une station spatiale invulnérable, à son droïde R2-D2 avec pour mission de les remettre au Jedi Obi-Wan Kenobi. Accompagné de son fidèle compagnon, le droïde de protocole C-3PO, R2-D2 s'échoue sur la planète Tatooine et termine sa quête chez le jeune Luke Skywalker. Rêvant de devenir pilote mais confiné aux travaux de la ferme, ce dernier se lance à la recherche de ce mystérieux Obi-Wan Kenobi, devenu ermite au coeur des montagnes désertiques de Tatooine... "
   },
@@ -322,7 +322,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/pictures/19/04/03/14/15/2748213.jpg",
     duration: "1h45",
-    genre: "family",
+    genre: "Kids & Family",
     synopsis:
       "Après la disparition mystérieuse de Harry Goodman, un détective privé, son fils Tim va tenter de découvrir ce qui s’est passé.  Le détective Pikachu, ancien partenaire de Harry, participe alors à l’enquête : un super-détective adorable à la sagacité hilarante, qui en laisse plus d’un perplexe, dont lui-même. Constatant qu’ils sont particulièrement bien assortis, Tim et Pikachu unissent leurs forces dans une aventure palpitante pour résoudre cet insondable mystère.  À la recherche d’indices dans les rues peuplées de néons de la ville de Ryme – métropole moderne et tentaculaire où humains et Pokémon vivent côte à côte dans un monde en live-action très réaliste –, ils rencontrent plusieurs personnages Pokémon et découvrent alors un complot choquant qui pourrait bien détruire cette coexistence pacifique et menacer l’ensemble de leur univers. "
   },
@@ -331,7 +331,7 @@ const movieList = [
     picture:
       "http://fr.web.img6.acsta.net/c_215_290/pictures/19/04/03/14/15/2748213.jpg",
     duration: "1h45",
-    genre: "family",
+    genre: "Kids & Family",
     synopsis:
       "Après la disparition mystérieuse de Harry Goodman, un détective privé, son fils Tim va tenter de découvrir ce qui s’est passé.  Le détective Pikachu, ancien partenaire de Harry, participe alors à l’enquête : un super-détective adorable à la sagacité hilarante, qui en laisse plus d’un perplexe, dont lui-même. Constatant qu’ils sont particulièrement bien assortis, Tim et Pikachu unissent leurs forces dans une aventure palpitante pour résoudre cet insondable mystère.  À la recherche d’indices dans les rues peuplées de néons de la ville de Ryme – métropole moderne et tentaculaire où humains et Pokémon vivent côte à côte dans un monde en live-action très réaliste –, ils rencontrent plusieurs personnages Pokémon et découvrent alors un complot choquant qui pourrait bien détruire cette coexistence pacifique et menacer l’ensemble de leur univers. "
   },
@@ -340,7 +340,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/64/25/05/19199449.jpg",
     duration: "",
-    genre: "anime",
+    genre: "Animation",
     synopsis:
       "Mise en images pour le cinema d'une bande dessinee apocalyptique sur les débuts du XXIe siecle dans la megapole de Neo-Tokyo au Japon. Tetsuo, un adolescent ayant vécu une enfance difficile, est la victime d'expériences visant à développer les capacités psychiques qui dorment en chacun de nous. Ainsi doté d'une puissance que lui meme ne peut imaginer, Tetsuo décide de partir en guerre contre le monde qui l'a opprimé. Dès lors, Il se retrouve au coeur d'une légende populaire qui annonce le retour prochain d'Akira, un enfant aux pouvoirs extra-ordinaires censé délivrer Tokyo du chaos... "
   },
@@ -349,7 +349,7 @@ const movieList = [
     picture:
       "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/64/25/05/19199449.jpg",
     duration: "",
-    genre: "anime",
+    genre: "Animation",
     synopsis:
       "Mise en images pour le cinema d'une bande dessinee apocalyptique sur les débuts du XXIe siecle dans la megapole de Neo-Tokyo au Japon. Tetsuo, un adolescent ayant vécu une enfance difficile, est la victime d'expériences visant à développer les capacités psychiques qui dorment en chacun de nous. Ainsi doté d'une puissance que lui meme ne peut imaginer, Tetsuo décide de partir en guerre contre le monde qui l'a opprimé. Dès lors, Il se retrouve au coeur d'une légende populaire qui annonce le retour prochain d'Akira, un enfant aux pouvoirs extra-ordinaires censé délivrer Tokyo du chaos... "
   },
