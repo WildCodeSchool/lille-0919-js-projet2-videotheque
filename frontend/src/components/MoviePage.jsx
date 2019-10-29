@@ -10,21 +10,18 @@ class MoviePage extends React.Component {
       modalIsOpen: false,
       img: "play.png"
     };
+    this.toggleModal = this.toggleModal.bind(this);
+  }
 
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
-  openModal() {
-    this.setState({ modalIsOpen: true });
-  }
-  closeModal() {
-    this.setState({ modalIsOpen: false });
+  toggleModal() {
+    this.setState({ modalIsOpen: !this.state.modalIsOpen });
   }
 
   render() {
     return (
       <div id="around">
         <Modal
+          ariaHideApp={false}
           isOpen={this.state.modalIsOpen}
           className="modalStyle"
           contentLabel="Example Modal"
@@ -32,15 +29,15 @@ class MoviePage extends React.Component {
         >
           <iframe
             src={this.props.trailer}
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="1"
+            allowFullScreen="1"
           ></iframe>
-          <button className="closeTrailer" onClick={this.closeModal}>
+          <button className="closeTrailer" onClick={this.toggleModal}>
             close
           </button>
         </Modal>
-        <div id="movieTrailerContainer" onClick={this.openModal}>
+        <div id="movieTrailerContainer" onClick={this.toggleModal}>
           <img src={this.props.trailerThumb} className="trailerThumb" />
           <div>
             <img
@@ -91,7 +88,7 @@ class MoviePage extends React.Component {
                 {this.props.duration}
               </p>
             </div>
-            <div id="movieIconsContainer">
+            <div className="movieIconsContainer">
               <img id="moviePlusIcons" src="./plusIcon.png" />
               <img id="movieLikeIcons" src="./likeIcon.png" />
               <img id="movieNavetIcons" src="./navetIcon.png" />

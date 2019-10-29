@@ -48,7 +48,7 @@
   height: 120px;
 }
 
-#movieIconsContainer {
+.movieIconsContainer {
   height: 22px;
   width: 80px;
   display: flex;
@@ -165,7 +165,7 @@ h3 {
     font-size: 18px;
   }
 
-  #movieIconsContainer {
+  .movieIconsContainer {
     height: 42px;
     width: 140px;
     display: flex;
