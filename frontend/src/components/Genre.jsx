@@ -6,7 +6,6 @@ function Genre(props) {
   return (
     <div className="genre">
       <Link to={`/listMovies/${props.genreName}`}>
-        {" "}
         <img
           key={props.genreName}
           alt={props.genreName}
