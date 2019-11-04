@@ -1,0 +1,40 @@
+* {
+  background-color: black;
+}
+
+.slide-container {
+  margin: 150px 0px auto 0px;
+}
+
+.each-slide > div {
+  display: inline-block;
+
+  background-size: cover;
+  height: 100px;
+  width: 80px;
+  margin: auto 5px 40px 5px;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.slide-container p {
+  height: 30px;
+  background: rgba(136, 20, 20, 0.6);
+  width: 30px;
+  z-index: 10;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.style {
+  width: 75%;
+  overflow: hidden;
+}
