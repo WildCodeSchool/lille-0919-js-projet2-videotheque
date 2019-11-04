@@ -94,11 +94,6 @@ class MoviePage extends React.Component {
               <img id="movieLikeIcons" src="./likeIcon.png" />
               <img id="movieNavetIcons" src="./navetIcon.png" />
             </div>
-            <div id="movieIconsContainer">
-              <img id="moviePlusIcons" src="./plusIcon.png" alt="add" />
-              <img id="movieLikeIcons" src="./likeIcon.png" alt="like" />
-              <img id="movieNavetIcons" src="./navetIcon.png" alt="navet" />
-            </div>
           </div>
           <div id="synopsisContainer">
             <hr />
