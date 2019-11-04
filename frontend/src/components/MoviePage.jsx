@@ -29,6 +29,7 @@ class MoviePage extends React.Component {
           onRequestClose={this.closeModal}
         >
           <iframe
+            title="modal"
             src={this.props.trailer}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -39,9 +40,14 @@ class MoviePage extends React.Component {
           </button>
         </Modal>
         <div id="movieTrailerContainer" onClick={this.toggleModal}>
-          <img src={this.props.trailerThumb} className="trailerThumb" />
+          <img
+            src={this.props.trailerThumb}
+            className="trailerThumb"
+            alt={this.props.trailerThumb}
+          />
           <div>
             <img
+              alt={this.state.img}
               className="playIconOver"
               src={this.state.img}
               onMouseEnter={() => {
