@@ -103,6 +103,11 @@ h3 {
   line-height: 16px;
   font-family: sans-serif;
 }
+
+#actorListContainer {
+  color: white;
+  text-align: justify;
+}
 /* Desktop */
 @media screen and (min-width: 960px) {
   #around {
