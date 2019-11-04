@@ -90,18 +90,18 @@ class MoviePage extends React.Component {
               </p>
             </div>
             <div className="movieIconsContainer">
-              <img id="moviePlusIcons" src="./plusIcon.png" />
-              <img id="movieLikeIcons" src="./likeIcon.png" />
-              <img id="movieNavetIcons" src="./navetIcon.png" />
+              <img id="moviePlusIcons" src="./pictures/plusIcon.png" />
+              <img id="movieLikeIcons" src="./pictures/likeIcon.png" />
+              <img id="movieNavetIcons" src="./pictures/navetIcon.png" />
             </div>
           </div>
-          <div id="synopsisContainer">
-            <hr />
-            <h3>Synopsis</h3>
-            <p>{this.props.synopsis}</p>
-          </div>
-          <ActorsList />
         </div>
+        <div id="synopsisContainer">
+          <hr />
+          <h3>Synopsis</h3>
+          <p>{this.props.synopsis}</p>
+        </div>
+        <ActorsList />
       </div>
     );
   }

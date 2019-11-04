@@ -1,42 +1,32 @@
-* {
-  background-color: rgb(20, 20, 20);
-}
-
 #around {
   height: auto;
-  margin-top: 50px;
+  padding-top: 50px;
 }
-
 #movieTrailerContainer {
   padding-bottom: 10px;
   position: relative;
   height: auto;
   width: 100%;
   cursor: pointer;
-  padding-top: 55px;
 }
-
 #movieTitleContainer {
   height: 150px;
   display: flex;
   flex-direction: row;
   padding-bottom: 10px;
 }
-
 #movieMainJacket {
   width: 110px;
   display: flex;
   justify-content: center;
   padding: 0px;
 }
-
 #movieMainJacketImg {
   width: auto;
   height: 130px;
   padding-right: 15px;
   padding-left: 15px;
 }
-
 #movieDescription {
   display: flex;
   flex-direction: column;
@@ -48,7 +38,6 @@
   font-family: sans-serif;
   height: 120px;
 }
-
 .movieIconsContainer {
   height: 22px;
   width: 80px;
@@ -61,6 +50,7 @@
   display: flex;
   flex-direction: column;
   height: 150px;
+  width: 1000px;
   justify-content: space-between;
 }
 
@@ -70,7 +60,6 @@ h2 {
   font-size: 18px;
   font-family: sans-serif;
 }
-
 .oneRedWord {
   color: red;
   font-weight: bold;
@@ -92,7 +81,6 @@ h2 {
   width: 16px;
   height: auto;
 }
-
 hr {
   color: white;
   padding-top: 0;
@@ -107,7 +95,6 @@ h3 {
   font-weight: bold;
   padding: 20px 0px 0px 20px;
 }
-
 #synopsisContainer p {
   color: white;
   text-align: justify;
