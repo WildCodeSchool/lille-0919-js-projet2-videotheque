@@ -34,9 +34,13 @@ function MoviePage(props) {
             </p>
           </div>
           <div id="movieIconsContainer">
-            <img id="moviePlusIcons" src="./plusIcon.png" alt="add" />
-            <img id="movieLikeIcons" src="./likeIcon.png" alt="like" />
-            <img id="movieNavetIcons" src="./navetIcon.png" alt="navet" />
+            <img id="moviePlusIcons" src="pictures/plusIcon.png" alt="add" />
+            <img id="movieLikeIcons" src="pictures/likeIcon.png" alt="like" />
+            <img
+              id="movieNavetIcons"
+              src="pictures/navetIcon.png"
+              alt="navet"
+            />
           </div>
         </div>
       </div>
