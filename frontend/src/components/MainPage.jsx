@@ -16,8 +16,8 @@ function MainPage() {
         </div>
       </div>
       <div className="main-poster">
-        {movieList.map(item => (
-          <MainPageCard picture={item.picture} />
+        {movieList.map((item, i) => (
+          <MainPageCard key={i} picture={item.picture} />
         ))}
       </div>
     </div>

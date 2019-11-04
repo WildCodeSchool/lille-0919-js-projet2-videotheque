@@ -5,8 +5,12 @@ import DataGenresList from "../DataGenre";
 function GenreList() {
   return (
     <div>
-      {DataGenresList.map(genre => (
-        <Genre genreName={genre.name} genreBackground={genre.background} />
+      {DataGenresList.map((genre, i) => (
+        <Genre
+          key={i}
+          genreName={genre.name}
+          genreBackground={genre.background}
+        />
       ))}
     </div>
   );

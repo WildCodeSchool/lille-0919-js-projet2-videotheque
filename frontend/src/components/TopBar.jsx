@@ -28,8 +28,7 @@ class TopBar extends React.Component {
                   <img
                     id="logoUser"
                     alt="logoUser"
-                    src="logoUser.jpg"
-                    onclick="location.href='user connexion link'"
+                    src="pictures/logoUser.jpg"
                   />
                 </NavLink>
               </li>
@@ -41,7 +40,11 @@ class TopBar extends React.Component {
                     this.setState({ searching: newSearching });
                   }}
                 >
-                  <img id="pictoLoupe" alt="pictoLoupe" src="pictoLoupe.png" />
+                  <img
+                    id="pictoLoupe"
+                    alt="pictoLoupe"
+                    src="pictures/pictoLoupe.png"
+                  />
                 </button>
                 <div
                   className={
