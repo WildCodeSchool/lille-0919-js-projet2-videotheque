@@ -101,9 +101,7 @@ class MoviePage extends React.Component {
           <h3>Synopsis</h3>
           <p>{this.props.synopsis}</p>
         </div>
-        <div id="actorListContainer">
-          <ActorsList />
-        </div>
+        <ActorsList />
       </div>
     );
   }

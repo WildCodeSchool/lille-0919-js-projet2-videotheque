@@ -98,16 +98,12 @@ h3 {
 #synopsisContainer p {
   color: white;
   text-align: justify;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 0px 20px;
   font-size: 13px;
   line-height: 16px;
   font-family: sans-serif;
 }
 
-#actorListContainer {
-  color: white;
-  text-align: justify;
-}
 /* Desktop */
 @media screen and (min-width: 960px) {
   #around {

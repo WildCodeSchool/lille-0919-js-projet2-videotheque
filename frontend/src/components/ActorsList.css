@@ -1,3 +1,6 @@
+.actorListContainer {
+  width: 100%;
+}
 .actorsList {
   color: white;
   padding: 0px 20px 0px 20px;
@@ -31,4 +34,21 @@
   text-align: justify;
   height: 30px;
   font-size: 12px;
+}
+
+.actorName {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 960px) {
+  .actorListContainer {
+    width: 80%;
+  }
+
+  .actorsList img {
+    width: 140px;
+    border: 1px solid white;
+    margin: 10px;
+  }
 }

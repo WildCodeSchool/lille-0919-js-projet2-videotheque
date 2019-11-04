@@ -24,7 +24,7 @@ const list = [
 
 function ActorsList() {
   return (
-    <div>
+    <div className="actorListContainer">
       <h3>Headline</h3>
       <ul className="actorsList">
         {list.map((person, i) => {
