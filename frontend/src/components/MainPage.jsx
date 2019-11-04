@@ -10,7 +10,7 @@ function MainPage() {
         <div className="trailer">
           <img
             className="icon-play"
-            src="Pictures/icon-play.svg"
+            src="pictures/icon-play.svg"
             alt="Video Player"
           />
         </div>

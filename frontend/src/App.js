@@ -6,19 +6,15 @@ import { Switch, Route } from "react-router-dom";
 import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
 import "./App.css";
 import ListMovies from "./components/ListMovies";
-import SlideSearchFunction from "./components/SlideSearchFunction";
 
 function App() {
   return (
     <div className="App">
       <TopBar />
-      <SlideSearchFunction />
-      <MainPage />
-      <MoviePageFilterByTitle />
-      <ListMovies />
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/movieSheet" component={MoviePageFilterByTitle} />
+        <Route path="/listMovies/:genreName" component={ListMovies} />
       </Switch>
       <Footer />
     </div>
