@@ -2,6 +2,7 @@ import React from "react";
 import "./style/topBar.css";
 import "./style/SlideSearchFunction.css";
 import GenreList from "./GenreList";
+import Modal from "./Modal";
 import { NavLink } from "react-router-dom";
 
 class TopBar extends React.Component {
@@ -24,13 +25,14 @@ class TopBar extends React.Component {
           <div className="topBarNavigationItems">
             <ul>
               <li>
-                <NavLink activeClassName="active" to="/">
+                <Modal />
+                {/* <NavLink activeClassName="active" to="/">
                   <img
                     id="logoUser"
                     alt="logoUser"
                     src="pictures/logoUser.jpg"
                   />
-                </NavLink>
+                </NavLink> */}
               </li>
               <li>
                 <button

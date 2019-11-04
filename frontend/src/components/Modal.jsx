@@ -13,11 +13,10 @@ class Modal extends React.Component {
   };
 
   render() {
-    const { buttonTxt } = this.props;
     console.log(this.state.isOpen);
     return (
       <>
-        <ModalButton toggleModal={this.toggleModal} openBtnTxt={buttonTxt} />
+        <ModalButton toggleModal={this.toggleModal} />
         {this.state.isOpen && <ModalContent toggleModal={this.toggleModal} />}
       </>
     );
