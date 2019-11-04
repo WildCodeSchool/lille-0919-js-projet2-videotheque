@@ -36,7 +36,11 @@ class TopBar extends React.Component {
                     this.setState({ searching: newSearching });
                   }}
                 >
-                  <img id="pictoLoupe" alt="pictoLoupe" src="pictoLoupe.png" />
+                  <img
+                    id="pictoLoupe"
+                    alt="pictoLoupe"
+                    src="pictures/pictoLoupe.png"
+                  />
                 </button>
                 <div
                   className={
