@@ -25,12 +25,7 @@ class TopBar extends React.Component {
             <ul>
               <li>
                 <NavLink activeClassName="active" to="/">
-                  <img
-                    id="logoUser"
-                    alt="logoUser"
-                    src="logoUser.jpg"
-                    onclick="location.href='user connexion link'"
-                  />
+                  <img id="logoUser" alt="logoUser" src="logoUser.jpg" />
                 </NavLink>
               </li>
               <li>
