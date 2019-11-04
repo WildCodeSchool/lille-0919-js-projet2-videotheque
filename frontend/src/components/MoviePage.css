@@ -4,6 +4,15 @@
 
 #around {
   height: auto;
+  margin-top: 50px;
+}
+
+#movieTrailerContainer {
+  padding-bottom: 10px;
+  position: relative;
+  height: auto;
+  width: 100%;
+  cursor: pointer;
   padding-top: 55px;
 }
 
@@ -40,7 +49,7 @@
   height: 120px;
 }
 
-#movieIconsContainer {
+.movieIconsContainer {
   height: 22px;
   width: 80px;
   display: flex;
@@ -116,6 +125,14 @@ h3 {
     align-items: center;
   }
 
+  #movieTrailerContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    height: auto;
+    width: 78%;
+  }
+
   #movieTitleContainer {
     height: 280px;
     width: 80%;
@@ -149,7 +166,7 @@ h3 {
     font-size: 18px;
   }
 
-  #movieIconsContainer {
+  .movieIconsContainer {
     height: 42px;
     width: 140px;
     display: flex;
