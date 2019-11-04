@@ -13,7 +13,6 @@ class MainPage extends React.Component {
 
   componentDidMount() {
     this.getMovie();
-    console.log(this.state.movies);
   }
 
   getMovie() {
