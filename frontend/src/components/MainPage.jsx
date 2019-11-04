@@ -1,5 +1,5 @@
 import React from "react";
-import "./MainPage.css";
+import "./style/MainPage.css";
 import MainPageCard from "./MainPageCard";
 import movieList from "../DataBaseMovie";
 

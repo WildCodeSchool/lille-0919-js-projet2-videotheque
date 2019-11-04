@@ -1,6 +1,6 @@
 import React from "react";
-import "./MoviePage.css";
-import "./MoviePageModalTrailer.css";
+import "./style/MoviePage.css";
+import "./style/MoviePageModalTrailer.css";
 import Modal from "react-modal";
 import ActorsList from "./ActorsList";
 
