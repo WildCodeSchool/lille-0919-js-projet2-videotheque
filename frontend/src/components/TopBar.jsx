@@ -47,6 +47,10 @@ class TopBar extends React.Component {
                   className={
                     this.state.searching ? "noEntrySearch" : "movieGenre"
                   }
+                  onClick={event => {
+                    let newSearching = !this.state.searching;
+                    this.setState({ searching: newSearching });
+                  }}
                 >
                   <div
                     className={
