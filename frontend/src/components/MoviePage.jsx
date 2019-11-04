@@ -9,7 +9,7 @@ class MoviePage extends React.Component {
     super(props);
     this.state = {
       modalIsOpen: false,
-      img: "play.png"
+      img: "pictures/play.png"
     };
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -46,12 +46,12 @@ class MoviePage extends React.Component {
               src={this.state.img}
               onMouseEnter={() => {
                 this.setState({
-                  img: "playHover.png"
+                  img: "pictures/playHover.png"
                 });
               }}
               onMouseOut={() => {
                 this.setState({
-                  img: "play.png"
+                  img: "pictures/play.png"
                 });
               }}
             />
@@ -90,9 +90,21 @@ class MoviePage extends React.Component {
               </p>
             </div>
             <div className="movieIconsContainer">
-              <img id="moviePlusIcons" src="./plusIcon.png" />
-              <img id="movieLikeIcons" src="./likeIcon.png" />
-              <img id="movieNavetIcons" src="./navetIcon.png" />
+              <img
+                id="moviePlusIcons"
+                src="./pictures/plusIcon.png"
+                alt="plusIcon"
+              />
+              <img
+                id="movieLikeIcons"
+                src="./pictures/likeIcon.png"
+                alt="likeIcon"
+              />
+              <img
+                id="movieNavetIcons"
+                src="./pictures/navetIcon.png"
+                alt="navetIcon"
+              />
             </div>
           </div>
           <div id="synopsisContainer">
