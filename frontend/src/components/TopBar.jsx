@@ -1,6 +1,6 @@
 import React from "react";
-import "./topBar.css";
-import "./SlideSearchFunction.css";
+import "./style/topBar.css";
+import "./style/SlideSearchFunction.css";
 import GenreList from "./GenreList";
 import { NavLink } from "react-router-dom";
 

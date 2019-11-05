@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./MainPageCard.css";
+import "./style/MainPageCard.css";
 
-function MainPageCard(props) {
+function MainPageCard({ movieData }) {
   return (
     <Link to="/movieSheet" className="div-poster">
       <img
         className="single-movie-poster"
-        src={props.picture}
-        alt="Movie Poster"
+        src={`https://image.tmdb.org/t/p/w500/${movieData.poster_path}`}
+        alt={movieData.poster_path}
+        key={movieData.poster_path}
       />
     </Link>
   );

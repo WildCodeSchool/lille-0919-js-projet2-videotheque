@@ -1,6 +1,6 @@
 import React from "react";
-import "./MoviePage.css";
-import "./MoviePageModalTrailer.css";
+import "./style/MoviePage.css";
+import "./style/MoviePageModalTrailer.css";
 import Modal from "react-modal";
 import ActorsList from "./ActorsList";
 
@@ -9,7 +9,7 @@ class MoviePage extends React.Component {
     super(props);
     this.state = {
       modalIsOpen: false,
-      img: "play.png"
+      img: "pictures/play.png"
     };
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -42,22 +42,22 @@ class MoviePage extends React.Component {
         <div id="movieTrailerContainer" onClick={this.toggleModal}>
           <img
             src={this.props.trailerThumb}
-            alt="Movie Trailer"
             className="trailerThumb"
+            alt={this.props.trailerThumb}
           />
           <div>
             <img
-              alt="Movie Start"
+              alt={this.state.img}
               className="playIconOver"
               src={this.state.img}
               onMouseEnter={() => {
                 this.setState({
-                  img: "playHover.png"
+                  img: "pictures/playHover.png"
                 });
               }}
               onMouseOut={() => {
                 this.setState({
-                  img: "play.png"
+                  img: "pictures/play.png"
                 });
               }}
             />
