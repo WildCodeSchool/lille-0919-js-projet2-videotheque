@@ -50,10 +50,6 @@ class TopBar extends React.Component {
                   className={
                     this.state.searching ? "noEntrySearch" : "movieGenre"
                   }
-                  onClick={event => {
-                    let newSearching = !this.state.searching;
-                    this.setState({ searching: newSearching });
-                  }}
                 >
                   <div
                     className={
@@ -65,7 +61,12 @@ class TopBar extends React.Component {
                       type="text"
                       placeholder="Search.."
                     ></input>
-                    <GenreList />
+                    <GenreList
+                      onClick={event => {
+                        let newSearching = !this.state.searching;
+                        this.setState({ searching: newSearching });
+                      }}
+                    />
                   </div>
                 </div>
               </li>
