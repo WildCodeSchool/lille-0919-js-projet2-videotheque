@@ -13,7 +13,6 @@ class Modal extends React.Component {
   };
 
   render() {
-    console.log(this.state.isOpen);
     return (
       <>
         <ModalButton toggleModal={this.toggleModal} />
