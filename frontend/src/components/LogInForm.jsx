@@ -43,7 +43,7 @@ class LogInForm extends React.Component {
         </p>
                   
         <button type="submit" className="submitButton">
-                      Submit !           
+          Submit!
         </button>
                 
       </div>
