@@ -34,7 +34,7 @@ const Slideshow = () => {
       <div id="movieIconsFavTitre">
         <img id="movieLikeIcons" src="./likeIcon.png" alt="like" />
         <div>
-          <h1>favoris</h1>
+          <h1>favorites</h1>
         </div>
       </div>
       <Slide {...properties}>
@@ -66,10 +66,10 @@ const Slideshow = () => {
           <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
-          <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
-          <div style={{ backgroundImage: `url(${slideImages[2]})` }}></div>
-          <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
+          <div style={{ backgroundImage: `url(${slideImages[4]})` }}></div>
+          <div style={{ backgroundImage: `url(${slideImages[5]})` }}></div>
+          <div style={{ backgroundImage: `url(${slideImages[6]})` }}></div>
+          <div style={{ backgroundImage: `url(${slideImages[7]})` }}></div>
         </div>
       </Slide>
       <div id="movieIconsNavetTitre">
@@ -87,10 +87,10 @@ const Slideshow = () => {
           <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
-          <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
-          <div style={{ backgroundImage: `url(${slideImages[2]})` }}></div>
-          <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
+          <div style={{ backgroundImage: `url(${slideImages[4]})` }}></div>
+          <div style={{ backgroundImage: `url(${slideImages[5]})` }}></div>
+          <div style={{ backgroundImage: `url(${slideImages[6]})` }}></div>
+          <div style={{ backgroundImage: `url(${slideImages[7]})` }}></div>
         </div>
       </Slide>
     </div>
