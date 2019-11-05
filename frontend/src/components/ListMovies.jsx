@@ -14,16 +14,14 @@ function ListMovies() {
           return movie.genre === `${genreName}`;
         })
         .map(movie => (
-          <a href=" ">
-            <Movie
-              key={movie.title}
-              title={movie.title}
-              genre={movie.genre}
-              duration={movie.duration}
-              picture={movie.picture}
-              synopsis={movie.synopsis}
-            />
-          </a>
+          <Movie
+            key={movie.title}
+            title={movie.title}
+            genre={movie.genre}
+            duration={movie.duration}
+            picture={movie.picture}
+            synopsis={movie.synopsis}
+          />
         ))}
     </div>
   );
