@@ -1,5 +1,5 @@
 import React from "react";
-import "./ActorsList.css";
+import "./style/ActorsList.css";
 
 function Actor(props) {
   return (

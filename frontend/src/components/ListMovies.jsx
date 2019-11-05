@@ -1,7 +1,7 @@
 import React from "react";
 import Movie from "./Movie";
 import movieList from "../DataBaseMovie";
-import "./ListMovies.css";
+import "./style/ListMovies.css";
 import { useParams } from "react-router-dom";
 
 function ListMovies() {

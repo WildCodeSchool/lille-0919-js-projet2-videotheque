@@ -1,6 +1,6 @@
 import React from "react";
-import "./Movie.css";
 import { Link } from "react-router-dom";
+import "./style/Movie.css";
 
 function Movie(props) {
   return (

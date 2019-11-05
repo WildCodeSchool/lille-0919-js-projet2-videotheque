@@ -3,54 +3,43 @@
 }
 .div-poster {
   width: 12vw;
-  height: 16vw;
+  height: 18vw;
   overflow: hidden;
 }
 .div-poster:hover {
   transform: scale(1.05);
-  transition: transform 500ms;
+  transition: transform 700ms;
+  box-shadow: 0px 0 20px 10px rgb(15, 15, 15);
   cursor: pointer;
 }
 
 .single-movie-poster {
   width: 100%;
+  height: 100%;
 }
-
 @media screen and (max-width: 450px) {
   .div-poster {
     width: 50vw;
-    height: 62.5vw;
-  }
-  .single-movie-poster {
-    width: 100%;
+    height: 75vw;
   }
 }
 
 @media screen and (min-width: 451px) and (max-width: 600px) {
   .div-poster {
     width: 33vw;
-    height: 41.25vw;
-  }
-  .single-movie-poster {
-    width: 100%;
+    height: 49.5vw;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 746px) {
   .div-poster {
     width: 25vw;
-    height: 31.25vw;
-  }
-  .single-movie-poster {
-    width: 100%;
+    height: 37.5vw;
   }
 }
 @media screen and (min-width: 747px) and (max-width: 1100px) {
   .div-poster {
     width: 20vw;
-    height: 25vw;
-  }
-  .single-movie-poster {
-    width: 100%;
+    height: 30vw;
   }
 }
