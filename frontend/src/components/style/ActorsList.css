@@ -44,7 +44,8 @@
 @media screen and (min-width: 960px) {
   .actorListContainer {
     width: 80%;
-    height: 300px;
+    height: auto;
+    margin-bottom: 10px;
   }
 
   .actorsList img {
