@@ -49,6 +49,16 @@
   position: fixed;
   margin: auto;
 }
+.form {
+  color: red;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
 .signUp {
   background: black;
   color: white;
