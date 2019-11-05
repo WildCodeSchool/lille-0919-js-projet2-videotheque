@@ -1,0 +1,22 @@
+.ListMovies h1 {
+  width: 100%;
+  background-color: black;
+  color: silver;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 0.5em;
+}
+.ListMovies a {
+  text-decoration: none;
+  width: 49%;
+}
+.ListMovies {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .ListMovies {
+    display: block;
+  }
+}

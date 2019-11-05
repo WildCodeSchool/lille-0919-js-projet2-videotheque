@@ -1,6 +1,6 @@
 import React from "react";
 import Actor from "./Actor";
-import "./ActorsList.css";
+import "./style/ActorsList.css";
 
 const list = [
   {
@@ -25,7 +25,7 @@ const list = [
 function ActorsList() {
   return (
     <div>
-      <h1>HEADLINE</h1>
+      <h3>Headline</h3>
       <ul className="actorsList">
         {list.map((person, i) => {
           return (
