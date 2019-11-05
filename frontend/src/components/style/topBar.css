@@ -18,6 +18,9 @@ header #pictoLoupe {
   width: 25px;
   margin-top: 4px;
 }
+header #close {
+  width: 30px;
+}
 
 .topBarLogo a {
   color: white;
