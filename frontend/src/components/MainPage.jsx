@@ -10,14 +10,14 @@ function MainPage() {
         <div className="trailer">
           <img
             className="icon-play"
-            src="Pictures/icon-play.svg"
+            src="pictures/icon-play.svg"
             alt="Video Player"
           />
         </div>
       </div>
       <div className="main-poster">
-        {movieList.map(item => (
-          <MainPageCard picture={item.picture} />
+        {movieList.map((item, i) => (
+          <MainPageCard key={i} picture={item.picture} />
         ))}
       </div>
     </div>

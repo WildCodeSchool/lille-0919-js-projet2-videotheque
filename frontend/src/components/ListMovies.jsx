@@ -2,14 +2,16 @@ import React from "react";
 import Movie from "./Movie";
 import movieList from "../DataBaseMovie";
 import "./ListMovies.css";
+import { useParams } from "react-router-dom";
 
 function ListMovies() {
+  const { genreName } = useParams();
   return (
     <div className="ListMovies">
-      <h1>Genre</h1>
+      <h1>{genreName}</h1>
       {movieList
         .filter(movie => {
-          return movie.genre === "Horror";
+          return movie.genre === `${genreName}`;
         })
         .map(movie => (
           <a href=" ">
