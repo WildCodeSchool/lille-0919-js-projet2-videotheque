@@ -1,40 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches|Titillium+Web:400,400i,600,600i,700,700i&display=swap");
+
 * {
   background-color: black;
 }
 
 .slide-container {
-  margin: 150px 0px auto 0px;
+  margin: 130px auto auto 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .each-slide > div {
   display: inline-block;
-
   background-size: cover;
   height: 100px;
   width: 80px;
-  margin: auto 5px 40px 5px;
 }
 
-.each-fade {
-  display: flex;
+.each-slide {
+  height: 100px;
+  margin-bottom: 40px;
 }
 
-.slide-container p {
-  height: 30px;
-  background: rgba(136, 20, 20, 0.6);
-  width: 30px;
-  z-index: 10;
-  text-align: center;
-  cursor: pointer;
-  color: white;
-  border-radius: 50%;
+#movieLikeIcons {
+  width: 24px;
+  height: 24px;
+  margin: auto 3px 2px 4px;
+}
+#movieIconsFavTitre {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: absolute;
 }
 
-.style {
-  width: 75%;
-  overflow: hidden;
+#movieIconsFavTitre h1 {
+  color: rgb(165, 26, 26);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+#moviePlusIcons {
+  width: 20px;
+  height: 20px;
+  margin: auto 5px 5px 4px;
+}
+
+#movieIconsPlusTitre h1 {
+  color: rgb(197, 8, 8);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+#movieIconsPlusTitre {
+  display: flex;
+  align-items: center;
 }

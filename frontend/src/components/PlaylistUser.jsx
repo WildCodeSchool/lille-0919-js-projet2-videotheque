@@ -15,7 +15,7 @@ const slideImages = [
 const properties = {
   infinite: true,
   indicators: false,
-  arrows: true,
+  arrows: false,
   onChange: (oldIndex, newIndex) => {
     console.log(`slide transition from ${oldIndex} to ${newIndex}`);
   }
@@ -24,6 +24,12 @@ const properties = {
 const Slideshow = () => {
   return (
     <div className="slide-container">
+      <div id="movieIconsFavTitre">
+        <img id="movieLikeIcons" src="./likeIcon.png" alt="like" />
+        <div>
+          <h1>favoris</h1>
+        </div>
+      </div>
       <Slide {...properties}>
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
@@ -38,6 +44,13 @@ const Slideshow = () => {
           <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
         </div>
       </Slide>
+      <div id="movieIconsPlusTitre">
+        <img id="moviePlusIcons" src="./plusIcon.png" alt="add" />
+        <div>
+          <h1>to see</h1>
+        </div>
+      </div>
+
       <Slide {...properties}>
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
@@ -52,6 +65,7 @@ const Slideshow = () => {
           <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
         </div>
       </Slide>
+      <h1>Navet</h1>
       <Slide {...properties}>
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
