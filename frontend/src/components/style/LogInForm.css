@@ -1,6 +1,6 @@
-.logIn  {
+.logIn {
   background: black;
-  border: solid white 1px;
+  border: solid white 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +9,7 @@
   border-radius: 2px;
   margin-top: 50px;
 }
-.logInInput  {
+.logInInput {
   margin-top: 1%;
   margin-bottom: 3%;
   margin-left: 25%;
@@ -20,19 +20,19 @@
   justify-content: center;
   height: 20px;
 }
-.label  {
+.label {
   color: white;
   background-color: black;
   display: flex;
   justify-content: center;
   margin-top: 5%;
 }
-.container  {
+.container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-.submitButton  {
+.submitButton {
   margin-left: 30%;
   margin-right: 30%;
   margin-top: 10%;
@@ -45,7 +45,7 @@
   align-items: center;
   height: 30px;
 }
-.form  {
+.form {
   color: red;
   background-color: black;
   display: flex;
@@ -54,31 +54,38 @@
   font-weight: bold;
 }
 
-@media screen and (min-width: 500px) and (max-width: 700px){
-  .logIn {
-        width: 80%;
+.signUp {
+  background: black;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .logIn  {
+    flexwidth: 80%;
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-      .logIn {
-        width: 70%;
-      }
-      .submitButton {
-        margin-left: 60%;
-        margin-right: 25%;
-        margin-top: 3%;
-      }
-    }
-    
-@media screen and (min-width: 1000px) {
-      .logIn {
-        width: 70%;
-      }
-      .submitButton {
-        margin-left: 60%;
-        margin-right: 25%;
-        margin-top: 3%;
-      }
-    }
-  
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .logIn  {
+    width: 70%;
+  }
+
+    .submitButton  {
+    margin-left: 60%;
+    margin-right: 25%;
+    margin-top: 3%;
+  }
+}
+@media screen and (min-width: 1000px) {
+   .logIn  {
+    width: 70%;
+  }
+
+  .submitButton  {
+    margin-left: 60%;
+    margin-right: 25%;
+    margin-top: 3%;
+  }
+}
