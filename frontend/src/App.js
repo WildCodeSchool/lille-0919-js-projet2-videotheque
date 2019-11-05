@@ -8,6 +8,7 @@ import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
 import "./App.css";
 import ListMovies from "./components/ListMovies";
 import SlideSearchFunction from "./components/SlideSearchFunction";
+import ActorsList from "./components/ActorsList";
 
 function App() {
   return (
