@@ -2,7 +2,7 @@ import React from "react";
 import MoviePage from "./MoviePage";
 import movieList from "../DataBaseMovie";
 
-function MoviePageFilterByTitle() {
+function MovieSheet() {
   return (
     <div>
       {movieList
@@ -28,4 +28,4 @@ function MoviePageFilterByTitle() {
   );
 }
 
-export default MoviePageFilterByTitle;
+export default MovieSheet;

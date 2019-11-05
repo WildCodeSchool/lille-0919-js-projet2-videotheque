@@ -3,9 +3,9 @@ import TopBar from "./components/TopBar";
 import MainPage from "./components/MainPage";
 import Footer from "./components/Footer";
 import { Switch, Route } from "react-router-dom";
-import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
+import MovieSheet from "./components/MovieSheet";
 import "./App.css";
-import ListMovies from "./components/ListMovies";
+import ListMoviesByGenre from "./components/ListMoviesByGenre";
 
 function App() {
   return (
@@ -13,8 +13,11 @@ function App() {
       <TopBar />
       <Switch>
         <Route exact path="/" component={MainPage} />
-        <Route path="/movieSheet" component={MoviePageFilterByTitle} />
-        <Route path="/listMovies/:genreName" component={ListMovies} />
+        <Route path="/movieSheet" component={MovieSheet} />
+        <Route
+          path="/listMoviesByGenre/:genreName"
+          component={ListMoviesByGenre}
+        />
       </Switch>
       <Footer />
     </div>

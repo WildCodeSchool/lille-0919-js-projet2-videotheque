@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Genre(props) {
   return (
     <div className="genre">
-      <Link to={`/listMovies/${props.genreName}`}>
+      <Link to={`/listMoviesByGenre/${props.genreName}`}>
         <img
           key={props.genreName}
           alt={props.genreName}

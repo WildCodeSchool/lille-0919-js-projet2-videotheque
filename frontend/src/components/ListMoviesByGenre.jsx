@@ -1,10 +1,10 @@
 import React from "react";
-import Movie from "./Movie";
+import MovieByGenre from "./MovieByGenre";
 import movieList from "../DataBaseMovie";
-import "./style/ListMovies.css";
+import "./style/ListMoviesByGenre.css";
 import { useParams } from "react-router-dom";
 
-function ListMovies() {
+function ListMoviesByGenre() {
   const { genreName } = useParams();
   return (
     <div className="ListMovies">
@@ -15,7 +15,7 @@ function ListMovies() {
         })
         .map(movie => (
           <a href=" ">
-            <Movie
+            <MovieByGenre
               key={movie.title}
               title={movie.title}
               genre={movie.genre}
@@ -28,4 +28,4 @@ function ListMovies() {
     </div>
   );
 }
-export default ListMovies;
+export default ListMoviesByGenre;

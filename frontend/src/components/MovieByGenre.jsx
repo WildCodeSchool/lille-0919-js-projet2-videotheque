@@ -1,7 +1,7 @@
 import React from "react";
-import "./style/Movie.css";
+import "./style/MovieByGenre.css";
 
-function Movie(props) {
+function MovieByGenre(props) {
   return (
     <div className="Movie">
       <img className="avatar" src={props.picture} alt={props.title} />
@@ -24,4 +24,4 @@ function Movie(props) {
   );
 }
 
-export default Movie;
+export default MovieByGenre;
