@@ -1,13 +1,15 @@
 import React from "react";
 import MoviePage from "./MoviePage";
 import movieList from "../DataBaseMovie";
+import { useParams } from "react-router-dom";
 
 function MoviePageFilterByTitle() {
+  const { id } = useParams();
   return (
     <div>
       {movieList
         .filter(movie => {
-          return movie.title === "Joker";
+          return movie.title === `${id}`;
         })
         .map(moviePage => (
           <MoviePage
