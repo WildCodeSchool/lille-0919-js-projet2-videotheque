@@ -4,7 +4,7 @@ import "./MainPageCard.css";
 
 function MainPageCard(props) {
   return (
-    <Link to="/movieSheet" className="div-poster">
+    <Link to={`/movieSheet/${props.id}`} className="div-poster">
       <img
         className="single-movie-poster"
         src={props.picture}
