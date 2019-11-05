@@ -1,5 +1,5 @@
 import React from "react";
-import "./Movie.css";
+import "./style/Movie.css";
 
 function Movie(props) {
   return (

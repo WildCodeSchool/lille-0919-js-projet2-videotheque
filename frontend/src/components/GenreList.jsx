@@ -4,7 +4,7 @@ import DataGenresList from "../DataGenre";
 
 function GenreList() {
   return (
-    <div>
+    <div className="genreList">
       {DataGenresList.map((genre, i) => (
         <Genre
           key={i}

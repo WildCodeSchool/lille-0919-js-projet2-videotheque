@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Footer.css";
+import "./style/Footer.css";
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
         <li a href="">
           Terms of use
         <li>
-          <Link to="/">CGU</Link>
+          <Link to="/">Terms of use</Link>
         </li>
         <li>
           <Link to="/">
