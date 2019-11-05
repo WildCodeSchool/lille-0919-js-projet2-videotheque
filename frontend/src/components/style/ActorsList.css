@@ -14,7 +14,7 @@
 
 .actorsList img {
   width: 100px;
-  border: 1px solid white;
+
   margin: 10px;
 }
 
@@ -34,6 +34,7 @@
   text-align: justify;
   height: 30px;
   font-size: 12px;
+  font-family: "Heebo", sans-serif;
 }
 
 .actorName {

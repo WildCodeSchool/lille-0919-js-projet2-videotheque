@@ -79,10 +79,6 @@ class MoviePage extends React.Component {
                 {this.props.by}
               </p>
               <p>
-                <span className="oneRedWord">With </span>
-                {this.props.with}...
-              </p>
-              <p>
                 <span className="oneRedWord">Genre </span>
                 {this.props.genre}
               </p>
