@@ -14,7 +14,11 @@ function Footer() {
         </li>
         <li>
           <Link to="/">
-            <img src="./pictures/twitter.svg" alt="twitter" />
+            <img
+              className="twitter"
+              src="./pictures/twitter.svg"
+              alt="twitter"
+            />
           </Link>
         </li>
         <li>

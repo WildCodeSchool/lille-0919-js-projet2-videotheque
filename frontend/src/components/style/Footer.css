@@ -12,7 +12,11 @@
   justify-content: space-around;
   height: 100%;
 }
-.footer ul li img {
+
+.copyright {
+  width: 20px;
+}
+.twitter {
   width: 30px;
 }
 
