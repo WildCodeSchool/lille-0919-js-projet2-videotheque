@@ -1,6 +1,7 @@
 #around {
   height: auto;
   padding-top: 50px;
+  margin-bottom: 10px;
 }
 #movieTrailerContainer {
   padding-bottom: 10px;
@@ -103,10 +104,10 @@ h3 {
 /* Desktop */
 @media screen and (min-width: 960px) {
   #around {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
 
   #movieTrailerContainer {
@@ -182,7 +183,7 @@ h3 {
   }
 
   #synopsisContainer {
-    height: 280px;
+    height: auto;
     width: 80%;
   }
 }
