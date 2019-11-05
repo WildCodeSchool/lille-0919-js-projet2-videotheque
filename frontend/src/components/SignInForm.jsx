@@ -4,10 +4,12 @@ import "./SignInForm.css";
 class SignInForm extends Component {
   constructor(props) {
     super(props);
-    this.state = { mail: "Awesome Mail" };
-    this.state = { username: "Awesome Username" };
-    this.state = { password: "Awesome Password" };
-    this.state = { confPassword: "Awesome confPassword" };
+    this.state = {
+      mail: "",
+      username: "",
+      password: "",
+      confPassword: ""
+    };
   }
 
   render() {
