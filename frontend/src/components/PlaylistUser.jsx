@@ -17,6 +17,7 @@ const properties = {
   infinite: true,
   indicators: false,
   arrows: false,
+
   onChange: (oldIndex, newIndex) => {
     console.log(`slide transition from ${oldIndex} to ${newIndex}`);
   }
@@ -74,7 +75,7 @@ const Slideshow = () => {
       <div id="movieIconsNavetTitre">
         <img id="movieNavetIcons" src="./navetIcon.png" alt="navet" />
         <div>
-          <h1>no no no</h1>
+          <h1>dislike</h1>
         </div>
       </div>
 
