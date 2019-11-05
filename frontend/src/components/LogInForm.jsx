@@ -36,10 +36,7 @@ class LogInForm extends React.Component {
           }}
         />
         <p className="signUp">
-          <NavLink to="/signInForm">
-            Don't have an account yet? Sign Up!
-          </NavLink>
-          >
+          <Link to="/signInForm">Don't have an account yet? Sign Up!</Link>>
         </p>
                   
         <button type="submit" className="submitButton">
