@@ -14,12 +14,6 @@ function App() {
   return (
     <div className="App">
       <TopBar />
-      <SignInForm />
-      <SlideSearchFunction />
-      <MainPage />
-      <MoviePageFilterByTitle />
-      <ActorsList />
-      <ListMovies />
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/movieSheet" component={MoviePageFilterByTitle} />
