@@ -6,6 +6,8 @@ import { useParams } from "react-router-dom";
 
 function ListMovies() {
   const { genreName } = useParams();
+  const { id } = useParams();
+
   return (
     <div className="ListMovies">
       <h1>{genreName}</h1>
@@ -21,6 +23,7 @@ function ListMovies() {
             duration={movie.duration}
             picture={movie.picture}
             synopsis={movie.synopsis}
+            id={movie.title}
           />
         ))}
     </div>
