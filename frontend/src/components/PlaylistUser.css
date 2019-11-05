@@ -1,14 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Staatliches|Titillium+Web:400,400i,600,600i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
 
 * {
-  background-color: black;
+  background-color: rgb(22, 22, 22);
 }
 
 .slide-container {
-  margin: 130px auto auto 20px;
+  margin: 70px auto auto 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+#myMoviesLibrary h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 25px;
+  background: linear-gradient(to left, rgb(231, 194, 194), rgb(165, 26, 26));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+hr {
+  margin: 0px;
+  margin-bottom: 30px;
+  background: linear-gradient(to left, rgb(231, 194, 194), rgb(165, 26, 26));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .each-slide > div {
@@ -20,12 +36,12 @@
 
 .each-slide {
   height: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 #movieLikeIcons {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   margin: auto 3px 2px 4px;
 }
 #movieIconsFavTitre {
@@ -34,24 +50,55 @@
 }
 
 #movieIconsFavTitre h1 {
-  color: rgb(165, 26, 26);
-  font-family: "Titillium Web", sans-serif;
-  font-weight: bold;
+  color: white;
+  font-family: "Heebo", sans-serif;
+  font-size: 15px;
   padding-bottom: 2px;
+  font-weight: bold;
+  background: linear-gradient(to left, rgb(231, 194, 194), rgb(136, 128, 128));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #moviePlusIcons {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   margin: auto 5px 5px 4px;
 }
 
 #movieIconsPlusTitre h1 {
-  color: rgb(197, 8, 8);
-  font-family: "Titillium Web", sans-serif;
-  font-weight: bold;
+  color: white;
+  font-family: "Heebo", sans-serif;
+  font-size: 15px;
   padding-bottom: 4px;
+  font-weight: bold;
+  background: linear-gradient(to left, rgb(231, 194, 194), rgb(136, 128, 128));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #movieIconsPlusTitre {
   display: flex;
   align-items: center;
 }
+
+#movieNavetIcons {
+  width: 20px;
+  height: 23px;
+  margin: auto 5px 5px 4px;
+}
+#movieIconsNavetTitre h1 {
+  color: white;
+  font-family: "Heebo", sans-serif;
+  font-size: 15px;
+  padding-bottom: 4px;
+  font-weight: bold;
+  background: linear-gradient(to left, rgb(231, 194, 194), rgb(136, 128, 128));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#movieIconsNavetTitre {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px);
