@@ -27,7 +27,7 @@ class LogInForm extends React.Component {
               this.setState({ username: event.target.value });
             }}
           />
-                   <label className="label">Password</label>
+               <label className="label">Password</label>
                     
           <input
             className="logInInput"
