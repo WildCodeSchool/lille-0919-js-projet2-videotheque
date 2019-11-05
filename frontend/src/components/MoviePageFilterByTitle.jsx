@@ -14,7 +14,6 @@ function MoviePageFilterByTitle() {
             key={moviePage.title}
             title={moviePage.title}
             releasedDate={moviePage.releasedDate}
-            with={moviePage.with}
             by={moviePage.by}
             genre={moviePage.genre}
             duration={moviePage.duration}
