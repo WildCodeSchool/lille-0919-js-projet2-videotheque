@@ -1,0 +1,7 @@
+.topBar {
+  z-index: 1;
+}
+
+#movieTrailerContainer {
+  z-index: 0;
+}
