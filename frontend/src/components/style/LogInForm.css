@@ -4,10 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
-  height: auto;
   border-radius: 2px;
-  margin-top: 50px;
+  position: fixed;
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
 }
 .logInInput {
   margin-top: 1%;
@@ -27,11 +30,7 @@
   justify-content: center;
   margin-top: 5%;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 .submitButton {
   margin-left: 30%;
   margin-right: 30%;
@@ -44,6 +43,11 @@
   justify-content: center;
   align-items: center;
   height: 30px;
+}
+.buttonClose {
+  color: white;
+  position: fixed;
+  margin: auto;
 }
 .form {
   color: red;
