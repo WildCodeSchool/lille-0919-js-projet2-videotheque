@@ -1,9 +1,9 @@
-.Footer {
+.footer {
   background-color: black;
   height: 50px;
   width: 100%;
 }
-ul {
+.footer ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,10 +11,12 @@ ul {
   justify-content: space-around;
   height: 100%;
 }
-img {
+.footer ul li img {
   width: 30px;
-  color: black;
 }
-li {
+
+.footer ul li a {
   color: white;
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
 }

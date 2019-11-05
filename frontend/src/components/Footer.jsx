@@ -4,7 +4,7 @@ import "./style/Footer.css";
 
 function Footer() {
   return (
-    <div className="Footer">
+    <div className="footer">
       <ul>
         <li>
           <Link to="/">Contact us</Link>
