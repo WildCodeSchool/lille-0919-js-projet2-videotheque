@@ -19,7 +19,11 @@ function Footer() {
         </li>
         <li>
           <Link to="/">
-            <img src="./pictures/copyright.svg" alt="copyright" />
+            <img
+              className="copyright"
+              src="./pictures/copyright.svg"
+              alt="copyright"
+            />
           </Link>
         </li>
       </ul>
