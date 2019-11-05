@@ -1,6 +1,9 @@
 .noEntrySearch {
   display: none;
 }
+.EntrySearch {
+  display: block;
+}
 
 @media screen and (max-width: 600px) {
   .searchBarButton {
