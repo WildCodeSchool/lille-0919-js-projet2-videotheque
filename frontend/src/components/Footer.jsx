@@ -1,18 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
   return (
     <div className="Footer">
       <ul>
-        <li a href="">
-          Contact us
+        <li>
+          <Link to="/">Contact us</Link>
         </li>
         <li a href="">
           Terms of use
+        <li>
+          <Link to="/">CGU</Link>
         </li>
-        <li a href="">
-          <img src="./pictures/twitter.svg" />
+        <li>
+          <Link to="/">
+            <img src="./pictures/twitter.svg" alt="twitter" />
+          </Link>
+        </li>
+        <li>
+          <Link to="/">
+            <img src="./pictures/copyright.svg" alt="copyright" />
+          </Link>
         </li>
       </ul>
     </div>

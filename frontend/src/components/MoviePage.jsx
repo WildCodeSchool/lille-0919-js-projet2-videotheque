@@ -1,5 +1,6 @@
 import React from "react";
 import "./MoviePage.css";
+import ActorsList from "./ActorsList";
 
 function MoviePage(props) {
   return (
@@ -33,9 +34,9 @@ function MoviePage(props) {
             </p>
           </div>
           <div id="movieIconsContainer">
-            <img id="moviePlusIcons" src="./plusIcon.png" />
-            <img id="movieLikeIcons" src="./likeIcon.png" />
-            <img id="movieNavetIcons" src="./navetIcon.png" />
+            <img id="moviePlusIcons" src="./plusIcon.png" alt="add" />
+            <img id="movieLikeIcons" src="./likeIcon.png" alt="like" />
+            <img id="movieNavetIcons" src="./navetIcon.png" alt="navet" />
           </div>
         </div>
       </div>
@@ -44,6 +45,7 @@ function MoviePage(props) {
         <h3>Synopsis</h3>
         <p>{props.synopsis}</p>
       </div>
+      <ActorsList />
     </div>
   );
 }
