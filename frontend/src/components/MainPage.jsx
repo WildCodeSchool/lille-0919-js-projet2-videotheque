@@ -46,7 +46,7 @@ class MainPage extends React.Component {
         </div>
         <div className="main-poster">
           {this.state.movies.map(movie => {
-            return <MainPageCard movieData={movie} />;
+            return <MainPageCard movieData={movie} key={movie.poster_path} />;
           })}
         </div>
       </div>
