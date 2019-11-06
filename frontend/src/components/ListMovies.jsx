@@ -50,11 +50,11 @@ class ListMovies extends React.Component {
   render() {
     return (
       <div className="ListMovies">
-        <h1>All Movies</h1>
-        {this.state.movies /*
+        <h1>Horror Movies</h1>
+        {this.state.movies
           .filter(movie => {
-            return movie.genre_ids === `${this.state.genreName}`;
-          })*/
+            return movie.genre_ids.includes(27);
+          })
           .map(movie => (
             <Movie
               key={movie.id}
