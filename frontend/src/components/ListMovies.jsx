@@ -57,6 +57,7 @@ class ListMovies extends React.Component {
           })*/
           .map(movie => (
             <Movie
+              key={movie.id}
               id={movie.id}
               title={movie.original_title}
               genre={movie.genre_ids}
