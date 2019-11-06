@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
+import React from "react";
+//import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
 import "./style/LogInForm.css";
 
 class LogInForm extends React.Component {
@@ -35,12 +35,7 @@ class LogInForm extends React.Component {
             this.setState({ password: event.target.value });
           }}
         />
-        <p className="signUp">
-          <NavLink to="/signInForm">
-            Don't have an account yet? Sign Up!
-          </NavLink>
-          >
-        </p>
+        <p className="signUp">Don't have an account yet? Sign Up! ></p>
                   
         <button type="submit" className="submitButton">
           Submit!
