@@ -21,15 +21,6 @@ function Footer() {
             />
           </Link>
         </li>
-        <li>
-          <Link to="/">
-            <img
-              className="copyright"
-              src="./pictures/copyright.svg"
-              alt="copyright"
-            />
-          </Link>
-        </li>
       </ul>
     </div>
   );
