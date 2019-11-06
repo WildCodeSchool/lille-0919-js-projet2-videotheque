@@ -16,7 +16,10 @@ function Movie(props) {
           <p>
             release date: {props.release}
             <br />
-            genre: {props.genre}
+            genre:{" "}
+            {props.genre.map(genre_id => {
+              return `${genre_id}.`;
+            })}
           </p>
           <div className="synopsis">
             <p>
