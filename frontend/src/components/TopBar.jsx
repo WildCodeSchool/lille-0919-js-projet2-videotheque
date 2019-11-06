@@ -33,7 +33,7 @@ class TopBar extends React.Component {
                   <img
                     id="logoUser"
                     alt="logoUser"
-                    src="pictures/logoUser.jpg"
+                    src="pictures/logoUser.png"
                   />
                 </NavLink>
               </li>
