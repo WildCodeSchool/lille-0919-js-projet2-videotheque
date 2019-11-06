@@ -43,7 +43,7 @@ class ListMovies extends React.Component {
         this.setState({
           genreName: genre
         });
-        console.log(this.state.genreName);
+        console.log(this.state.genreName[0].name);
       });
   }
 
@@ -56,16 +56,14 @@ class ListMovies extends React.Component {
             return movie.genre_ids === `${this.state.genreName}`;
           })*/
           .map(movie => (
-            <a href=" ">
-              <Movie
-                id={movie.id}
-                title={movie.original_title}
-                genre={movie.genre_ids}
-                release={movie.release_date}
-                picture={movie.poster_path}
-                synopsis={movie.overview}
-              />
-            </a>
+            <Movie
+              id={movie.id}
+              title={movie.original_title}
+              genre={movie.genre_ids}
+              release={movie.release_date}
+              picture={movie.poster_path}
+              synopsis={movie.overview}
+            />
           ))}
       </div>
     );
