@@ -8,7 +8,8 @@ class ListMovies extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      movies: []
+      movies: [],
+      genreName: []
     };
   }
 
@@ -31,6 +32,19 @@ class ListMovies extends React.Component {
           });
         });
     }
+    axios
+      .get(
+        `https://api.themoviedb.org/3/genre/movie/list?language=en-US&api_key=495d98b77df65d47fbf7eba028518ed7`
+      )
+      .then(({ data }) => {
+        const results = data.genres;
+        let genre = this.state.genreName;
+        genre.push(...results);
+        this.setState({
+          genreName: genre
+        });
+        console.log(this.state.genreName);
+      });
   }
 
   render() {
@@ -39,17 +53,17 @@ class ListMovies extends React.Component {
         <h1>All Movies</h1>
         {this.state.movies /*
           .filter(movie => {
-            return movie.genre === `${this.state.genreName}`;
+            return movie.genre_ids === `${this.state.genreName}`;
           })*/
           .map(movie => (
             <a href=" ">
               <Movie
-                key={movie.title}
-                title={movie.title}
-                genre={movie.genre}
-                duration={movie.duration}
-                picture={movie.picture}
-                synopsis={movie.synopsis}
+                key={movie.id}
+                title={movie.original_title}
+                genre={movie.genre_ids}
+                release={movie.release_date}
+                picture={movie.poster_path}
+                synopsis={movie.overview}
               />
             </a>
           ))}
