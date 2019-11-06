@@ -10,7 +10,7 @@ function Footer() {
           <Link to="/">Contact us</Link>
         </li>
         <li>
-          <Link to="/">CGU</Link>
+          <Link to="/">Terms of use</Link>
         </li>
         <li>
           <Link to="/">

@@ -1,7 +1,7 @@
 .genre {
   width: 100%;
   position: relative;
-  height: 20vh;
+  height: 23vh;
   overflow: hidden;
   margin-bottom: 1vh;
 }
@@ -18,4 +18,15 @@
   min-width: 100%;
   max-width: 110%;
   max-height: 120%;
+}
+@media screen and (min-width: 600px) {
+  .genre {
+    width: 25vw;
+    height: 14vw;
+    margin: 1vh 2vw;
+  }
+  .genreList {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
