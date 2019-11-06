@@ -1,16 +1,6 @@
 import React from "react";
 import "./style/MainPage.css";
 import MainPageCard from "./MainPageCard";
-<<<<<<< HEAD
-import movieList from "../DataBaseMovie";
-import TrailerHomePage from "./TrailerHomePage";
-
-function MainPage() {
-  return (
-    <div className="main-homepage">
-      <div className="trailer-homepage">
-        <TrailerHomePage />
-=======
 import axios from "axios";
 
 class MainPage extends React.Component {
@@ -59,7 +49,6 @@ class MainPage extends React.Component {
             return <MainPageCard movieData={movie} />;
           })}
         </div>
->>>>>>> 0f9a52c7f8c064872a10047d9155066a1c5f472d
       </div>
     );
   }
