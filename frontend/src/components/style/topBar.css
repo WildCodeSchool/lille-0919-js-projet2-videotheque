@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches%7CTitillium+Web:400,400i,600,600i,700,700i&display=swap");
+
 .topBar {
   position: fixed;
   width: 100%;
@@ -19,10 +21,19 @@ header #pictoLoupe {
   margin-top: 4px;
 }
 
-.topBarLogo a {
+.topBarLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.topBarLogo h1 {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
+  font-family: "Staatliches", cursive;
 }
 
 .spacer {
@@ -50,4 +61,8 @@ header #pictoLoupe {
 }
 .searchBarButton:focus {
   outline: none;
+}
+
+.logo {
+  height: 40px;
 }
