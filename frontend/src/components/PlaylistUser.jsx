@@ -98,3 +98,9 @@ const Slideshow = () => {
 };
 
 export default Slideshow;
+
+/*{slideImages.map(image => {
+  return (
+    <div style={{ backgroundImage: `url(${image.image})` }}></div>
+  );
+})}*/

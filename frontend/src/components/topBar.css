@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches|Titillium+Web:400,400i,600,600i,700,700i&display=swap");
+
 .topBar {
   position: fixed;
   top: 0;
@@ -12,11 +14,17 @@
   padding: 0 0.5rem;
 }
 header #logoUser {
-  width: 25px;
+  width: 20px;
   margin-top: 4px;
 }
 header #pictoLoupe {
   width: 25px;
+  margin-top: 4px;
+}
+
+header #logoSite {
+  width: 35px;
+  height: 35px;
   margin-top: 4px;
 }
 
@@ -37,7 +45,7 @@ header #pictoLoupe {
   display: flex;
 }
 .topBarNavigationItems li {
-  padding: 0 0.5rem;
+  padding: 0 0.3rem;
 }
 
 .topBarNavigationItems a {

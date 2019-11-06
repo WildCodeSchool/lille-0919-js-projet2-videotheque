@@ -7,7 +7,7 @@ const TopBar = () => (
     <nav className="topBarNavigation">
       <div className="topBarLogo">
         <NavLink activeClassName="active" to="/">
-          MyMovies
+          <img id="logoSite" alt="logoSite" src="pictures/logoMyMovies.png" />
         </NavLink>
       </div>
 
@@ -20,14 +20,18 @@ const TopBar = () => (
               <img
                 id="logoUser"
                 alt="logoUser"
-                src="logoUser.jpg"
+                src="pictures/logoUser.png"
                 onclick="location.href='user connexion link'"
               />
             </NavLink>
           </li>
           <li>
             <button className="searchBarButton">
-              <img id="pictoLoupe" alt="pictoLoupe" src="pictoLoupe.png" />
+              <img
+                id="pictoLoupe"
+                alt="pictoLoupe"
+                src="pictures/logoLoupe.png"
+              />
             </button>
           </li>
         </ul>
