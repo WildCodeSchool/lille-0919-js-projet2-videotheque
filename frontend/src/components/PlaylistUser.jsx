@@ -27,7 +27,7 @@ const Slideshow = () => {
   return (
     <div className="slide-container">
       <div id="myMoviesLibrary">
-        <h1>My Movies Library </h1>
+        <h1>My Library </h1>
         <hr></hr>
       </div>
 

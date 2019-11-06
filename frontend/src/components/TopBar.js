@@ -9,6 +9,7 @@ const TopBar = () => (
         <NavLink activeClassName="active" to="/">
           <img id="logoSite" alt="logoSite" src="pictures/logoMyMovies.png" />
         </NavLink>
+        <h1>MyMovies</h1>
       </div>
 
       <div className="spacer" />
