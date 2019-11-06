@@ -23,6 +23,7 @@ class TopBar extends React.Component {
                 alt="logo"
               />
             </NavLink>
+            <h1>MyMovies</h1>
           </div>
           <div className="spacer" />
           <div className="topBarNavigationItems">
