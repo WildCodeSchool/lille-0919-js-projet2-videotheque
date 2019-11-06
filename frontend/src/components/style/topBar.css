@@ -64,5 +64,10 @@ header #pictoLoupe {
 }
 
 .logo {
-  height: 40px;
+  height: 30px;
+}
+
+#logoUser {
+  height: 30px;
+  width: 12px;
 }
