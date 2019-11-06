@@ -13,7 +13,7 @@ function App() {
       <TopBar />
       <Switch>
         <Route exact path="/" component={MainPage} />
-        <Route path="/movieSheet" component={MoviePageFilterByTitle} />
+        <Route path="/movieSheet/:id" component={MoviePageFilterByTitle} />
         <Route path="/listMovies/:genreName" component={ListMovies} />
       </Switch>
       <Footer />
