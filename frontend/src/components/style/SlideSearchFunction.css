@@ -38,7 +38,6 @@
   .noEntrySearch {
     display: block;
     width: 0%;
-    background-color: black;
     position: absolute;
     top: 50px;
     right: -2px;
