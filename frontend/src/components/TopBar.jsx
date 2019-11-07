@@ -35,30 +35,37 @@ class TopBar extends React.Component {
               </li>
               <li>
                 <button
-                  className="searchBarButton"
+                  className={`searchBarButton ${
+                    this.state.searching ? "EntrySearch" : "noEntrySearch"
+                  }`}
                   onClick={event => {
                     let newSearching = !this.state.searching;
                     this.setState({ searching: newSearching });
                   }}
-                />
-                <img
-                  id="pictoLoupe"
-                  alt="pictoLoupe"
-                  src="/pictures/pictoLoupe.png"
-                  className="searchBarButton"
+                >
+                  <img
+                    id="pictoLoupe"
+                    alt="pictoLoupe"
+                    src="pictures/pictoLoupe.png"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  className={`searchBarButton ${
+                    this.state.searching ? "noEntrySearch" : "EntrySearch"
+                  }`}
                   onClick={event => {
                     let newSearching = !this.state.searching;
                     this.setState({ searching: newSearching });
                   }}
-                />
+                >
+                  <img id="close" alt="close" src="pictures/Red-Cross.png" />
+                </button>
                 <div
                   className={
                     this.state.searching ? "noEntrySearch" : "movieGenre"
                   }
-                  onClick={event => {
-                    let newSearching = !this.state.searching;
-                    this.setState({ searching: newSearching });
-                  }}
                 >
                   <div
                     className={
@@ -70,7 +77,12 @@ class TopBar extends React.Component {
                       type="text"
                       placeholder="Search.."
                     ></input>
-                    <GenreList />
+                    <GenreList
+                      onClick={event => {
+                        let newSearching = !this.state.searching;
+                        this.setState({ searching: newSearching });
+                      }}
+                    />
                   </div>
                 </div>
               </li>
