@@ -22,21 +22,25 @@ const list = [
   { name: "Brett Cullen", role: "Thomas Wayne", image: "./pictures/brett.jpg" }
 ];
 
-function ActorsList() {
+function ActorsList({ castInfo }) {
   return (
     <div className="actorListContainer">
       <h3>Headline</h3>
       <ul className="actorsList">
-        {list.map((person, i) => {
-          return (
-            <Actor
-              key={i}
-              name={person.name}
-              image={person.image}
-              role={person.role}
-            />
-          );
-        })}
+        {castInfo.cast
+          .filter((person, i) => {
+            return i < 6;
+          })
+          .map((person, i) => {
+            return (
+              <Actor
+                key={i}
+                name={person.name}
+                image={person.profile_path}
+                role={person.role}
+              />
+            );
+          })}
       </ul>
     </div>
   );
