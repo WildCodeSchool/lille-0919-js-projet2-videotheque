@@ -68,7 +68,7 @@ class MoviePageFilterByTitle extends React.Component {
         </Modal>
         <div id="movieTrailerContainer" onClick={this.toggleModal}>
           <img
-            src={movieInfo.trailerThumb}
+            src={`https://image.tmdb.org/t/p/w500/${movieInfo.backdrop_path}`}
             className="trailerThumb"
             alt={this.props.trailerThumb}
           />
