@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 
 function Genre(props) {
   return (
-    <div className="genre">
-      <Link to={`/listMovies/${props.genreName}`}>
+    <Link to={`/listMovies/${props.genreName}`}>
+      <div className="genre">
         <img
           key={props.genreName}
           alt={props.genreName}
           src={props.genreBackground}
         />
         <h1>{props.genreName}</h1>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
 
