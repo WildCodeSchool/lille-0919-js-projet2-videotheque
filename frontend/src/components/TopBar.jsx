@@ -26,13 +26,6 @@ class TopBar extends React.Component {
             <ul>
               <li>
                 <Modal />
-                {/* <NavLink activeClassName="active" to="/">
-                  <img
-                    id="logoUser"
-                    alt="logoUser"
-                    src="pictures/logoUser.jpg"
-                  />
-                </NavLink> */}
               </li>
               <li>
                 <button
