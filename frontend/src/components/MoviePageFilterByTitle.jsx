@@ -10,9 +10,19 @@ class MoviePageFilterByTitle extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      movieInfo: [],
+      movieInfo: {
+        title: "",
+        overview: "",
+        poster_path: "",
+        release_date: "",
+        genres: []
+      },
+      castInfo: {
+        cast: [],
+        crew: []
+      },
       modalIsOpen: false,
-      img: "pictures/play.png"
+      img: "/pictures/play.png"
     };
   }
 
@@ -24,15 +34,19 @@ class MoviePageFilterByTitle extends React.Component {
     const id = this.props.match.params.id;
     Axios.get(
       `https://api.themoviedb.org/3/movie/${id}?api_key=495d98b77df65d47fbf7eba028518ed7`
-    ).then(response => {
-      const movieInfo = response.data;
-      this.setState({ movieInfo }, () => console.log(this.state.movieInfo));
+    ).then(({ data }) => {
+      this.setState({ movieInfo: data });
+    });
+    Axios.get(
+      `http://api.themoviedb.org/3/movie/${id}/casts?api_key=495d98b77df65d47fbf7eba028518ed7`
+    ).then(({ data }) => {
+      this.setState({ castInfo: data });
     });
   };
-  // const toto=response.data;
-  // this.setState({movieInfo:toto});
 
   render() {
+    //const {movieInfo} = this.state;
+    const movieInfo = this.state.movieInfo;
     return (
       <div id="around">
         <Modal
@@ -55,7 +69,7 @@ class MoviePageFilterByTitle extends React.Component {
         </Modal>
         <div id="movieTrailerContainer" onClick={this.toggleModal}>
           <img
-            src={this.state.movieInfo.trailerThumb}
+            src={movieInfo.trailerThumb}
             className="trailerThumb"
             alt={this.props.trailerThumb}
           />
@@ -66,12 +80,12 @@ class MoviePageFilterByTitle extends React.Component {
               src={this.state.img}
               onMouseEnter={() => {
                 this.setState({
-                  img: "pictures/playHover.png"
+                  img: "/pictures/playHover.png"
                 });
               }}
               onMouseOut={() => {
                 this.setState({
-                  img: "pictures/play.png"
+                  img: "/pictures/play.png"
                 });
               }}
             />
@@ -81,16 +95,16 @@ class MoviePageFilterByTitle extends React.Component {
           <div id="movieMainJacket">
             <img
               id="movieMainJacketImg"
-              src={`https://image.tmdb.org/t/p/w500/${this.state.movieInfo.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w500/${movieInfo.poster_path}`}
               alt={this.props.title}
             ></img>
           </div>
           <div id="movieDescAndIcons">
             <div id="movieDescription">
-              <h2>{this.props.title}</h2>
+              <h2>{movieInfo.title}</h2>
               <p>
                 <span className="oneRedWord">By </span>
-                {this.props.by}
+                ...
               </p>
               <p>
                 <span className="oneRedWord">With </span>
@@ -98,31 +112,33 @@ class MoviePageFilterByTitle extends React.Component {
               </p>
               <p>
                 <span className="oneRedWord">Genre </span>
-                {this.props.genre}
+                {movieInfo.genres.map(genre => {
+                  return genre.name + " ";
+                })}
               </p>
               <p>
                 <span className="oneRedWord">Released at </span>
-                {this.props.releasedDate}
+                {movieInfo.release_date}
               </p>
               <p>
                 <span className="oneRedWord">Runtime </span>
-                {this.props.duration}
+                {movieInfo.runtime} minutes
               </p>
             </div>
             <div className="movieIconsContainer">
               <img
                 id="moviePlusIcons"
-                src="./pictures/plusIcon.png"
+                src="/pictures/plusIcon.png"
                 alt="plusIcon"
               />
               <img
                 id="movieLikeIcons"
-                src="./pictures/likeIcon.png"
+                src="/pictures/likeIcon.png"
                 alt="likeIcon"
               />
               <img
                 id="movieNavetIcons"
-                src="./pictures/navetIcon.png"
+                src="/pictures/navetIcon.png"
                 alt="navetIcon"
               />
             </div>
@@ -130,9 +146,9 @@ class MoviePageFilterByTitle extends React.Component {
           <div id="synopsisContainer">
             <hr />
             <h3>Synopsis</h3>
-            <p>{this.props.synopsis}</p>
+            <p>{movieInfo.overview}</p>
           </div>
-          <ActorsList />
+          <ActorsList castInfo={this.state.castInfo} />
         </div>
       </div>
     );
