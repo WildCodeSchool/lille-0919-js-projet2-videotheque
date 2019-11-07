@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
+import React from "react";
 import "./style/LogInForm.css";
 
 class LogInForm extends React.Component {
@@ -37,8 +36,7 @@ class LogInForm extends React.Component {
         />
         <p className="signUp">
           <Link to="/signInForm">Don't have an account yet? Sign Up!</Link>>
-        </p>
-                  
+        </p>                  
         <button type="submit" className="submitButton">
           Submit!
         </button>

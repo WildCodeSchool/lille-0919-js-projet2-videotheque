@@ -1,9 +1,10 @@
-.Footer {
-  background-color: #7c6d6d;
+.footer {
+  background-color: black;
   height: 50px;
   width: 100%;
+  border-top: solid rgb(92, 92, 92) 0.01em;
 }
-ul {
+.footer ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,6 +12,13 @@ ul {
   justify-content: space-around;
   height: 100%;
 }
-img {
-  width: 20px;
+
+.twitter {
+  width: 30px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
 }
