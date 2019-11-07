@@ -17,7 +17,7 @@ class TopBar extends React.Component {
       <header className="topBar">
         <nav className="topBarNavigation">
           <div className="topBarLogo">
-            <NavLink activeClassName="active" to="/">
+            <NavLink activeClassName="active flex" to="/">
               <img
                 className="logo"
                 src="/pictures/logoMyMovies.png"
