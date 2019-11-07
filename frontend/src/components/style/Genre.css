@@ -4,6 +4,9 @@
   height: 23vh;
   overflow: hidden;
   margin-bottom: 1vh;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 .genre h1 {
   background-color: rgba(20, 20, 20, 0.7);
