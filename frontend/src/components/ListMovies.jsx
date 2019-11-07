@@ -43,7 +43,8 @@ class ListMovies extends React.Component {
         this.setState({
           genreName: genre
         });
-        console.log(this.state.genreName[0].name);
+        console.log(this.state.genreName[10].name);
+        console.log(this.state.genreName[10].id);
       });
   }
 
