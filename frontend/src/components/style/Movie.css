@@ -23,9 +23,7 @@
   }
   .synopsis {
     text-align: justify;
-  }
-  .Desktop {
-    display: none;
+    color: white;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -51,20 +49,9 @@
     color: white;
     margin: 5% 1em;
   }
-  .header .infos h2 {
-    font-weight: bold;
-    color: red;
-  }
-  .synopsis {
-    text-align: justify;
-    color: white;
-  }
-  .Mobile {
-    display: none;
-  }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1250px) {
   .header {
     width: 24.5vw;
     display: flex;
