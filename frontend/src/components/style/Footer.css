@@ -1,5 +1,5 @@
 .Footer {
-  background-color: #7c6d6d;
+  background-color: black;
   height: 50px;
   width: 100%;
 }
@@ -12,5 +12,9 @@ ul {
   height: 100%;
 }
 img {
-  width: 20px;
+  width: 30px;
+  color: black;
+}
+li {
+  color: white;
 }

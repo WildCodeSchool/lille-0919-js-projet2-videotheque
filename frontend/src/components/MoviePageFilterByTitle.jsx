@@ -1,5 +1,4 @@
 import React from "react";
-//import MoviePage from "./MoviePage";
 import Axios from "axios";
 import "./style/MoviePage.css";
 import "./style/MoviePageModalTrailer.css";
