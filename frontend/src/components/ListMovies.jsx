@@ -9,7 +9,8 @@ class ListMovies extends React.Component {
     super(props);
     this.state = {
       movies: [],
-      genreName: []
+      genreName: [],
+      genreId: 27
     };
   }
 
@@ -37,14 +38,15 @@ class ListMovies extends React.Component {
         `https://api.themoviedb.org/3/genre/movie/list?language=en-US&api_key=495d98b77df65d47fbf7eba028518ed7`
       )
       .then(({ data }) => {
-        const results = data.genres;
-        let genre = this.state.genreName;
-        genre.push(...results);
-        this.setState({
-          genreName: genre
+        console.log(this.props.match.params.genreName);
+        let myGenre = data.genres.filter(genre => {
+          return genre.name === this.props.match.params.genreName;
         });
-        console.log(this.state.genreName[10].name);
-        console.log(this.state.genreName[10].id);
+        myGenre = myGenre[0].id;
+        console.log(myGenre);
+        this.setState({
+          genreId: myGenre
+        });
       });
   }
 
@@ -54,7 +56,7 @@ class ListMovies extends React.Component {
         <h1>Horror Movies</h1>
         {this.state.movies
           .filter(movie => {
-            return movie.genre_ids.includes(27);
+            return movie.genre_ids.includes(this.state.genreId);
           })
           .map(movie => (
             <Movie
