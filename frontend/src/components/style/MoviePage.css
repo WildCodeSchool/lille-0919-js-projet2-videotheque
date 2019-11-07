@@ -148,6 +148,10 @@ h3 {
     font-size: 30px;
   }
 
+  h3 {
+    font-size: 22px;
+  }
+
   .oneRedWord {
     font-size: 18px;
   }
@@ -186,5 +190,9 @@ h3 {
   #synopsisContainer {
     height: auto;
     width: 80%;
+  }
+
+  #synopsisContainer p {
+    font-size: 17px;
   }
 }
