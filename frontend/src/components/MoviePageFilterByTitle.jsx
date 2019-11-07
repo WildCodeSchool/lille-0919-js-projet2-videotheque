@@ -20,6 +20,9 @@ class MoviePageFilterByTitle extends React.Component {
         cast: [],
         crew: []
       },
+      videoInfo: {
+        results: [""]
+      },
       modalIsOpen: false,
       img: "/pictures/play.png"
     };
@@ -41,11 +44,17 @@ class MoviePageFilterByTitle extends React.Component {
     ).then(({ data }) => {
       this.setState({ castInfo: data });
     });
+    Axios.get(
+      `http://api.themoviedb.org/3/movie/${id}/videos?api_key=495d98b77df65d47fbf7eba028518ed7`
+    ).then(({ data }) => {
+      this.setState({ videoInfo: data });
+    });
   };
 
   render() {
-    //const {movieInfo} = this.state;
     const movieInfo = this.state.movieInfo;
+    const videoInfo = this.state.videoInfo;
+
     return (
       <div id="around">
         <Modal
@@ -56,11 +65,16 @@ class MoviePageFilterByTitle extends React.Component {
           onRequestClose={this.closeModal}
         >
           <iframe
-            title="modal"
-            src={this.props.trailer}
+            src={`https://www.youtube-nocookie.com/embed/${videoInfo.results
+              .filter((video, i) => {
+                return i === 1;
+              })
+              .map((video, i) => {
+                return video.key;
+              })}`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen="1"
+            allowFullScreen
           ></iframe>
           <button className="closeTrailer" onClick={this.toggleModal}>
             close
