@@ -63,3 +63,20 @@
     display: none;
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .header {
+    width: 24.5vw;
+    display: flex;
+    padding: 1%;
+  }
+  .header .avatar {
+    width: 12vw;
+    height: calc(12vw * 1.5);
+    margin: 5% auto;
+  }
+  .header .infos {
+    width: 12vw;
+    height: calc(12vw * 1.35);
+  }
+}
