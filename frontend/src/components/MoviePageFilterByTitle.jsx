@@ -67,6 +67,7 @@ class MoviePageFilterByTitle extends React.Component {
           onRequestClose={this.toggleModal}
         >
           <iframe
+            title="Trailer"
             src={`https://www.youtube-nocookie.com/embed/${videoInfo.results
               .filter((video, i) => {
                 return i === 1;
@@ -86,7 +87,7 @@ class MoviePageFilterByTitle extends React.Component {
           <img
             src={`https://image.tmdb.org/t/p/w500/${movieInfo.backdrop_path}`}
             className="trailerThumb"
-            alt={this.props.trailerThumb}
+            alt={movieInfo.title}
           />
           <div>
             <img
