@@ -13,8 +13,8 @@ class LogInForm extends React.Component {
   render() {
     return (
       <div className="logIn">
-        <h1 className="form">Log In</h1>
-             <label className="label">Username</label>
+        <h1 className="form">Log In</h1> 
+        <label className="label">Username</label>
                   
         <input
           className="logInInput"
@@ -24,7 +24,7 @@ class LogInForm extends React.Component {
             this.setState({ username: event.target.value });
           }}
         />
-             <label className="label">Password</label>
+        <label className="label">Password</label>
                   
         <input
           className="logInInput"
@@ -34,8 +34,9 @@ class LogInForm extends React.Component {
             this.setState({ password: event.target.value });
           }}
         />
-        <p className="signUp">Don't have an account yet? Sign Up! ></p>
-                  
+        <p className="signUp">
+          <Link to="/signInForm">Don't have an account yet? Sign Up!</Link>>
+        </p>                  
         <button type="submit" className="submitButton">
           Submit!
         </button>
