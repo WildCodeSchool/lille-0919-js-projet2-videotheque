@@ -106,10 +106,6 @@ class MoviePageFilterByTitle extends React.Component {
                 ...
               </p>
               <p>
-                <span className="oneRedWord">With </span>
-                {this.props.with}...
-              </p>
-              <p>
                 <span className="oneRedWord">Genre </span>
                 {movieInfo.genres.map(genre => {
                   return genre.name + " ";
@@ -142,13 +138,13 @@ class MoviePageFilterByTitle extends React.Component {
               />
             </div>
           </div>
-          <div id="synopsisContainer">
-            <hr />
-            <h3>Synopsis</h3>
-            <p>{movieInfo.overview}</p>
-          </div>
-          <ActorsList castInfo={this.state.castInfo} />
         </div>
+        <div id="synopsisContainer">
+          <hr />
+          <h3>Synopsis</h3>
+          <p>{movieInfo.overview}</p>
+        </div>
+        <ActorsList castInfo={this.state.castInfo} />
       </div>
     );
   }
