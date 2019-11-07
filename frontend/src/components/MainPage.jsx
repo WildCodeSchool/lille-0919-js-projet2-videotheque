@@ -35,15 +35,6 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className="main-homepage">
-        <div className="trailer-homepage">
-          <div className="trailer">
-            <img
-              className="icon-play"
-              src="Pictures/icon-play.svg"
-              alt="Video Player"
-            />
-          </div>
-        </div>
         <div className="main-poster">
           {this.state.movies.map(movie => {
             return <MainPageCard movieData={movie} key={movie.id} />;

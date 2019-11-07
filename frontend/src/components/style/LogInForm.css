@@ -1,0 +1,96 @@
+.logIn {
+  background: black;
+  border: solid white 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2px;
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+}
+.logInInput {
+  margin-top: 1%;
+  margin-bottom: 3%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 2px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+}
+.label {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+.submitButton {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: white;
+  background-color: red;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+}
+.buttonClose {
+  color: white;
+  position: fixed;
+  margin: auto;
+}
+.form {
+  color: red;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.signUp {
+  background: black;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .logIn  {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .logIn  {
+    width: 70%;
+  }
+
+    .submitButton  {
+    margin-left: 60%;
+    margin-right: 25%;
+    margin-top: 3%;
+  }
+}
+@media screen and (min-width: 1000px) {
+   .logIn  {
+    width: 70%;
+  }
+
+  .submitButton  {
+    margin-left: 60%;
+    margin-right: 25%;
+    margin-top: 3%;
+  }
+}

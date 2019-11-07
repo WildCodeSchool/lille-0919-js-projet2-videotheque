@@ -2,6 +2,7 @@ import React from "react";
 import "./style/topBar.css";
 import "./style/SlideSearchFunction.css";
 import GenreList from "./GenreList";
+import Modal from "./Modal";
 import { NavLink } from "react-router-dom";
 
 class TopBar extends React.Component {
@@ -16,21 +17,21 @@ class TopBar extends React.Component {
       <header className="topBar">
         <nav className="topBarNavigation">
           <div className="topBarLogo">
-            <NavLink activeClassName="active" to="/">
-              MyMovies
+            <NavLink activeClassName="active flex" to="/">
+              <img
+                className="logo"
+                src="/pictures/logoMyMovies.png"
+                alt="logo"
+              />
+
+              <h1>MyMovies</h1>
             </NavLink>
           </div>
           <div className="spacer" />
           <div className="topBarNavigationItems">
             <ul>
               <li>
-                <NavLink activeClassName="active" to="/">
-                  <img
-                    id="logoUser"
-                    alt="logoUser"
-                    src="/pictures/logoUser.jpg"
-                  />
-                </NavLink>
+                <Modal />
               </li>
               <li>
                 <button
@@ -39,13 +40,17 @@ class TopBar extends React.Component {
                     let newSearching = !this.state.searching;
                     this.setState({ searching: newSearching });
                   }}
-                >
-                  <img
-                    id="pictoLoupe"
-                    alt="pictoLoupe"
-                    src="/pictures/pictoLoupe.png"
-                  />
-                </button>
+                />
+                <img
+                  id="pictoLoupe"
+                  alt="pictoLoupe"
+                  src="/pictures/pictoLoupe.png"
+                  className="searchBarButton"
+                  onClick={event => {
+                    let newSearching = !this.state.searching;
+                    this.setState({ searching: newSearching });
+                  }}
+                />
                 <div
                   className={
                     this.state.searching ? "noEntrySearch" : "movieGenre"
