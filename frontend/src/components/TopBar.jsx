@@ -20,7 +20,7 @@ class TopBar extends React.Component {
             <NavLink activeClassName="active" to="/">
               <img
                 className="logo"
-                src="pictures/logoMyMovies.png"
+                src="/pictures/logoMyMovies.png"
                 alt="logo"
               />
             </NavLink>
@@ -30,13 +30,6 @@ class TopBar extends React.Component {
           <div className="topBarNavigationItems">
             <ul>
               <li>
-                <NavLink activeClassName="active" to="/">
-                  <img
-                    id="logoUser"
-                    alt="logoUser"
-                    src="pictures/logoUser.png"
-                  />
-                </NavLink>
                 <Modal />
               </li>
               <li>
@@ -46,13 +39,17 @@ class TopBar extends React.Component {
                     let newSearching = !this.state.searching;
                     this.setState({ searching: newSearching });
                   }}
-                >
-                  <img
-                    id="pictoLoupe"
-                    alt="pictoLoupe"
-                    src="pictures/pictoLoupe.png"
-                  />
-                </button>
+                />
+                <img
+                  id="pictoLoupe"
+                  alt="pictoLoupe"
+                  src="/pictures/pictoLoupe.png"
+                  className="searchBarButton"
+                  onClick={event => {
+                    let newSearching = !this.state.searching;
+                    this.setState({ searching: newSearching });
+                  }}
+                />
                 <div
                   className={
                     this.state.searching ? "noEntrySearch" : "movieGenre"
