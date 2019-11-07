@@ -37,7 +37,7 @@ class MoviePageFilterByTitle extends React.Component {
       this.setState({ movieInfo: data });
     });
     Axios.get(
-      `http://api.themoviedb.org/3/movie/${id}/casts?api_key=495d98b77df65d47fbf7eba028518ed7`
+      `http://api.themoviedb.org/3/movie/${id}/credits?api_key=495d98b77df65d47fbf7eba028518ed7`
     ).then(({ data }) => {
       this.setState({ castInfo: data });
     });
@@ -103,7 +103,13 @@ class MoviePageFilterByTitle extends React.Component {
               <h2>{movieInfo.title}</h2>
               <p>
                 <span className="oneRedWord">By </span>
-                ...
+                {this.state.castInfo.crew
+                  .filter((person, i) => {
+                    return i === 1;
+                  })
+                  .map((person, i) => {
+                    return person.name;
+                  })}
               </p>
               <p>
                 <span className="oneRedWord">Genre </span>
