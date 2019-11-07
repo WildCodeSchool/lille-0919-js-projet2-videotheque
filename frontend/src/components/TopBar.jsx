@@ -28,7 +28,7 @@ class TopBar extends React.Component {
                   <img
                     id="logoUser"
                     alt="logoUser"
-                    src="pictures/logoUser.jpg"
+                    src="/pictures/logoUser.jpg"
                   />
                 </NavLink>
               </li>
@@ -43,7 +43,7 @@ class TopBar extends React.Component {
                   <img
                     id="pictoLoupe"
                     alt="pictoLoupe"
-                    src="pictures/pictoLoupe.png"
+                    src="/pictures/pictoLoupe.png"
                   />
                 </button>
                 <div
