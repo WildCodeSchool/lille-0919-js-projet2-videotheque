@@ -8,7 +8,6 @@
 }
 .ListMovies a {
   text-decoration: none;
-  width: 49%;
 }
 .ListMovies {
   display: flex;
