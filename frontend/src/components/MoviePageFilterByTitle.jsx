@@ -37,7 +37,7 @@ class MoviePageFilterByTitle extends React.Component {
       this.setState({ movieInfo: data });
     });
     Axios.get(
-      `http://api.themoviedb.org/3/movie/${id}/casts?api_key=495d98b77df65d47fbf7eba028518ed7`
+      `http://api.themoviedb.org/3/movie/${id}/credits?api_key=495d98b77df65d47fbf7eba028518ed7`
     ).then(({ data }) => {
       this.setState({ castInfo: data });
     });
@@ -68,7 +68,7 @@ class MoviePageFilterByTitle extends React.Component {
         </Modal>
         <div id="movieTrailerContainer" onClick={this.toggleModal}>
           <img
-            src={movieInfo.trailerThumb}
+            src={`https://image.tmdb.org/t/p/w500/${movieInfo.backdrop_path}`}
             className="trailerThumb"
             alt={this.props.trailerThumb}
           />
@@ -103,11 +103,13 @@ class MoviePageFilterByTitle extends React.Component {
               <h2>{movieInfo.title}</h2>
               <p>
                 <span className="oneRedWord">By </span>
-                ...
-              </p>
-              <p>
-                <span className="oneRedWord">With </span>
-                {this.props.with}...
+                {this.state.castInfo.crew
+                  .filter((person, i) => {
+                    return i === 1;
+                  })
+                  .map((person, i) => {
+                    return person.name;
+                  })}
               </p>
               <p>
                 <span className="oneRedWord">Genre </span>
@@ -142,13 +144,13 @@ class MoviePageFilterByTitle extends React.Component {
               />
             </div>
           </div>
-          <div id="synopsisContainer">
-            <hr />
-            <h3>Synopsis</h3>
-            <p>{movieInfo.overview}</p>
-          </div>
-          <ActorsList castInfo={this.state.castInfo} />
         </div>
+        <div id="synopsisContainer">
+          <hr />
+          <h3>Synopsis</h3>
+          <p>{movieInfo.overview}</p>
+        </div>
+        <ActorsList castInfo={this.state.castInfo} />
       </div>
     );
   }

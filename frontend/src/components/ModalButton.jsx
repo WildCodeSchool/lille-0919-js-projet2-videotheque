@@ -3,9 +3,14 @@ import React from "react";
 function ModalButton(props) {
   const { toggleModal } = props;
   return (
-    <button onClick={() => toggleModal()}>
-      <img id="logoUser" alt="logoUser" src="pictures/logoUser.jpg" />
-    </button>
+    <div>
+      <img
+        id="logoUser"
+        alt="logoUser"
+        src="/pictures/logoUser.png"
+        onClick={() => toggleModal()}
+      />
+    </div>
   );
 }
 
