@@ -26,6 +26,8 @@ class MoviePageFilterByTitle extends React.Component {
       modalIsOpen: false,
       img: "/pictures/play.png"
     };
+
+    this.toggleModal = this.toggleModal.bind(this);
   }
 
   toggleModal = () => {
@@ -61,8 +63,8 @@ class MoviePageFilterByTitle extends React.Component {
           ariaHideApp={false}
           isOpen={this.state.modalIsOpen}
           className="modalStyle"
-          contentLabel="Example Modal"
-          onRequestClose={this.closeModal}
+          contentLabel="Trailer Modal"
+          onRequestClose={this.toggleModal}
         >
           <iframe
             src={`https://www.youtube-nocookie.com/embed/${videoInfo.results
