@@ -42,6 +42,8 @@ class ListMovies extends React.Component {
         let myGenre = data.genres.filter(genre => {
           return genre.name === this.props.match.params.genreName;
         });
+        let myGenreName = myGenre[0].name;
+        this.setState({ genreName: myGenreName });
         myGenre = myGenre[0].id;
         console.log(myGenre);
         this.setState({
@@ -53,7 +55,7 @@ class ListMovies extends React.Component {
   render() {
     return (
       <div className="ListMovies">
-        <h1>Horror Movies</h1>
+        <h1>{this.state.genreName} Movies</h1>
         {this.state.movies
           .filter(movie => {
             return movie.genre_ids.includes(this.state.genreId);
@@ -62,7 +64,7 @@ class ListMovies extends React.Component {
             <Movie
               key={movie.id}
               id={movie.id}
-              title={movie.original_title}
+              title={movie.title}
               genre={movie.genre_ids}
               release={movie.release_date}
               picture={movie.poster_path}
