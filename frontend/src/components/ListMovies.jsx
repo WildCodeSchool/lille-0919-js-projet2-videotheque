@@ -2,7 +2,6 @@ import React from "react";
 import Movie from "./Movie";
 import axios from "axios";
 import "./style/ListMovies.css";
-//import { useParams } from "react-router-dom";
 
 class ListMovies extends React.Component {
   constructor(props) {
