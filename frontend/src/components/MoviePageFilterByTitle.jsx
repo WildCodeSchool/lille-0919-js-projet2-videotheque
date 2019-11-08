@@ -77,7 +77,7 @@ class MoviePageFilterByTitle extends React.Component {
               })}`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            allowFullScreen="1"
           ></iframe>
           <button className="closeTrailer" onClick={this.toggleModal}>
             close
