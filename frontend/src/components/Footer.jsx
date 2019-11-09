@@ -16,7 +16,7 @@ function Footer() {
           <Link to="/">
             <img
               className="twitter"
-              src="./pictures/twitter.svg"
+              src="/pictures/twitter.svg"
               alt="twitter"
             />
           </Link>

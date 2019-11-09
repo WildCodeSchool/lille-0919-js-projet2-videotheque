@@ -20,9 +20,14 @@ class MoviePageFilterByTitle extends React.Component {
         cast: [],
         crew: []
       },
+      videoInfo: {
+        results: [""]
+      },
       modalIsOpen: false,
       img: "/pictures/play.png"
     };
+
+    this.toggleModal = this.toggleModal.bind(this);
   }
 
   toggleModal = () => {
@@ -41,23 +46,35 @@ class MoviePageFilterByTitle extends React.Component {
     ).then(({ data }) => {
       this.setState({ castInfo: data });
     });
+    Axios.get(
+      `http://api.themoviedb.org/3/movie/${id}/videos?api_key=495d98b77df65d47fbf7eba028518ed7`
+    ).then(({ data }) => {
+      this.setState({ videoInfo: data });
+    });
   };
 
   render() {
-    //const {movieInfo} = this.state;
     const movieInfo = this.state.movieInfo;
+    const videoInfo = this.state.videoInfo;
+
     return (
       <div id="around">
         <Modal
           ariaHideApp={false}
           isOpen={this.state.modalIsOpen}
           className="modalStyle"
-          contentLabel="Example Modal"
-          onRequestClose={this.closeModal}
+          contentLabel="Trailer Modal"
+          onRequestClose={this.toggleModal}
         >
           <iframe
-            title="modal"
-            src={this.props.trailer}
+            title="Trailer"
+            src={`https://www.youtube-nocookie.com/embed/${videoInfo.results
+              .filter((video, i) => {
+                return i === 1;
+              })
+              .map((video, i) => {
+                return video.key;
+              })}`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen="1"
@@ -70,7 +87,7 @@ class MoviePageFilterByTitle extends React.Component {
           <img
             src={`https://image.tmdb.org/t/p/original/${movieInfo.backdrop_path}`}
             className="trailerThumb"
-            alt={this.props.trailerThumb}
+            alt={movieInfo.title}
           />
           <div>
             <img
