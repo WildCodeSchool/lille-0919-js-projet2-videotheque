@@ -22,9 +22,10 @@ class App extends React.Component {
   };
 
   render() {
+    console.log(this.state);
     return (
       <div className="App">
-        <TopBar />
+        <TopBar handleLogIn={this.handleLogIn} />
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route path="/movieSheet/:id" component={MoviePageFilterByTitle} />

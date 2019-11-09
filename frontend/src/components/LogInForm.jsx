@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style/LogInForm.css";
+import axios from "axios";
 
 class LogInForm extends React.Component {
   constructor(props) {
@@ -12,6 +13,23 @@ class LogInForm extends React.Component {
   }
   handleSubmit = e => {
     e.preventDefault();
+    axios.get("http://localhost:5000/users").then(result => {
+      const found = result.data.find(user => {
+        return user.username === this.state.username;
+      });
+      if (found) {
+        if (found.password === this.state.password) {
+          console.log("Yay! Logging you in.");
+          this.props.handleLogIn(found);
+        } else {
+          console.log("Incorrect password.");
+          this.setState({ username: "", password: "" });
+        }
+      } else {
+        console.log("User not found.");
+        this.setState({ username: "", password: "" });
+      }
+    });
   };
 
   render() {

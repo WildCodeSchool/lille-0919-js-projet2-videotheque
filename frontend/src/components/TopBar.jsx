@@ -31,7 +31,7 @@ class TopBar extends React.Component {
           <div className="topBarNavigationItems">
             <ul>
               <li>
-                <Modal />
+                <Modal handleLogIn={this.props.handleLogIn} />
               </li>
               <li>
                 <button

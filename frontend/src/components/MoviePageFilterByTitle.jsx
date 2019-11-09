@@ -128,16 +128,19 @@ class MoviePageFilterByTitle extends React.Component {
             </div>
             <div className="movieIconsContainer">
               <img
+                onClick={() => this.addWatch}
                 id="moviePlusIcons"
                 src="/pictures/plusIcon.png"
                 alt="plusIcon"
               />
               <img
+                onClick={() => this.addFavorites}
                 id="movieLikeIcons"
                 src="/pictures/likeIcon.png"
                 alt="likeIcon"
               />
               <img
+                onClick={() => this.addTurnips}
                 id="movieNavetIcons"
                 src="/pictures/navetIcon.png"
                 alt="navetIcon"
