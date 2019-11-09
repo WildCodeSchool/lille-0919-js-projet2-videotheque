@@ -7,18 +7,23 @@ import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
 import "./App.css";
 import ListMovies from "./components/ListMovies";
 
-function App() {
-  return (
-    <div className="App">
-      <TopBar />
-      <Switch>
-        <Route exact path="/" component={MainPage} />
-        <Route path="/movieSheet/:id" component={MoviePageFilterByTitle} />
-        <Route path="/listMovies/:genreName" component={ListMovies} />
-      </Switch>
-      <Footer />
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div className="App">
+        <TopBar />
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route path="/movieSheet/:id" component={MoviePageFilterByTitle} />
+          <Route path="/listMovies/:genreName" component={ListMovies} />
+        </Switch>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
