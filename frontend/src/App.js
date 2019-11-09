@@ -10,7 +10,17 @@ import ListMovies from "./components/ListMovies";
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { isLoggedIn: false, user: {} };
   }
+
+  handleLogIn = userObject => {
+    this.setState({ user: userObject, isLoggedIn: true });
+  };
+
+  handleLogOut = () => {
+    this.setState({ user: {}, isLoggedIn: false });
+  };
+
   render() {
     return (
       <div className="App">
@@ -19,6 +29,7 @@ class App extends React.Component {
           <Route exact path="/" component={MainPage} />
           <Route path="/movieSheet/:id" component={MoviePageFilterByTitle} />
           <Route path="/listMovies/:genreName" component={ListMovies} />
+          {/*<Route path="/playlistUser/"component={playlistUser}/>*/}
         </Switch>
         <Footer />
       </div>
