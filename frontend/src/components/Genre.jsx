@@ -11,7 +11,9 @@ function Genre(props) {
           alt={props.genreName}
           src={`https://image.tmdb.org/t/p/w500${props.genreBackground}`}
         />
-        <h1>{props.genreName}</h1>
+        <div className="h1">
+          <h1>{props.genreName}</h1>
+        </div>
       </div>
     </Link>
   );
