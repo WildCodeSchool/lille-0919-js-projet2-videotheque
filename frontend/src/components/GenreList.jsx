@@ -28,7 +28,7 @@ class GenreList extends React.Component {
       })
       .then(() => {
         genres.map(genre => {
-          axios
+          return axios
             .get(
               `https://api.themoviedb.org/3/discover/movie?with_genres=${genre.id}&api_key=495d98b77df65d47fbf7eba028518ed7`
             )
