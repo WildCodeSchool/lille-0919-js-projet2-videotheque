@@ -5,20 +5,18 @@ import "./style/MainPageCard.css";
 class MainPageCard extends React.Component {
   render() {
     return (
-      <div>
-        <Link
-          to={`/movieSheet/${this.props.movieData.id}`}
-          className="div-poster"
-        >
-          <img
-            className="single-movie-poster"
-            src={`https://image.tmdb.org/t/p/w500/${this.props.movieData.poster_path}`}
-            alt={this.props.movieData.poster_path}
-            key={this.props.movieData.poster_path}
-            id={this.props.movieData.id}
-          />
-        </Link>
-      </div>
+      <Link
+        to={`/movieSheet/${this.props.movieData.id}`}
+        className="div-poster"
+      >
+        <img
+          className="single-movie-poster"
+          src={`https://image.tmdb.org/t/p/w500/${this.props.movieData.poster_path}`}
+          alt={this.props.movieData.poster_path}
+          key={this.props.movieData.poster_path}
+          id={this.props.movieData.id}
+        />
+      </Link>
     );
   }
 }

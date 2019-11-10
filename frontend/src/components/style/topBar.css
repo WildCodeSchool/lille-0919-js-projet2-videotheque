@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Staatliches%7CTitillium+Web:400,400i,600,600i,700,700i&display=swap");
-
+.flex {
+  display: flex;
+}
+.flex img {
+  width: 30px;
+  margin-right: 10px;
+}
 .topBar {
   position: fixed;
   width: 100%;
