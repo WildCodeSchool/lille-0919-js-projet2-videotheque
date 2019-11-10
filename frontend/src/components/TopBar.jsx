@@ -75,7 +75,7 @@ class TopBar extends React.Component {
                     <input
                       id="searchingBarre"
                       type="text"
-                      placeholder="Search.."
+                      placeholder="Search a Genre..."
                     ></input>
                     <GenreList
                       onClick={event => {
