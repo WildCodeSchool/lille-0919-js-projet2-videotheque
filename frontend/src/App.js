@@ -6,6 +6,7 @@ import { Switch, Route } from "react-router-dom";
 import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
 import "./App.css";
 import ListMovies from "./components/ListMovies";
+import UserAccount from "./components/UserAccount";
 
 class App extends React.Component {
   constructor(props) {
@@ -48,7 +49,17 @@ class App extends React.Component {
             )}
           />
           <Route path="/listMovies/:genreName" component={ListMovies} />
-          {/*<Route path="/playlistUser/"component={playlistUser}/>*/}
+          <Route
+            path="/userAccount"
+            render={props => (
+              <UserAccount
+                {...props}
+                user={this.state.user}
+                isLoggedIn={this.state.isLoggedIn}
+                updateUser={this.updateUser}
+              />
+            )}
+          />
         </Switch>
         <Footer />
       </div>
