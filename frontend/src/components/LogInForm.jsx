@@ -21,6 +21,7 @@ class LogInForm extends React.Component {
         if (found.password === this.state.password) {
           console.log("Yay! Logging you in.");
           this.props.handleLogIn(found);
+          this.props.toggleModal();
         } else {
           console.log("Incorrect password.");
           this.setState({ username: "", password: "" });
@@ -52,7 +53,7 @@ class LogInForm extends React.Component {
                     
           <input
             className="logInInput"
-            type="text"
+            type="password"
             placeholder="Password"
             value={this.state.password}
             onChange={event => {

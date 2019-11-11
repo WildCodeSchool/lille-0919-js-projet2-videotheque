@@ -6,7 +6,7 @@ function ModalContent({ toggleModal, handleLogIn }) {
   return (
     <aside className="modal-content">
       <div>
-        <LogInForm handleLogIn={handleLogIn} />
+        <LogInForm toggleModal={toggleModal} handleLogIn={handleLogIn} />
 
         <button className="buttonClose" onClick={() => toggleModal()}>
           Close
