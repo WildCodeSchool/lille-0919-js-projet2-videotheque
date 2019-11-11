@@ -55,23 +55,28 @@ class MoviePageFilterByTitle extends React.Component {
   };
 
   addIconsFunction = iconId => {
-    let iconType = "";
-    switch (iconId) {
-      case "toWatch":
-        iconType = iconId;
-        break;
-      case "favorite":
-        iconType = iconId;
-        break;
-      case "dislike":
-        iconType = iconId;
-        break;
-    }
-
     const { isLoggedIn, user } = this.props;
     if (isLoggedIn) {
+      let iconType = "";
+      let oldArray = [];
+      switch (iconId) {
+        case "toWatch":
+          iconType = "toWatchMovies";
+          oldArray = user.toWatchMovies;
+          break;
+        case "favorite":
+          iconType = "favoriteMovies";
+          oldArray = user.favoriteMovies;
+          break;
+        case "dislike":
+          iconType = "dislikeMovies";
+          oldArray = user.dislikeMovies;
+          break;
+        default:
+          break;
+      }
+
       const movieId = this.props.match.params.id;
-      const oldArray = user.favoriteMovies;
 
       if (oldArray.includes(movieId)) {
         console.log("Movie already in list.");
@@ -84,13 +89,13 @@ class MoviePageFilterByTitle extends React.Component {
         url: `http://localhost:5000/users/${user.id}`,
         headers: { "content-type": "application/json; charset=utf-8" },
         data: {
-          favoriteMovies: newArray
+          [iconType]: newArray
         }
       }).then(({ data }) => {
         this.props.updateUser(data);
       });
     } else {
-      console.log("PLease log in, connard!");
+      console.log("Please log in");
     }
   };
 
