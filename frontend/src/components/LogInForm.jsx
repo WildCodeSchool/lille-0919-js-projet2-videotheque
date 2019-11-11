@@ -22,6 +22,7 @@ class LogInForm extends React.Component {
           console.log("Yay! Logging you in.");
           this.props.handleLogIn(found);
           this.props.toggleModal();
+          // TODO - redirect to /userAccount
         } else {
           console.log("Incorrect password.");
           this.setState({ username: "", password: "" });

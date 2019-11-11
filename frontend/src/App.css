@@ -12,6 +12,10 @@
   z-index: 0;
 }
 
+#account-wrapper {
+  z-index: 5;
+}
+
 h2 {
   font-family: "Staatliches", cursive;
 }
