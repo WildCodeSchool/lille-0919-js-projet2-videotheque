@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "alice",
+      "password": "one",
+      "favoriteMovies": [
+        5,
+        "420818",
+        "301528",
+        "449924",
+        "420809"
+      ],
+      "toWatchMovies": [],
+      "dislikeMovies": []
+    }
+  ]
+}
