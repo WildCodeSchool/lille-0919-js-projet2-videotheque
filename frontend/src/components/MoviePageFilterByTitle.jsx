@@ -35,6 +35,7 @@ class MoviePageFilterByTitle extends React.Component {
   };
 
   componentDidMount = () => {
+    console.log(this.props);
     const id = this.props.match.params.id;
     Axios.get(
       `https://api.themoviedb.org/3/movie/${id}?api_key=495d98b77df65d47fbf7eba028518ed7`
@@ -53,7 +54,39 @@ class MoviePageFilterByTitle extends React.Component {
     });
   };
 
+  addFavorites = () => {
+    const { isLoggedIn, user } = this.props;
+    if (isLoggedIn) {
+      const movieId = this.props.match.params.id;
+      const oldArray = user.favoriteMovies;
+
+      if (oldArray.includes(movieId)) {
+        console.log("Movie already in list.");
+        return;
+      }
+      const newArray = [...oldArray, movieId];
+      // console.log({ newArray });
+      // console.log("user.id: ", user.id);
+
+      Axios({
+        method: "patch",
+        url: `http://localhost:5000/users/${user.id}`,
+        headers: { "content-type": "application/json; charset=utf-8" },
+        data: {
+          favoriteMovies: newArray
+        }
+      }).then(({ data }) => {
+        this.props.updateUser(data);
+      });
+    } else {
+      console.log("PLease log in, connard!");
+    }
+  };
+
   render() {
+    console.log(this.props.user);
+    //const {movieInfo} = this.state;
+
     const movieInfo = this.state.movieInfo;
     const videoInfo = this.state.videoInfo;
 
@@ -143,23 +176,29 @@ class MoviePageFilterByTitle extends React.Component {
                 {movieInfo.runtime} minutes
               </p>
             </div>
+
+            {/* {this.props.isLoggedIn && ( */}
             <div className="movieIconsContainer">
               <img
+                // onClick={() => this.addWatch()}
                 id="moviePlusIcons"
                 src="/pictures/plusIcon.png"
                 alt="plusIcon"
               />
               <img
+                onClick={() => this.addFavorites()}
                 id="movieLikeIcons"
                 src="/pictures/likeIcon.png"
                 alt="likeIcon"
               />
               <img
+                // onClick={() => this.addTurnips()}
                 id="movieNavetIcons"
                 src="/pictures/navetIcon.png"
                 alt="navetIcon"
               />
             </div>
+            {/* )} */}
           </div>
         </div>
         <div id="synopsisContainer">

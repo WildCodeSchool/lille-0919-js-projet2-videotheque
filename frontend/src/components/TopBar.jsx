@@ -30,8 +30,13 @@ class TopBar extends React.Component {
           <div className="spacer" />
           <div className="topBarNavigationItems">
             <ul>
+              {this.props.isLoggedIn && (
+                <li style={{ color: "white" }}>
+                  Logged in as: {this.props.user.username}
+                </li>
+              )}
               <li>
-                <Modal />
+                <Modal handleLogIn={this.props.handleLogIn} />
               </li>
               <li>
                 <button

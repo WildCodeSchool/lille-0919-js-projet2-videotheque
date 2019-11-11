@@ -2,11 +2,11 @@ import React from "react";
 import LogInForm from "./LogInForm";
 import "./style/LogInForm.css";
 
-function ModalContent({ toggleModal }) {
+function ModalContent({ toggleModal, handleLogIn }) {
   return (
     <aside className="modal-content">
       <div>
-        <LogInForm />
+        <LogInForm toggleModal={toggleModal} handleLogIn={handleLogIn} />
 
         <button className="buttonClose" onClick={() => toggleModal()}>
           Close
