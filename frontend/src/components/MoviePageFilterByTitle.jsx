@@ -54,7 +54,20 @@ class MoviePageFilterByTitle extends React.Component {
     });
   };
 
-  addFavorites = () => {
+  addIconsFunction = iconId => {
+    let iconType = "";
+    switch (iconId) {
+      case "toWatch":
+        iconType = iconId;
+        break;
+      case "favorite":
+        iconType = iconId;
+        break;
+      case "dislike":
+        iconType = iconId;
+        break;
+    }
+
     const { isLoggedIn, user } = this.props;
     if (isLoggedIn) {
       const movieId = this.props.match.params.id;
@@ -65,8 +78,6 @@ class MoviePageFilterByTitle extends React.Component {
         return;
       }
       const newArray = [...oldArray, movieId];
-      // console.log({ newArray });
-      // console.log("user.id: ", user.id);
 
       Axios({
         method: "patch",
@@ -180,22 +191,22 @@ class MoviePageFilterByTitle extends React.Component {
             {/* {this.props.isLoggedIn && ( */}
             <div className="movieIconsContainer">
               <img
-                // onClick={() => this.addWatch()}
                 id="moviePlusIcons"
                 src="/pictures/plusIcon.png"
                 alt="plusIcon"
+                onClick={() => this.addIconsFunction("toWatch")}
               />
               <img
-                onClick={() => this.addFavorites()}
                 id="movieLikeIcons"
                 src="/pictures/likeIcon.png"
                 alt="likeIcon"
+                onClick={() => this.addIconsFunction("favorite")}
               />
               <img
-                // onClick={() => this.addTurnips()}
                 id="movieNavetIcons"
                 src="/pictures/navetIcon.png"
                 alt="navetIcon"
+                onClick={() => this.addIconsFunction("dislike")}
               />
             </div>
             {/* )} */}
