@@ -7,14 +7,13 @@ function MoviePageFilterByTitle() {
     <div>
       {movieList
         .filter(movie => {
-          return movie.title === "Joker";
+          return movie.title === "Joker1";
         })
         .map(moviePage => (
           <MoviePage
             key={moviePage.title}
             title={moviePage.title}
             releasedDate={moviePage.releasedDate}
-            with={moviePage.with}
             by={moviePage.by}
             genre={moviePage.genre}
             duration={moviePage.duration}
