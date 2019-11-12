@@ -48,7 +48,6 @@ class LogInForm extends React.Component {
             }}
           />
           <label className="label">Password</label>
-                    
           <input
             className="logInInput"
             type="password"
