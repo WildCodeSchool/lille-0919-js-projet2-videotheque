@@ -34,6 +34,7 @@ class TopBar extends React.Component {
                 <li style={{ color: "white" }}>
                   Logged in as: {this.props.user.username}
                   <NavLink to="/userAccount">MyAccount</NavLink>
+                  <p onClick={() => this.props.handleLogOut()}>Log out</p>
                 </li>
               )}
               <li>
