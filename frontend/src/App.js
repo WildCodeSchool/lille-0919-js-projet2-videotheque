@@ -27,13 +27,13 @@ class App extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="App">
         <TopBar
           isLoggedIn={this.state.isLoggedIn}
           user={this.state.user}
           handleLogIn={this.handleLogIn}
+          handleLogOut={this.handleLogOut}
         />
         <Switch>
           <Route exact path="/" component={MainPage} />
