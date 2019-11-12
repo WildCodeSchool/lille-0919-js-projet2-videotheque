@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style/LogInForm.css";
 import axios from "axios";
 
@@ -13,16 +12,15 @@ class LogInForm extends React.Component {
   }
   handleSubmit = e => {
     e.preventDefault();
-    axios.get("http://localhost:5000/users").then(result => {
-      const found = result.data.find(user => {
+    axios.get("http://localhost:5000/users").then(arrayOfUsers => {
+      const found = arrayOfUsers.data.find(user => {
         return user.username === this.state.username;
       });
       if (found) {
         if (found.password === this.state.password) {
-          console.log("Yay! Logging you in.");
+          console.log("Ay, caramba! Logging you in.");
           this.props.handleLogIn(found);
           this.props.toggleModal();
-          // TODO - redirect to /userAccount
         } else {
           console.log("Incorrect password.");
           this.setState({ username: "", password: "" });
@@ -61,9 +59,9 @@ class LogInForm extends React.Component {
               this.setState({ password: event.target.value });
             }}
           />
-          <p className="signUp">
-            <Link to="/signInForm">Don't have an account yet? Sign Up!</Link>>
-          </p>{" "}
+          <p className="signUp" onClick={() => this.props.toggleSignUp()}>
+            Don't have an account yet? Sign Up!
+          </p>
                     
           <button type="submit" className="submitButton">
             Submit!
