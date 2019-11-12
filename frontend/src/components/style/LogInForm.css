@@ -5,17 +5,19 @@
   border-radius: 5px;
   position: fixed;
   width: 80vw;
-  height: 70vh;
+  height: 80vh;
   left: 10vw;
-  top: 15vh;
+  top: 60px;
 }
 h1 {
   color: red;
+  font-size: 2em;
+  font-family: "Staatliches", cursive;
   display: flex;
   justify-content: center;
   border-radius: 2px;
   font-weight: bold;
-  margin-top: 5%;
+  margin: 10vh 0 6vh;
 }
 form {
   display: flex;
@@ -27,6 +29,7 @@ form {
   margin-top: 3%;
   display: flex;
   justify-content: center;
+  font-family: "Heebo", sans-serif;
 }
 .logInInput {
   border-radius: 5px;
@@ -36,10 +39,11 @@ form {
   width: 90%;
 }
 .signUp {
-  margin: 5% 0;
+  margin: 5vh 0;
   color: white;
   text-align: center;
   text-decoration: underline;
+  font-family: "Heebo", sans-serif;
 }
 .submitButton {
   color: white;
@@ -51,9 +55,26 @@ form {
   width: 100px;
   margin: auto;
 }
-.buttonClose img {
+.buttonClose {
   position: fixed;
-  top: 100px;
-  margin: auto;
-  width: 30px;
+  top: 65px;
+  right: 10vw;
+  width: 55px;
+  border: none;
+}
+.buttonClose img {
+  width: 45px;
+}
+@media screen and (min-width: 700px) {
+  .logIn {
+    width: 50vw;
+    left: 25vw;
+  }
+  .logInInput {
+    margin: 2% 30% 3% 30%;
+    width: 40%;
+  }
+  .buttonClose {
+    right: 25vw;
+  }
 }

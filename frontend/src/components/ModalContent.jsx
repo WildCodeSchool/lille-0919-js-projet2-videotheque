@@ -33,7 +33,7 @@ class ModalContent extends React.Component {
           )}
 
           <button className="buttonClose" onClick={() => toggleModal()}>
-            Close
+            <img alt="close log In" src="/pictures/Red-Cross.png" />
           </button>
         </div>
       </aside>
