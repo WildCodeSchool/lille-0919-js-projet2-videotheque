@@ -5,8 +5,39 @@
   padding-top: 50px;
   margin-bottom: 10px;
   color: white;
+  margin: 70px auto auto 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#movieIconsPlusTitre {
+  display: flex;
+}
+#moviePlusIcons {
+  width: 15px;
+  height: 15px;
 }
 
 .movie-poster {
-  height: 200px;
+  background-size: cover;
+  height: 100px;
+  width: 80px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+li {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+button {
+  position: absolute;
+  margin-top: 80px;
+}
+h2 {
+  font-size: 20px;
 }

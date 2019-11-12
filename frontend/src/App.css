@@ -6,6 +6,14 @@
 
 .topBar {
   z-index: 1;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.Footer {
+  bottom: 0px;
+  position: fixed;
 }
 
 #movieTrailerContainer {

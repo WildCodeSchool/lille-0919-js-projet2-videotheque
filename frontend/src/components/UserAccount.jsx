@@ -103,9 +103,11 @@ class UserAccount extends React.Component {
   render() {
     return (
       <div id="account-wrapper">
-        <h1>MY LIBRARY</h1>
+        <div id="movieIconsPlusTitre">
+          <h2>To watch</h2>
+          <img id="moviePlusIcons" src="./pictures/plusIcon.png" alt="add" />
+        </div>
 
-        <h2>To watch movies</h2>
         <ul>
           {this.state.toWatchMovies.map(movie => {
             return (
@@ -124,8 +126,7 @@ class UserAccount extends React.Component {
             );
           })}
         </ul>
-
-        <h2>Favorite movies</h2>
+        <h2>Favorites</h2>
         <ul>
           {this.state.favoriteMovies.map(movie => {
             return (
@@ -144,8 +145,7 @@ class UserAccount extends React.Component {
             );
           })}
         </ul>
-
-        <h2>Dislike movies</h2>
+        <h2>Dislike</h2>
         <ul>
           {this.state.dislikeMovies.map(movie => {
             return (
