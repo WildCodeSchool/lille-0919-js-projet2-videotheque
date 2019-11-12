@@ -12,6 +12,9 @@ class TopBar extends React.Component {
       searching: true
     };
   }
+  openCloseSlide = () => {
+    this.setState({ searching: !this.state.searching });
+  };
   render() {
     return (
       <header className="topBar">
@@ -39,8 +42,7 @@ class TopBar extends React.Component {
                     this.state.searching ? "EntrySearch" : "noEntrySearch"
                   }`}
                   onClick={event => {
-                    let newSearching = !this.state.searching;
-                    this.setState({ searching: newSearching });
+                    this.openCloseSlide();
                   }}
                 >
                   <img
@@ -56,8 +58,7 @@ class TopBar extends React.Component {
                     this.state.searching ? "noEntrySearch" : "EntrySearch"
                   }`}
                   onClick={event => {
-                    let newSearching = !this.state.searching;
-                    this.setState({ searching: newSearching });
+                    this.openCloseSlide();
                   }}
                 >
                   <img id="close" alt="close" src="/pictures/Red-Cross.png" />
@@ -79,8 +80,7 @@ class TopBar extends React.Component {
                     ></input>
                     <GenreList
                       onClick={event => {
-                        let newSearching = !this.state.searching;
-                        this.setState({ searching: newSearching });
+                        this.openCloseSlide();
                       }}
                     />
                   </div>
