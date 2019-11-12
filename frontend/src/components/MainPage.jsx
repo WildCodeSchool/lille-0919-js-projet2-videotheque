@@ -3,6 +3,7 @@ import "./style/MainPage.css";
 import MainPageCard from "./MainPageCard";
 import axios from "axios";
 import Search from "./Search";
+import "./style/SearchBar.css";
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -57,12 +58,14 @@ class MainPage extends React.Component {
 
     return (
       <div className="main-homepage">
-        <div className="main-poster">
+        <div className="search-container">
           <Search
             query={query}
             onInput={this.onInput}
             placeholder="Search for Movie Title …"
           />
+        </div>
+        <div className="main-poster">
           {this.state.movies
             .sort((a, b) => a.movie1 > b.movie2)
             .map(movie => {
