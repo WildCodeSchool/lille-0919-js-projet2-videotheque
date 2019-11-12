@@ -1,6 +1,5 @@
 import React from "react";
 import "./PlaylistUser.css";
-import { Slide } from "react-slideshow-image";
 
 const slideImages = [
   "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/64/25/05/19199449.jpg",
@@ -12,16 +11,6 @@ const slideImages = [
   "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lbGzEyESjANpOeD48aROlc3X7aa.jpg",
   "http://fr.web.img2.acsta.net/c_215_290/medias/nmedia/18/35/41/59/18422600.jpg"
 ];
-
-const properties = {
-  infinite: true,
-  indicators: false,
-  arrows: false,
-
-  onChange: (oldIndex, newIndex) => {
-    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-  }
-};
 
 const Slideshow = () => {
   return (
@@ -37,62 +26,57 @@ const Slideshow = () => {
           <h1>favorites</h1>
         </div>
       </div>
-      <Slide {...properties}>
+
+      <div className="each-slideHidden">
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[2]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
-        </div>
-        <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[4]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[5]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[6]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[7]})` }}></div>
-        </div>
-      </Slide>
-      <div id="movieIconsPlusTitre">
-        <img id="moviePlusIcons" src="./plusIcon.png" alt="add" />
-        <div>
-          <h1>to see</h1>
         </div>
       </div>
 
-      <Slide {...properties}>
+      <div id="movieIconsPlusTitre">
+        <img id="moviePlusIcons" src="./plusIcon.png" alt="add" />
+        <div>
+          <h1>to watch</h1>
+        </div>
+      </div>
+      <div className="each-slideHidden">
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[2]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
-        </div>
-        <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[4]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[5]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[6]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[7]})` }}></div>
         </div>
-      </Slide>
+      </div>
+
       <div id="movieIconsNavetTitre">
         <img id="movieNavetIcons" src="./navetIcon.png" alt="navet" />
         <div>
           <h1>dislike</h1>
         </div>
       </div>
-
-      <Slide {...properties}>
+      <div className="each-slideHidden">
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[2]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
-        </div>
-        <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[4]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[5]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[6]})` }}></div>
           <div style={{ backgroundImage: `url(${slideImages[7]})` }}></div>
         </div>
-      </Slide>
+      </div>
     </div>
   );
 };

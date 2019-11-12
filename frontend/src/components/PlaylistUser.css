@@ -8,7 +8,7 @@
 .slide-container {
   margin: 70px auto auto 20px;
   display: flex;
-  justify-content: center;
+
   flex-direction: column;
 }
 
@@ -19,22 +19,54 @@
 }
 hr {
   margin: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background: linear-gradient(to left, rgb(231, 194, 194), rgb(165, 26, 26));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .each-slide > div {
-  display: inline-block;
   background-size: cover;
   height: 100px;
   width: 80px;
 }
+.each-slideHidden {
+  overflow: hidden;
+  width: 320px;
+}
 
 .each-slide {
-  height: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  width: calc(100px * 8);
+  display: flex;
+  animation: glisse 15s infinite;
+}
+
+#each-slide {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: Opx;
+  z-index: 10;
+  display: flex;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  13% {
+    transform: translateX(-100px);
+  }
+  26% {
+    transform: translateX(-200px);
+  }
+  52% {
+    transform: translateX(-400px);
+  }
+  104% {
+    transform: translateX(-500px);
+  }
 }
 
 #movieLikeIcons {
