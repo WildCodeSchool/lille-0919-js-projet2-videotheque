@@ -14,7 +14,6 @@ class TopBar extends React.Component {
   }
   openCloseSlide = () => {
     this.setState({ searching: !this.state.searching });
-    console.log(this.state.searching);
   };
   render() {
     return (
@@ -25,7 +24,7 @@ class TopBar extends React.Component {
               <img
                 className="logo"
                 src="/pictures/logoMyMovies.png"
-                alt="logo"
+                alt="back Home-Page"
               />
 
               <h1>MyMovies</h1>

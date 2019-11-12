@@ -58,6 +58,9 @@ class ListMovies extends React.Component {
           .filter(movie => {
             return movie.genre_ids.includes(this.state.genreId);
           })
+          .sort((date1, date2) => {
+            return date1.release_date < date2.release_date;
+          })
           .map(movie => (
             <Movie
               key={movie.id}
