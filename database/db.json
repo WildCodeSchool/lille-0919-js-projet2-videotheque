@@ -1,18 +1,51 @@
 {
   "users": [
     {
-      "id": 0,
-      "username": "alice",
-      "password": "one",
-      "favoriteMovies": [
-        5,
-        "420818",
-        "301528",
-        "449924",
-        "420809"
+      "id": 0
+    },
+    {
+      "username": "moi",
+      "password": "moi",
+      "toWatchMovies": [
+        "218"
       ],
-      "toWatchMovies": [],
-      "dislikeMovies": []
+      "favoriteMovies": [
+        "566057"
+      ],
+      "dislikeMovies": [
+        "384018"
+      ],
+      "id": 5
+    },
+    {
+      "username": "toi",
+      "password": "toi",
+      "toWatchMovies": [
+        "521777",
+        "245891"
+      ],
+      "favoriteMovies": [
+        "522162",
+        "420817"
+      ],
+      "dislikeMovies": [
+        "320288"
+      ],
+      "id": 8
+    },
+    {
+      "username": "alice",
+      "password": "alice",
+      "toWatchMovies": [
+        "420818"
+      ],
+      "favoriteMovies": [
+        "324857"
+      ],
+      "dislikeMovies": [
+        "245891"
+      ],
+      "id": 9
     }
   ]
 }
