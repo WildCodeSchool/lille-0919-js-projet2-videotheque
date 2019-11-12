@@ -54,7 +54,7 @@ class UserAccount extends React.Component {
     }).then(({ data }) => {
       this.props.updateUser(data);
       this.setState({ [typeCategory]: newStateList });
-      console.log(``);
+      this.props.notification("success", "Movie deleted from list");
     });
   };
 

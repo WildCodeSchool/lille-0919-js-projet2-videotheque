@@ -18,15 +18,14 @@ class LogInForm extends React.Component {
       });
       if (found) {
         if (found.password === this.state.password) {
-          console.log("Ay, caramba! Logging you in.");
           this.props.handleLogIn(found);
           this.props.toggleModal();
         } else {
-          console.log("Incorrect password.");
+          this.props.notification("error", "Wrong password,try again!");
           this.setState({ username: "", password: "" });
         }
       } else {
-        console.log("User not found.");
+        this.props.notification("error", "User not found,please sign up!");
         this.setState({ username: "", password: "" });
       }
     });

@@ -38,7 +38,10 @@ class TopBar extends React.Component {
                 </li>
               )}
               <li>
-                <Modal handleLogIn={this.props.handleLogIn} />
+                <Modal
+                  handleLogIn={this.props.handleLogIn}
+                  notification={this.props.notification}
+                />
               </li>
               <li>
                 <button
