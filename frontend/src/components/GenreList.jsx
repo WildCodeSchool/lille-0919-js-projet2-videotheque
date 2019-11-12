@@ -12,8 +12,6 @@ class GenreList extends React.Component {
   }
 
   componentDidMount() {
-    //this.callApi();
-
     this.getGenres();
   }
 
@@ -33,7 +31,7 @@ class GenreList extends React.Component {
               `https://api.themoviedb.org/3/discover/movie?with_genres=${genre.id}&api_key=495d98b77df65d47fbf7eba028518ed7`
             )
             .then(({ data }) => {
-              genre.img = data.results[11].backdrop_path;
+              genre.img = data.results[10].backdrop_path;
             });
         });
         this.setState({ genres: genres });

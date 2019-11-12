@@ -14,6 +14,7 @@ class TopBar extends React.Component {
   }
   openCloseSlide = () => {
     this.setState({ searching: !this.state.searching });
+    console.log(this.state.searching);
   };
   render() {
     return (
@@ -78,11 +79,13 @@ class TopBar extends React.Component {
                       type="text"
                       placeholder="Search a Genre..."
                     ></input>
-                    <GenreList
+                    <div
                       onClick={event => {
                         this.openCloseSlide();
                       }}
-                    />
+                    >
+                      <GenreList />
+                    </div>
                   </div>
                 </div>
               </li>
