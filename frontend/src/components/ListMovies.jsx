@@ -16,7 +16,7 @@ function ListMovies() {
         .map(movie => (
           <a href=" ">
             <Movie
-              key={movie.title}
+              key={movie.id}
               title={movie.title}
               genre={movie.genre}
               duration={movie.duration}
