@@ -26,8 +26,6 @@ class MoviePageFilterByTitle extends React.Component {
       modalIsOpen: false,
       img: "/pictures/play.png"
     };
-
-    this.toggleModal = this.toggleModal.bind(this);
   }
 
   toggleModal = () => {
@@ -91,8 +89,9 @@ class MoviePageFilterByTitle extends React.Component {
         data: {
           [iconType]: newArray
         }
-      }).then(({ data }) => {
-        this.props.updateUser(data);
+      }).then(receipt => {
+        console.log(`Movie #${movieId} has been added to the ${iconType}-list`);
+        this.props.updateUser(receipt.data);
       });
     } else {
       console.log("Please log in");
@@ -100,9 +99,6 @@ class MoviePageFilterByTitle extends React.Component {
   };
 
   render() {
-    console.log(this.props.user);
-    //const {movieInfo} = this.state;
-
     const movieInfo = this.state.movieInfo;
     const videoInfo = this.state.videoInfo;
 
@@ -193,28 +189,28 @@ class MoviePageFilterByTitle extends React.Component {
               </p>
             </div>
 
-            {/* {this.props.isLoggedIn && ( */}
-            <div className="movieIconsContainer">
-              <img
-                id="moviePlusIcons"
-                src="/pictures/plusIcon.png"
-                alt="plusIcon"
-                onClick={() => this.addIconsFunction("toWatch")}
-              />
-              <img
-                id="movieLikeIcons"
-                src="/pictures/likeIcon.png"
-                alt="likeIcon"
-                onClick={() => this.addIconsFunction("favorite")}
-              />
-              <img
-                id="movieNavetIcons"
-                src="/pictures/navetIcon.png"
-                alt="navetIcon"
-                onClick={() => this.addIconsFunction("dislike")}
-              />
-            </div>
-            {/* )} */}
+            {this.props.isLoggedIn && (
+              <div className="movieIconsContainer">
+                <img
+                  id="moviePlusIcons"
+                  src="/pictures/plusIcon.png"
+                  alt="plusIcon"
+                  onClick={() => this.addIconsFunction("toWatch")}
+                />
+                <img
+                  id="movieLikeIcons"
+                  src="/pictures/likeIcon.png"
+                  alt="likeIcon"
+                  onClick={() => this.addIconsFunction("favorite")}
+                />
+                <img
+                  id="movieNavetIcons"
+                  src="/pictures/navetIcon.png"
+                  alt="navetIcon"
+                  onClick={() => this.addIconsFunction("dislike")}
+                />
+              </div>
+            )}
           </div>
         </div>
         <div id="synopsisContainer">
