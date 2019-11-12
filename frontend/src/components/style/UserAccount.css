@@ -2,26 +2,54 @@
 
 #account-wrapper {
   height: auto;
-  padding-top: 50px;
   margin-bottom: 10px;
-  color: white;
-  margin: 70px auto auto 20px;
+  margin-top: 80px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 100%;
 }
+
+h1 {
+  font-size: 30px;
+  font-family: "Staatliches", cursive;
+  color: red;
+}
 #movieIconsPlusTitre {
+  display: flex;
+}
+#movieIconsFavTitre {
+  display: flex;
+}
+#movieIconsDislikeTitre {
   display: flex;
 }
 #moviePlusIcons {
   width: 15px;
   height: 15px;
+  margin-right: 4px;
+}
+#movieFavIcons {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+#movieDislikeIcons {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50px;
+  padding-top: 2px;
+  margin-right: 4px;
 }
 
 .movie-poster {
   background-size: cover;
   height: 100px;
   width: 80px;
+}
+.figure {
+  width: 80%;
 }
 
 ul {
@@ -31,13 +59,58 @@ ul {
 }
 li {
   display: flex;
-  overflow: hidden;
   margin-bottom: 20px;
 }
 button {
   position: absolute;
-  margin-top: 80px;
+  margin-top: 0px;
+  margin-left: 60px;
+  border-radius: 20%;
+  background-color: white;
+  border: none;
+  opacity: 0.4;
+  color: black;
+  cursor: pointer;
 }
+
 h2 {
   font-size: 20px;
+  font-family: "Staatliches", cursive;
+  margin-bottom: 5px;
+}
+#myMoviesLibrary {
+  margin-top: O;
+  margin-bottom: 30px;
+}
+hr {
+  margin: 0;
+}
+
+@media screen and (min-width: 960px) {
+  .slide-container {
+    width: 100%;
+  }
+
+  .ul {
+    height: 500px;
+    text-align: center;
+  }
+
+  #myMoviesLibrary h1 {
+    font-family: "Staatliches", cursive;
+    font-size: 40px;
+    color: rgb(165, 26, 26);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .movie-poster {
+    height: 230px;
+    width: 180px;
+  }
+  button {
+    margin-left: 160px;
+  }
+  hr {
+    display: none;
+  }
 }
