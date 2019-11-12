@@ -24,41 +24,32 @@ class MainPage extends React.Component {
   }
 
   componentDidMount() {
-    this.getMovie();
-  }
-
-  getMovie() {
-    for (let i = 1; i <= 2; i++) {
-      axios
-        .get(
-          `https://api.themoviedb.org/3/movie/popular?api_key=495d98b77df65d47fbf7eba028518ed7&language=en-US&page=${i}`
-        )
-        .then(({ data }) => {
-          const { results } = data;
-          let tmpMovies = this.state.movies;
-          tmpMovies.push(...results);
-          this.setState({
-            movies: tmpMovies
-          });
-        });
-    }
+    this.searchMovie();
   }
 
   searchMovie(query) {
     let url;
     if (query) {
-      url = `https://api.themoviedb.org/3/search/movie?query=${query}&api_key=495d98b77df65d47fbf7eba028518ed7`;
+      url = `https://api.themoviedb.org/3/search/movie?query=${query}&api_key=495d98b77df65d47fbf7eba028518ed7&language=en-US`;
     } else {
       url = `https://api.themoviedb.org/3/movie/popular?api_key=495d98b77df65d47fbf7eba028518ed7&language=en-US`;
     }
-
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        this.setState({
-          movies: data.results
-        });
+    for (let i = 1; i <= 2; i++) {
+      axios.get(url + `&page=${i}`).then(({ data }) => {
+        const { results } = data;
+        if (query) {
+          this.setState({
+            movies: data.results
+          });
+        } else {
+          let tmpMovies = this.state.movies;
+          tmpMovies.push(...results);
+          this.setState({
+            movies: tmpMovies
+          });
+        }
       });
+    }
   }
 
   render() {
@@ -72,9 +63,11 @@ class MainPage extends React.Component {
             onInput={this.onInput}
             placeholder="Search for Movie Title …"
           />
-          {this.state.movies.map(movie => {
-            return <MainPageCard movieData={movie} key={movie.id} />;
-          })}
+          {this.state.movies
+            .sort((a, b) => a.movie1 > b.movie2)
+            .map(movie => {
+              return <MainPageCard movieData={movie} key={movie.id} />;
+            })}
         </div>
       </div>
     );
