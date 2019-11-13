@@ -20,6 +20,7 @@ class Modal extends React.Component {
           <ModalContent
             toggleModal={this.toggleModal}
             handleLogIn={this.props.handleLogIn}
+            notification={this.props.notification}
           />
         )}
       </>

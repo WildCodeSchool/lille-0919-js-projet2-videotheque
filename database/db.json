@@ -6,15 +6,16 @@
     {
       "username": "moi",
       "password": "moi",
-      "toWatchMovies": [
-        "218"
-      ],
+      "toWatchMovies": [],
       "favoriteMovies": [
         "566057",
         "504949"
+        "420818",
+        "501170"
       ],
       "dislikeMovies": [
-        "384018"
+        "501170",
+        "420809"
       ],
       "id": 5
     },
@@ -41,12 +42,30 @@
         "420818"
       ],
       "favoriteMovies": [
-        "324857"
+        "324857",
+        "420818"
       ],
       "dislikeMovies": [
-        "245891"
+        "245891",
+        "420818"
       ],
       "id": 9
+    },
+    {
+      "username": "jeremy",
+      "password": "jeremy",
+      "toWatchMovies": [],
+      "favoriteMovies": [],
+      "dislikeMovies": [],
+      "id": 10
+    },
+    {
+      "username": "jeremy",
+      "password": "jeremy",
+      "toWatchMovies": [],
+      "favoriteMovies": [],
+      "dislikeMovies": [],
+      "id": 11
     }
   ]
 }

@@ -27,6 +27,7 @@ class SignUpForm extends React.Component {
     }).then(receipt => {
       this.props.handleLogIn(receipt.data);
       this.props.toggleModal();
+      this.props.notification("success", "You have signed up, welcome!");
     });
   };
 
