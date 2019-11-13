@@ -12,6 +12,9 @@
   z-index: 0;
 }
 
+#account-wrapper {
+  z-index: 5;
+}
 h1,
 h2,
 h3 {

@@ -26,8 +26,6 @@ class MoviePageFilterByTitle extends React.Component {
       modalIsOpen: false,
       img: "/pictures/play.png"
     };
-
-    this.toggleModal = this.toggleModal.bind(this);
   }
 
   toggleModal = () => {
@@ -51,6 +49,55 @@ class MoviePageFilterByTitle extends React.Component {
     ).then(({ data }) => {
       this.setState({ videoInfo: data });
     });
+  };
+
+  addIconsFunction = iconId => {
+    const { isLoggedIn, user } = this.props;
+
+    if (isLoggedIn) {
+      let iconType = "";
+      let oldArray = [];
+      switch (iconId) {
+        case "toWatch":
+          iconType = "toWatchMovies";
+          oldArray = user.toWatchMovies;
+
+          break;
+        case "favorite":
+          iconType = "favoriteMovies";
+          oldArray = user.favoriteMovies;
+          break;
+        case "dislike":
+          iconType = "dislikeMovies";
+          oldArray = user.dislikeMovies;
+          break;
+        default:
+          break;
+      }
+
+      const movieId = this.props.match.params.id;
+
+      if (oldArray.includes(movieId)) {
+        this.props.notification("warning", "Movie already in the list!");
+        return;
+      }
+
+      const newArray = [...oldArray, movieId];
+
+      Axios({
+        method: "patch",
+        url: `http://localhost:5000/users/${user.id}`,
+        headers: { "content-type": "application/json; charset=utf-8" },
+        data: {
+          [iconType]: newArray
+        }
+      }).then(receipt => {
+        this.props.notification("success", "Movie added in the list");
+        this.props.updateUser(receipt.data);
+      });
+    } else {
+      this.props.notification("warning", "Please, log in or sign up!");
+    }
   };
 
   render() {
@@ -143,23 +190,29 @@ class MoviePageFilterByTitle extends React.Component {
                 {movieInfo.runtime} minutes
               </p>
             </div>
-            <div className="movieIconsContainer">
-              <img
-                id="moviePlusIcons"
-                src="/pictures/plusIcon.png"
-                alt="plusIcon"
-              />
-              <img
-                id="movieLikeIcons"
-                src="/pictures/likeIcon.png"
-                alt="likeIcon"
-              />
-              <img
-                id="movieNavetIcons"
-                src="/pictures/navetIcon.png"
-                alt="navetIcon"
-              />
-            </div>
+
+            {this.props.isLoggedIn && (
+              <div className="movieIconsContainer">
+                <img
+                  id="moviePlusIcons"
+                  src="/pictures/plusIcon.png"
+                  alt="plusIcon"
+                  onClick={() => this.addIconsFunction("toWatch")}
+                />
+                <img
+                  id="movieLikeIcons"
+                  src="/pictures/likeIcon.png"
+                  alt="likeIcon"
+                  onClick={() => this.addIconsFunction("favorite")}
+                />
+                <img
+                  id="movieNavetIcons"
+                  src="/pictures/navetIcon.png"
+                  alt="navetIcon"
+                  onClick={() => this.addIconsFunction("dislike")}
+                />
+              </div>
+            )}
           </div>
         </div>
         <div id="synopsisContainer">
