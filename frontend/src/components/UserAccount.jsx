@@ -127,6 +127,7 @@ class UserAccount extends React.Component {
                       id={movie.id}
                     />
                     <button
+                      className="deletebutton"
                       onClick={() => this.deleteMovie(movie.id, "toWatch")}
                     >
                       x
@@ -155,6 +156,7 @@ class UserAccount extends React.Component {
                     id={movie.id}
                   />
                   <button
+                    className="deletebutton"
                     onClick={() => this.deleteMovie(movie.id, "favorite")}
                   >
                     x
@@ -184,7 +186,10 @@ class UserAccount extends React.Component {
                     key={movie.poster_path}
                     id={movie.id}
                   />
-                  <button onClick={() => this.deleteMovie(movie.id, "dislike")}>
+                  <button
+                    onClick={() => this.deleteMovie(movie.id, "dislike")}
+                    className="deletebutton"
+                  >
                     x
                   </button>
                 </li>

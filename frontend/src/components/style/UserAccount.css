@@ -63,7 +63,7 @@ li {
   display: flex;
   margin-bottom: 20px;
 }
-button {
+.deletebutton {
   position: absolute;
   margin-top: 0px;
   margin-left: 60px;
