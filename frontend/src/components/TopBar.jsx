@@ -4,6 +4,7 @@ import "./style/SlideSearchFunction.css";
 import GenreList from "./GenreList";
 import Modal from "./Modal";
 import { NavLink } from "react-router-dom";
+import Search from "./Search";
 
 class TopBar extends React.Component {
   constructor(props) {
@@ -73,11 +74,7 @@ class TopBar extends React.Component {
                       this.state.searching ? "noEntrySearch" : "enterYourSearch"
                     }
                   >
-                    <input
-                      id="searchingBarre"
-                      type="text"
-                      placeholder="Search a Genre..."
-                    ></input>
+                    <Search />
                     <div
                       onClick={event => {
                         this.openCloseSlide();
