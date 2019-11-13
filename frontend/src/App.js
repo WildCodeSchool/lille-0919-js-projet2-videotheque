@@ -6,12 +6,14 @@ import { Switch, Route } from "react-router-dom";
 import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
 import "./App.css";
 import ListMovies from "./components/ListMovies";
+
 import UserAccount from "./components/UserAccount";
 import {
   NotificationContainer,
   NotificationManager
 } from "react-notifications";
 import "react-notifications/lib/notifications.css";
+import { AnimatedSwitch } from "react-router-transition";
 
 class App extends React.Component {
   constructor(props) {
@@ -62,7 +64,15 @@ class App extends React.Component {
           handleLogOut={this.handleLogOut}
           notification={this.createNotification}
         />
+      
+      
         <Switch>
+            <AnimatedSwitch
+              atEnter={{ opacity: 0 }}
+              atLeave={{ opacity: 0 }}
+              atActive={{ opacity: 1 }}
+              className="switch-wrapper">
+      
           <Route exact path="/" component={MainPage} />
           <Route
             path="/movieSheet/:id"
@@ -89,6 +99,7 @@ class App extends React.Component {
               />
             )}
           />
+          </AnimatedSwitch>
         </Switch>
         <Footer />
 
