@@ -6,7 +6,14 @@ import { Switch, Route } from "react-router-dom";
 import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
 import "./App.css";
 import ListMovies from "./components/ListMovies";
+
 import UserAccount from "./components/UserAccount";
+import {
+  NotificationContainer,
+  NotificationManager
+} from "react-notifications";
+import "react-notifications/lib/notifications.css";
+import { AnimatedSwitch } from "react-router-transition";
 
 class App extends React.Component {
   constructor(props) {
@@ -26,6 +33,27 @@ class App extends React.Component {
     this.setState({ user: userObject });
   };
 
+  createNotification = (type, messageString, title) => {
+    const duration = 2000;
+    switch (type) {
+      case "success":
+        NotificationManager.success(messageString, title, duration);
+        break;
+      case "info":
+        NotificationManager.info(messageString, title, duration);
+        break;
+      case "warning":
+        NotificationManager.warning(messageString, title, duration);
+        break;
+      case "error":
+        NotificationManager.error(messageString, title, duration);
+        break;
+
+      default:
+        break;
+    }
+  };
+
   render() {
     return (
       <div className="App">
@@ -34,8 +62,17 @@ class App extends React.Component {
           user={this.state.user}
           handleLogIn={this.handleLogIn}
           handleLogOut={this.handleLogOut}
+          notification={this.createNotification}
         />
+      
+      
         <Switch>
+            <AnimatedSwitch
+              atEnter={{ opacity: 0 }}
+              atLeave={{ opacity: 0 }}
+              atActive={{ opacity: 1 }}
+              className="switch-wrapper">
+      
           <Route exact path="/" component={MainPage} />
           <Route
             path="/movieSheet/:id"
@@ -45,6 +82,7 @@ class App extends React.Component {
                 user={this.state.user}
                 isLoggedIn={this.state.isLoggedIn}
                 updateUser={this.updateUser}
+                notification={this.createNotification}
               />
             )}
           />
@@ -57,11 +95,15 @@ class App extends React.Component {
                 user={this.state.user}
                 isLoggedIn={this.state.isLoggedIn}
                 updateUser={this.updateUser}
+                notification={this.createNotification}
               />
             )}
           />
+          </AnimatedSwitch>
         </Switch>
         <Footer />
+
+        <NotificationContainer />
       </div>
     );
   }

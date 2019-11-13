@@ -6,7 +6,8 @@ class SignUpForm extends React.Component {
     super(props);
     this.state = {
       username: "",
-      password: ""
+      password: "",
+      avatar: ""
     };
   }
   handleSubmit = e => {
@@ -14,6 +15,7 @@ class SignUpForm extends React.Component {
     const newUser = {
       username: this.state.username,
       password: this.state.password,
+      avatar: this.state.avatar,
       toWatchMovies: [],
       favoriteMovies: [],
       dislikeMovies: []
@@ -27,6 +29,7 @@ class SignUpForm extends React.Component {
     }).then(receipt => {
       this.props.handleLogIn(receipt.data);
       this.props.toggleModal();
+      this.props.notification("success", "You have signed up, welcome!");
     });
   };
 

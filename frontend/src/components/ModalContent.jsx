@@ -14,7 +14,7 @@ class ModalContent extends React.Component {
   };
 
   render() {
-    const { toggleModal, handleLogIn } = this.props;
+    const { toggleModal, handleLogIn, notification } = this.props;
     return (
       <aside className="modal-content">
         <div>
@@ -23,17 +23,19 @@ class ModalContent extends React.Component {
               toggleSignUp={this.toggleSignUp}
               toggleModal={toggleModal}
               handleLogIn={handleLogIn}
+              notification={notification}
             />
           ) : (
             <LogInForm
               toggleSignUp={this.toggleSignUp}
               toggleModal={toggleModal}
               handleLogIn={handleLogIn}
+              notification={notification}
             />
           )}
 
           <button className="buttonClose" onClick={() => toggleModal()}>
-            Close
+            <img alt="close log In" src="/pictures/Red-Cross.png" />
           </button>
         </div>
       </aside>
