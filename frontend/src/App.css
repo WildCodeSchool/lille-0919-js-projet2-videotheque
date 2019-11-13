@@ -12,14 +12,12 @@
   z-index: 0;
 }
 
-h2 {
+h1,
+h2,
+h3 {
   font-family: "Staatliches", cursive;
 }
 
 p {
   font-family: "Heebo", sans-serif;
-}
-
-h3 {
-  font-family: "Staatliches", cursive;
 }

@@ -12,6 +12,9 @@ class TopBar extends React.Component {
       searching: true
     };
   }
+  openCloseSlide = () => {
+    this.setState({ searching: !this.state.searching });
+  };
   render() {
     return (
       <header className="topBar">
@@ -21,7 +24,7 @@ class TopBar extends React.Component {
               <img
                 className="logo"
                 src="/pictures/logoMyMovies.png"
-                alt="logo"
+                alt="back Home-Page"
               />
 
               <h1>MyMovies</h1>
@@ -35,30 +38,35 @@ class TopBar extends React.Component {
               </li>
               <li>
                 <button
-                  className="searchBarButton"
+                  className={`searchBarButton ${
+                    this.state.searching ? "EntrySearch" : "noEntrySearch"
+                  }`}
                   onClick={event => {
-                    let newSearching = !this.state.searching;
-                    this.setState({ searching: newSearching });
+                    this.openCloseSlide();
                   }}
-                />
-                <img
-                  id="pictoLoupe"
-                  alt="pictoLoupe"
-                  src="/pictures/pictoLoupe.png"
-                  className="searchBarButton"
+                >
+                  <img
+                    id="pictoLoupe"
+                    alt="pictoLoupe"
+                    src="/pictures/bobine-film.png"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  className={`searchBarButton ${
+                    this.state.searching ? "noEntrySearch" : "EntrySearch"
+                  }`}
                   onClick={event => {
-                    let newSearching = !this.state.searching;
-                    this.setState({ searching: newSearching });
+                    this.openCloseSlide();
                   }}
-                />
+                >
+                  <img id="close" alt="close" src="/pictures/Red-Cross.png" />
+                </button>
                 <div
                   className={
                     this.state.searching ? "noEntrySearch" : "movieGenre"
                   }
-                  onClick={event => {
-                    let newSearching = !this.state.searching;
-                    this.setState({ searching: newSearching });
-                  }}
                 >
                   <div
                     className={
@@ -68,9 +76,15 @@ class TopBar extends React.Component {
                     <input
                       id="searchingBarre"
                       type="text"
-                      placeholder="Search.."
+                      placeholder="Search a Genre..."
                     ></input>
-                    <GenreList />
+                    <div
+                      onClick={event => {
+                        this.openCloseSlide();
+                      }}
+                    >
+                      <GenreList />
+                    </div>
                   </div>
                 </div>
               </li>
