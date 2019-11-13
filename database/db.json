@@ -4,51 +4,31 @@
       "id": 0
     },
     {
-      "username": "moi",
-      "password": "moi",
-      "toWatchMovies": [],
-      "favoriteMovies": [
-        "566057",
-        "504949"
-        "420818",
-        "501170"
-      ],
-      "dislikeMovies": [
-        "501170",
-        "420809"
-      ],
-      "id": 5
+      "username": "alice",
+      "password": "alice",
+      "toWatchMovies": ["218"],
+      "favoriteMovies": ["566057"],
+      "dislikeMovies": ["384018"],
+      "id": 5,
+      "avatar": 
+
     },
+
     {
-      "username": "toi",
-      "password": "toi",
-      "toWatchMovies": [
-        "521777",
-        "245891"
-      ],
-      "favoriteMovies": [
-        "522162",
-        "420817"
-      ],
-      "dislikeMovies": [
-        "320288"
-      ],
+      "username": "laurent",
+      "password": "laurent",
+      "toWatchMovies": ["521777", "245891"],
+      "favoriteMovies": ["522162", "420817"],
+      "dislikeMovies": ["320288"],
       "id": 8
     },
     {
-      "username": "alice",
-      "password": "alice",
-      "toWatchMovies": [
-        "420818"
-      ],
-      "favoriteMovies": [
-        "324857",
-        "420818"
-      ],
-      "dislikeMovies": [
-        "245891",
-        "420818"
-      ],
+      "username": "nicolas",
+      "password": "nicolas",
+      "toWatchMovies": ["420818"],
+      "favoriteMovies": ["324857"],
+      "dislikeMovies": ["245891"],
+
       "id": 9
     },
     {
