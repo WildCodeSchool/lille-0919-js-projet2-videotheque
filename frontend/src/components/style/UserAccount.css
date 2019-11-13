@@ -28,11 +28,12 @@ h1 {
   width: 15px;
   height: 15px;
   margin-right: 4px;
+  margin-top: 1px;
 }
 #movieFavIcons {
   width: 18px;
   height: 18px;
-  margin-right: 4px;
+  margin-right: 2px;
 }
 #movieDislikeIcons {
   width: 15px;
@@ -40,7 +41,8 @@ h1 {
   background-color: white;
   border-radius: 50px;
   padding-top: 2px;
-  margin-right: 4px;
+  margin-right: 5px;
+  margin-top: 1px;
 }
 
 .movie-poster {
@@ -70,7 +72,6 @@ button {
   border: none;
   opacity: 0.4;
   color: black;
-  cursor: pointer;
 }
 
 h2 {
@@ -112,5 +113,26 @@ hr {
   }
   hr {
     display: none;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  #moviePlusIcons {
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+  }
+  #movieFavIcons {
+    width: 28px;
+    height: 28px;
+    margin-right: 4px;
+  }
+  #movieDislikeIcons {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50px;
+    padding-top: 2px;
+    margin-right: 4px;
   }
 }
