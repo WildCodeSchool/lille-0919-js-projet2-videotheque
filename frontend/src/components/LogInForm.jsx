@@ -18,15 +18,14 @@ class LogInForm extends React.Component {
       });
       if (found) {
         if (found.password === this.state.password) {
-          console.log("Ay, caramba! Logging you in.");
           this.props.handleLogIn(found);
           this.props.toggleModal();
         } else {
-          console.log("Incorrect password.");
+          this.props.notification("error", "Wrong password,try again!");
           this.setState({ username: "", password: "" });
         }
       } else {
-        console.log("User not found.");
+        this.props.notification("error", "User not found,please sign up!");
         this.setState({ username: "", password: "" });
       }
     });
@@ -35,10 +34,9 @@ class LogInForm extends React.Component {
   render() {
     return (
       <div className="logIn">
-        <h1 className="form">Log In</h1> 
-        <label className="label">Username</label>
-                   
+        <h1>Log In</h1>             
         <form onSubmit={e => this.handleSubmit(e)}>
+          <label className="label">Username</label>
           <input
             className="logInInput"
             type="text"
@@ -49,7 +47,6 @@ class LogInForm extends React.Component {
             }}
           />
           <label className="label">Password</label>
-                    
           <input
             className="logInInput"
             type="password"

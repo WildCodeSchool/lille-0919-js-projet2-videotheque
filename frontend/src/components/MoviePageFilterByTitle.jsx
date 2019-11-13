@@ -33,7 +33,6 @@ class MoviePageFilterByTitle extends React.Component {
   };
 
   componentDidMount = () => {
-    console.log(this.props);
     const id = this.props.match.params.id;
     Axios.get(
       `https://api.themoviedb.org/3/movie/${id}?api_key=495d98b77df65d47fbf7eba028518ed7`
@@ -54,6 +53,7 @@ class MoviePageFilterByTitle extends React.Component {
 
   addIconsFunction = iconId => {
     const { isLoggedIn, user } = this.props;
+
     if (isLoggedIn) {
       let iconType = "";
       let oldArray = [];
@@ -61,6 +61,7 @@ class MoviePageFilterByTitle extends React.Component {
         case "toWatch":
           iconType = "toWatchMovies";
           oldArray = user.toWatchMovies;
+
           break;
         case "favorite":
           iconType = "favoriteMovies";
@@ -77,9 +78,10 @@ class MoviePageFilterByTitle extends React.Component {
       const movieId = this.props.match.params.id;
 
       if (oldArray.includes(movieId)) {
-        console.log("Movie already in list.");
+        this.props.notification("warning", "Movie already in the list!");
         return;
       }
+
       const newArray = [...oldArray, movieId];
 
       Axios({
@@ -90,11 +92,11 @@ class MoviePageFilterByTitle extends React.Component {
           [iconType]: newArray
         }
       }).then(receipt => {
-        console.log(`Movie #${movieId} has been added to the ${iconType}-list`);
+        this.props.notification("success", "Movie added in the list");
         this.props.updateUser(receipt.data);
       });
     } else {
-      console.log("Please log in");
+      this.props.notification("warning", "Please, log in or sign up!");
     }
   };
 
@@ -130,7 +132,7 @@ class MoviePageFilterByTitle extends React.Component {
         </Modal>
         <div id="movieTrailerContainer" onClick={this.toggleModal}>
           <img
-            src={`https://image.tmdb.org/t/p/w500/${movieInfo.backdrop_path}`}
+            src={`https://image.tmdb.org/t/p/original/${movieInfo.backdrop_path}`}
             className="trailerThumb"
             alt={movieInfo.title}
           />

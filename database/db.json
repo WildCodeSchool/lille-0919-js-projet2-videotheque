@@ -11,6 +11,7 @@
       "dislikeMovies": ["384018"],
       "id": 5,
       "avatar": 
+
     },
 
     {
@@ -27,7 +28,24 @@
       "toWatchMovies": ["420818"],
       "favoriteMovies": ["324857"],
       "dislikeMovies": ["245891"],
+
       "id": 9
+    },
+    {
+      "username": "jeremy",
+      "password": "jeremy",
+      "toWatchMovies": [],
+      "favoriteMovies": [],
+      "dislikeMovies": [],
+      "id": 10
+    },
+    {
+      "username": "jeremy",
+      "password": "jeremy",
+      "toWatchMovies": [],
+      "favoriteMovies": [],
+      "dislikeMovies": [],
+      "id": 11
     }
   ]
 }
