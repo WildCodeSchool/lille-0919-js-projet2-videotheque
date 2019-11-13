@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style/UserAccount.css";
 import axios from "axios";
 
@@ -116,18 +117,22 @@ class UserAccount extends React.Component {
           <ul>
             {this.state.toWatchMovies.map(movie => {
               return (
-                <li>
-                  <img
-                    className="movie-poster"
-                    src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                    alt={movie.poster_path}
-                    key={movie.poster_path}
-                    id={movie.id}
-                  />
-                  <button onClick={() => this.deleteMovie(movie.id, "toWatch")}>
-                    x
-                  </button>
-                </li>
+                <Link to={`/movieSheet/${movie.id}`} className="div-poster">
+                  <li>
+                    <img
+                      className="movie-poster"
+                      src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                      alt={movie.poster_path}
+                      key={movie.poster_path}
+                      id={movie.id}
+                    />
+                    <button
+                      onClick={() => this.deleteMovie(movie.id, "toWatch")}
+                    >
+                      x
+                    </button>
+                  </li>
+                </Link>
               );
             })}
           </ul>
@@ -140,18 +145,22 @@ class UserAccount extends React.Component {
         <ul>
           {this.state.favoriteMovies.map(movie => {
             return (
-              <li>
-                <img
-                  className="movie-poster"
-                  src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                  alt={movie.poster_path}
-                  key={movie.poster_path}
-                  id={movie.id}
-                />
-                <button onClick={() => this.deleteMovie(movie.id, "favorite")}>
-                  x
-                </button>
-              </li>
+              <Link to={`/movieSheet/${movie.id}`} className="div-poster">
+                <li>
+                  <img
+                    className="movie-poster"
+                    src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                    alt={movie.poster_path}
+                    key={movie.poster_path}
+                    id={movie.id}
+                  />
+                  <button
+                    onClick={() => this.deleteMovie(movie.id, "favorite")}
+                  >
+                    x
+                  </button>
+                </li>
+              </Link>
             );
           })}
         </ul>
@@ -166,18 +175,20 @@ class UserAccount extends React.Component {
         <ul>
           {this.state.dislikeMovies.map(movie => {
             return (
-              <li>
-                <img
-                  className="movie-poster"
-                  src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                  alt={movie.poster_path}
-                  key={movie.poster_path}
-                  id={movie.id}
-                />
-                <button onClick={() => this.deleteMovie(movie.id, "dislike")}>
-                  x
-                </button>
-              </li>
+              <Link to={`/movieSheet/${movie.id}`} className="div-poster">
+                <li>
+                  <img
+                    className="movie-poster"
+                    src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                    alt={movie.poster_path}
+                    key={movie.poster_path}
+                    id={movie.id}
+                  />
+                  <button onClick={() => this.deleteMovie(movie.id, "dislike")}>
+                    x
+                  </button>
+                </li>
+              </Link>
             );
           })}
         </ul>
