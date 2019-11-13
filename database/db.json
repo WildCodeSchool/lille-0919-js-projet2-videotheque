@@ -4,12 +4,27 @@
       "id": 0
     },
     {
+
       "username": "alice",
       "password": "alice",
-      "toWatchMovies": ["218", "420809", "420817"],
-      "favoriteMovies": ["566057"],
-      "dislikeMovies": ["384018"],
-      "id": 5,
+      "toWatchMovies": [
+        "501170",
+        "245891",
+        "301528"
+      ],
+      "favoriteMovies": [
+        "496243",
+        "501170",
+        "475557",
+        "420818"
+      ],
+      "dislikeMovies": [
+        "499701",
+        "504949",
+        "299534",
+        "420809"
+      ],
+      "id": 5
       "avatar": "/pictures/troll.jpg"
     },
     {

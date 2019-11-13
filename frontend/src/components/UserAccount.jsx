@@ -103,29 +103,40 @@ class UserAccount extends React.Component {
   render() {
     return (
       <div id="account-wrapper">
-        <h1>MY LIBRARY</h1>
+        <div id="myMoviesLibrary">
+          <h1>My Library </h1>
+          <hr></hr>
+        </div>
+        <div id="movieIconsPlusTitre">
+          <img id="moviePlusIcons" src="./pictures/plusIcon.png" alt="add" />
 
-        <h2>To watch movies</h2>
-        <ul>
-          {this.state.toWatchMovies.map(movie => {
-            return (
-              <li>
-                <img
-                  className="movie-poster"
-                  src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                  alt={movie.poster_path}
-                  key={movie.poster_path}
-                  id={movie.id}
-                />
-                <button onClick={() => this.deleteMovie(movie.id, "toWatch")}>
-                  Delete
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+          <h2>To watch</h2>
+        </div>
+        <figure>
+          <ul>
+            {this.state.toWatchMovies.map(movie => {
+              return (
+                <li>
+                  <img
+                    className="movie-poster"
+                    src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                    alt={movie.poster_path}
+                    key={movie.poster_path}
+                    id={movie.id}
+                  />
+                  <button onClick={() => this.deleteMovie(movie.id, "toWatch")}>
+                    x
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </figure>
+        <div id="movieIconsFavTitre">
+          <img id="movieFavIcons" src="./pictures/likeIcon.png" alt="like" />
+          <h2>Favorites</h2>
+        </div>
 
-        <h2>Favorite movies</h2>
         <ul>
           {this.state.favoriteMovies.map(movie => {
             return (
@@ -138,14 +149,20 @@ class UserAccount extends React.Component {
                   id={movie.id}
                 />
                 <button onClick={() => this.deleteMovie(movie.id, "favorite")}>
-                  Delete
+                  x
                 </button>
               </li>
             );
           })}
         </ul>
-
-        <h2>Dislike movies</h2>
+        <div id="movieIconsDislikeTitre">
+          <img
+            id="movieDislikeIcons"
+            src="./pictures/dislikeIcon.png"
+            alt="Dislike"
+          />
+          <h2>Dislike</h2>
+        </div>
         <ul>
           {this.state.dislikeMovies.map(movie => {
             return (
@@ -158,7 +175,7 @@ class UserAccount extends React.Component {
                   id={movie.id}
                 />
                 <button onClick={() => this.deleteMovie(movie.id, "dislike")}>
-                  Delete
+                  x
                 </button>
               </li>
             );

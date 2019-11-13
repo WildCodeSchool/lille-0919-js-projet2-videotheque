@@ -207,7 +207,7 @@ class MoviePageFilterByTitle extends React.Component {
                 />
                 <img
                   id="movieNavetIcons"
-                  src="/pictures/navetIcon.png"
+                  src="/pictures/dislikeIcon.png"
                   alt="navetIcon"
                   onClick={() => this.addIconsFunction("dislike")}
                 />
