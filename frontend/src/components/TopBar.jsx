@@ -10,11 +10,18 @@ class TopBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searching: true
+      searching: true,
+      inputValue: ""
     };
   }
   openCloseSlide = () => {
     this.setState({ searching: !this.state.searching });
+  };
+  onInput = inputValue => {
+    this.setState({ inputValue });
+    console.log(
+      inputValue.charAt(0).toUpperCase() + inputValue.substring(1).toLowerCase()
+    );
   };
   render() {
     return (
@@ -74,13 +81,16 @@ class TopBar extends React.Component {
                       this.state.searching ? "noEntrySearch" : "enterYourSearch"
                     }
                   >
-                    <Search />
+                    <Search
+                      onInput={this.onInput}
+                      placeholder="Search a genre..."
+                    />
                     <div
                       onClick={event => {
                         this.openCloseSlide();
                       }}
                     >
-                      <GenreList />
+                      <GenreList input={this.state.inputValue} />
                     </div>
                   </div>
                 </div>

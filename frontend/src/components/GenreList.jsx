@@ -31,7 +31,7 @@ class GenreList extends React.Component {
               `https://api.themoviedb.org/3/discover/movie?with_genres=${genre.id}&api_key=495d98b77df65d47fbf7eba028518ed7`
             )
             .then(({ data }) => {
-              genre.img = data.results[10].backdrop_path;
+              genre.img = data.results[4].backdrop_path;
             });
         });
         this.setState({ genres: genres });
@@ -41,14 +41,19 @@ class GenreList extends React.Component {
   render() {
     return (
       <div className="genreList">
-        {this.state.genres.map(genre => (
-          <Genre
-            key={genre.id}
-            idGenre={genre.id}
-            genreName={genre.name}
-            genreBackground={genre.img}
-          />
-        ))}
+        {this.state.genres
+          .filter(genre => {
+            const name = genre.name.toLowerCase();
+            return name.includes(`${this.props.input.toLowerCase()}`);
+          })
+          .map(genre => (
+            <Genre
+              key={genre.id}
+              idGenre={genre.id}
+              genreName={genre.name}
+              genreBackground={genre.img}
+            />
+          ))}
       </div>
     );
   }
