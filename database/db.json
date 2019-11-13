@@ -6,28 +6,51 @@
     {
       "username": "alice",
       "password": "alice",
-      "toWatchMovies": ["218"],
-      "favoriteMovies": ["566057"],
-      "dislikeMovies": ["384018"],
+      "toWatchMovies": [
+        "218",
+        "420809",
+        "420817"
+      ],
+      "favoriteMovies": [
+        "566057"
+      ],
+      "dislikeMovies": [
+        "384018"
+      ],
       "id": 5,
-      "avatar": 
+      "avatar": "/pictures/troll.jpg"
     },
-
     {
       "username": "laurent",
       "password": "laurent",
-      "toWatchMovies": ["521777", "245891"],
-      "favoriteMovies": ["522162", "420817"],
-      "dislikeMovies": ["320288"],
-      "id": 8
+      "toWatchMovies": [
+        "521777",
+        "245891"
+      ],
+      "favoriteMovies": [
+        "522162",
+        "420817"
+      ],
+      "dislikeMovies": [
+        "320288"
+      ],
+      "id": 8,
+      "avatar": "/pictures/viking.jpg"
     },
     {
       "username": "nicolas",
       "password": "nicolas",
-      "toWatchMovies": ["420818"],
-      "favoriteMovies": ["324857"],
-      "dislikeMovies": ["245891"],
-      "id": 9
+      "toWatchMovies": [
+        "420818"
+      ],
+      "favoriteMovies": [
+        "324857"
+      ],
+      "dislikeMovies": [
+        "245891"
+      ],
+      "id": 9,
+      "avatar": "/pictures/ancylostoma-duodenale.jpg"
     }
   ]
 }
