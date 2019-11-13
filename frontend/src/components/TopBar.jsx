@@ -27,7 +27,7 @@ class TopBar extends React.Component {
                 alt="back Home-Page"
               />
 
-              <h1>MyMovies</h1>
+              <h1 className="title-Mymovies">MyMovies</h1>
             </NavLink>
           </div>
           <div className="spacer" />

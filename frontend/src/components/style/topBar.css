@@ -38,7 +38,7 @@ header #close {
   width: 120px;
 }
 
-.topBarLogo h1 {
+.topBarLogo .title-Mymovies {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
@@ -88,4 +88,8 @@ header #close {
   width: 40px;
   height: 40px;
   border-radius: 30px;
+}
+
+.title-Mymovies {
+  margin: auto;
 }
