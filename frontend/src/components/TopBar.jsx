@@ -48,7 +48,7 @@ class TopBar extends React.Component {
                   <img
                     id="pictoLoupe"
                     alt="pictoLoupe"
-                    src="/pictures/pictoLoupe.png"
+                    src="/pictures/bobine-film.png"
                   />
                 </button>
               </li>
