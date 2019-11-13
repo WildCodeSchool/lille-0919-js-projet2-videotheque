@@ -31,30 +31,38 @@ class MainPage extends React.Component {
   searchMovie(query) {
     let url;
     if (query) {
-      url = `https://api.themoviedb.org/3/search/movie?query=${query}&api_key=495d98b77df65d47fbf7eba028518ed7&language=en-US`;
-    } else {
-      url = `https://api.themoviedb.org/3/movie/popular?api_key=495d98b77df65d47fbf7eba028518ed7&language=en-US`;
-    }
-    for (let i = 1; i <= 2; i++) {
-      axios.get(url + `&page=${i}`).then(({ data }) => {
+      url = `https://api.themoviedb.org/3/search/movie?query=${query}&api_key=495d98b77df65d47fbf7eba028518ed7&language=en-US&include_adult=false`;
+      axios.get(url).then(({ data }) => {
         const { results } = data;
-        if (query) {
-          this.setState({
-            movies: data.results
-          });
-        } else {
-          let tmpMovies = this.state.movies;
-          tmpMovies.push(...results);
-          this.setState({
-            movies: tmpMovies
-          });
-        }
+        this.setState({
+          movies: data.results
+        });
       });
+    } else {
+      for (let i = 1; i <= 2; i++) {
+        url = `https://api.themoviedb.org/3/movie/popular?api_key=495d98b77df65d47fbf7eba028518ed7&language=en-US`;
+        axios.get(url + `&page=${i}`).then(({ data }) => {
+          const { results } = data;
+          if (query) {
+            this.setState({
+              movies: data.results
+            });
+          } else {
+            let tmpMovies = this.state.movies;
+            tmpMovies.push(...results);
+            this.setState({
+              movies: tmpMovies
+            });
+          }
+        });
+      }
     }
   }
 
   render() {
-    const { query } = this.state;
+    const { movies, query } = this.state;
+    const isSearched = query => item =>
+      !query || item.title.toLowerCase().includes(query.toLowerCase());
 
     return (
       <div className="main-homepage">
@@ -67,9 +75,20 @@ class MainPage extends React.Component {
         </div>
         <div className="main-poster">
           {this.state.movies
+            .filter(movie => {
+              return (
+                movie.title.includes !== "porn", movie.poster_path !== null
+              );
+            })
             .sort((a, b) => a.movie1 > b.movie2)
             .map(movie => {
-              return <MainPageCard movieData={movie} key={movie.id} />;
+              return (
+                <MainPageCard
+                  movieData={movie}
+                  key={movie.id}
+                  movies={movies.filter(isSearched(query))}
+                />
+              );
             })}
         </div>
       </div>
