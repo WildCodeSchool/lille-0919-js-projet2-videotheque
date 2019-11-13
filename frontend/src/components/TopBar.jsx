@@ -36,7 +36,11 @@ class TopBar extends React.Component {
               {this.props.isLoggedIn && (
                 <li style={{ color: "white" }}>
                   <NavLink to="/userAccount">
-                    <img id="avatarPicture" src={this.props.user.avatar}></img>
+                    <img
+                      id="avatarPicture"
+                      src={this.props.user.avatar}
+                      alt="avatarPicture"
+                    ></img>
                   </NavLink>
                   <p onClick={() => this.props.handleLogOut()}>Log out</p>
                 </li>
