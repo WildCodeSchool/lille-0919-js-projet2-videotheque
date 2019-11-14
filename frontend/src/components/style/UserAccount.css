@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-h1 {
+#account-wrapper h1 {
   font-size: 30px;
   font-family: "Staatliches", cursive;
   color: red;
