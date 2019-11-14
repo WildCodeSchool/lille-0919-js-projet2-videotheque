@@ -117,7 +117,11 @@ class UserAccount extends React.Component {
           <ul>
             {this.state.toWatchMovies.map(movie => {
               return (
-                <Link to={`/movieSheet/${movie.id}`} className="div-poster">
+                <Link
+                  to={`/movieSheet/${movie.id}`}
+                  className="div-poster"
+                  key={movie.id}
+                >
                   <li>
                     <img
                       className="movie-poster"
@@ -146,7 +150,11 @@ class UserAccount extends React.Component {
         <ul>
           {this.state.favoriteMovies.map(movie => {
             return (
-              <Link to={`/movieSheet/${movie.id}`} className="div-poster">
+              <Link
+                to={`/movieSheet/${movie.id}`}
+                className="div-poster"
+                key={movie.id}
+              >
                 <li>
                   <img
                     className="movie-poster"
@@ -177,7 +185,11 @@ class UserAccount extends React.Component {
         <ul>
           {this.state.dislikeMovies.map(movie => {
             return (
-              <Link to={`/movieSheet/${movie.id}`} className="div-poster">
+              <Link
+                to={`/movieSheet/${movie.id}`}
+                className="div-poster"
+                key={movie.id}
+              >
                 <li>
                   <img
                     className="movie-poster"
