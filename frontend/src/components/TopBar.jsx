@@ -33,20 +33,27 @@ class TopBar extends React.Component {
           <div className="spacer" />
           <div className="topBarNavigationItems">
             <ul>
-              {this.props.isLoggedIn && (
+              {this.props.isLoggedIn ? (
                 <li style={{ color: "white" }}>
                   <NavLink to="/userAccount">
                     <img id="avatarPicture" src={this.props.user.avatar}></img>
                   </NavLink>
-                  <p onClick={() => this.props.handleLogOut()}>Log out</p>
+                  <button
+                    id="logOutButton"
+                    onClick={() => this.props.handleLogOut()}
+                  >
+                    Log out
+                  </button>
+                </li>
+              ) : (
+                <li>
+                  <Modal
+                    handleLogIn={this.props.handleLogIn}
+                    notification={this.props.notification}
+                  />
                 </li>
               )}
-              <li>
-                <Modal
-                  handleLogIn={this.props.handleLogIn}
-                  notification={this.props.notification}
-                />
-              </li>
+
               <li>
                 <button
                   className={`searchBarButton ${

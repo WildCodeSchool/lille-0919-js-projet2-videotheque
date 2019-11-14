@@ -89,3 +89,8 @@ header #close {
   height: 40px;
   border-radius: 30px;
 }
+#logOutButton {
+  background-color: black;
+  color: white;
+  border: none;
+}
