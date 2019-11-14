@@ -92,7 +92,8 @@ header #close {
   height: 40px;
   border-radius: 30px;
 }
-
-.title-Mymovies {
-  margin: auto;
+#logOutButton {
+  background-color: black;
+  color: white;
+  border: none;
 }

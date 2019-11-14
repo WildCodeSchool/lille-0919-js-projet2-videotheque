@@ -64,41 +64,40 @@ class App extends React.Component {
           handleLogOut={this.handleLogOut}
           notification={this.createNotification}
         />
-      
-      
+
         <Switch>
-            <AnimatedSwitch
-              atEnter={{ opacity: 0 }}
-              atLeave={{ opacity: 0 }}
-              atActive={{ opacity: 1 }}
-              className="switch-wrapper">
-      
-          <Route exact path="/" component={MainPage} />
-          <Route
-            path="/movieSheet/:id"
-            render={props => (
-              <MoviePageFilterByTitle
-                {...props}
-                user={this.state.user}
-                isLoggedIn={this.state.isLoggedIn}
-                updateUser={this.updateUser}
-                notification={this.createNotification}
-              />
-            )}
-          />
-          <Route path="/listMovies/:genreName" component={ListMovies} />
-          <Route
-            path="/userAccount"
-            render={props => (
-              <UserAccount
-                {...props}
-                user={this.state.user}
-                isLoggedIn={this.state.isLoggedIn}
-                updateUser={this.updateUser}
-                notification={this.createNotification}
-              />
-            )}
-          />
+          <AnimatedSwitch
+            atEnter={{ opacity: 0 }}
+            atLeave={{ opacity: 0 }}
+            atActive={{ opacity: 1 }}
+            className="switch-wrapper"
+          >
+            <Route exact path="/" component={MainPage} />
+            <Route
+              path="/movieSheet/:id"
+              render={props => (
+                <MoviePageFilterByTitle
+                  {...props}
+                  user={this.state.user}
+                  isLoggedIn={this.state.isLoggedIn}
+                  updateUser={this.updateUser}
+                  notification={this.createNotification}
+                />
+              )}
+            />
+            <Route path="/listMovies/:genreName" component={ListMovies} />
+            <Route
+              path="/userAccount"
+              render={props => (
+                <UserAccount
+                  {...props}
+                  user={this.state.user}
+                  isLoggedIn={this.state.isLoggedIn}
+                  updateUser={this.updateUser}
+                  notification={this.createNotification}
+                />
+              )}
+            />
           </AnimatedSwitch>
         </Switch>
         <Footer />
