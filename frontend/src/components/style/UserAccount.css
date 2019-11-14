@@ -48,29 +48,31 @@
 
 .movie-poster {
   background-size: cover;
-  height: 100px;
-  width: 80px;
+  height: 100%;
+  width: 100%;
 }
 .figure {
   width: 80%;
 }
 
-ul {
+#account-wrapper ul {
   display: flex;
+  width: 82vw;
+  flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vh;
 }
-li {
+#account-wrapper .div-poster {
+  width: 20vw;
+  height: auto;
+}
+#account-wrapper li {
   display: flex;
-}
-#account-wrapper li img {
-  width: 100%;
-  height: 100%;
 }
 .deletebutton {
-  position: absolute;
-  margin-top: 0px;
-  margin-left: 60px;
+  position: relative;
+  top: 17px;
   border-radius: 20%;
   background-color: white;
   border: none;
@@ -96,8 +98,9 @@ hr {
     width: 100%;
   }
 
-  .ul {
-    height: 500px;
+  #account-wrapper ul {
+    width: 82vw;
+    margin: 3vh auto;
     text-align: center;
   }
 
@@ -107,10 +110,6 @@ hr {
     color: rgb(165, 26, 26);
     text-align: center;
     margin-bottom: 40px;
-  }
-  .movie-poster {
-    height: 230px;
-    width: 180px;
   }
   hr {
     display: none;
