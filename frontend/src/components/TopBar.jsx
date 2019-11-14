@@ -4,16 +4,24 @@ import "./style/SlideSearchFunction.css";
 import GenreList from "./GenreList";
 import Modal from "./Modal";
 import { NavLink } from "react-router-dom";
+import Search from "./Search";
 
 class TopBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searching: true
+      searching: true,
+      inputValue: ""
     };
   }
   openCloseSlide = () => {
     this.setState({ searching: !this.state.searching });
+  };
+  onInput = inputValue => {
+    this.setState({ inputValue });
+    console.log(
+      inputValue.charAt(0).toUpperCase() + inputValue.substring(1).toLowerCase()
+    );
   };
   render() {
     return (
@@ -88,17 +96,16 @@ class TopBar extends React.Component {
                       this.state.searching ? "noEntrySearch" : "enterYourSearch"
                     }
                   >
-                    <input
-                      id="searchingBarre"
-                      type="text"
-                      placeholder="Search a Genre..."
-                    ></input>
+                    <Search
+                      onInput={this.onInput}
+                      placeholder="Search a genre..."
+                    />
                     <div
                       onClick={event => {
                         this.openCloseSlide();
                       }}
                     >
-                      <GenreList />
+                      <GenreList input={this.state.inputValue} />
                     </div>
                   </div>
                 </div>
