@@ -1,6 +1,9 @@
 .noEntrySearch {
   display: none;
 }
+.EntrySearch {
+  display: block;
+}
 
 @media screen and (max-width: 600px) {
   .searchBarButton {
@@ -24,7 +27,6 @@
     height: calc(100vh - 100px);
     border-radius: 5px;
     border: 1px solid black;
-    background-color: black;
     position: absolute;
     top: 30px;
     right: 10px;
@@ -34,11 +36,10 @@
   }
   .noEntrySearch {
     display: block;
-    width: 0%;
-    background-color: black;
+    width: 0px;
     position: absolute;
     top: 50px;
-    right: -2px;
+    right: -15px;
     transition-duration: 1s;
   }
   #searchingBarre {
@@ -68,7 +69,6 @@
     height: calc(100vh - 100px);
     border-radius: 5px;
     border: 1px solid black;
-    background-color: black;
     position: absolute;
     top: 30px;
     right: 10px;
@@ -78,11 +78,10 @@
   }
   .noEntrySearch {
     display: block;
-    width: 0%;
-    background-color: black;
+    width: 0px;
     position: absolute;
     top: 50px;
-    right: -2px;
+    right: -15px;
     transition-duration: 1s;
   }
   #searchingBarre {

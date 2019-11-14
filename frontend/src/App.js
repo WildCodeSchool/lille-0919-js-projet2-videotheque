@@ -7,18 +7,105 @@ import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
 import "./App.css";
 import ListMovies from "./components/ListMovies";
 
-function App() {
-  return (
-    <div className="App">
-      <TopBar />
-      <Switch>
-        <Route exact path="/" component={MainPage} />
-        <Route path="/movieSheet" component={MoviePageFilterByTitle} />
-        <Route path="/listMovies/:genreName" component={ListMovies} />
-      </Switch>
-      <Footer />
-    </div>
-  );
+import UserAccount from "./components/UserAccount";
+import {
+  NotificationContainer,
+  NotificationManager
+} from "react-notifications";
+import "react-notifications/lib/notifications.css";
+import { AnimatedSwitch } from "react-router-transition";
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isLoggedIn: false, user: {} };
+  }
+
+  handleLogIn = userObject => {
+    this.setState({ user: userObject, isLoggedIn: true });
+  };
+
+  handleLogOut = () => {
+    this.setState({ user: {}, isLoggedIn: false });
+  };
+
+  updateUser = userObject => {
+    this.setState({ user: userObject });
+  };
+
+  createNotification = (type, messageString, title) => {
+    const duration = 2000;
+    switch (type) {
+      case "success":
+        NotificationManager.success(messageString, title, duration);
+        break;
+      case "info":
+        NotificationManager.info(messageString, title, duration);
+        break;
+      case "warning":
+        NotificationManager.warning(messageString, title, duration);
+        break;
+      case "error":
+        NotificationManager.error(messageString, title, duration);
+        break;
+
+      default:
+        break;
+    }
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <TopBar
+          isLoggedIn={this.state.isLoggedIn}
+          user={this.state.user}
+          handleLogIn={this.handleLogIn}
+          handleLogOut={this.handleLogOut}
+          notification={this.createNotification}
+        />
+
+        <Switch>
+          <AnimatedSwitch
+            atEnter={{ opacity: 0 }}
+            atLeave={{ opacity: 0 }}
+            atActive={{ opacity: 1 }}
+            className="switch-wrapper"
+          >
+            <Route exact path="/" component={MainPage} />
+            <Route
+              path="/movieSheet/:id"
+              render={props => (
+                <MoviePageFilterByTitle
+                  {...props}
+                  user={this.state.user}
+                  isLoggedIn={this.state.isLoggedIn}
+                  updateUser={this.updateUser}
+                  notification={this.createNotification}
+                />
+              )}
+            />
+            <Route path="/listMovies/:genreName" component={ListMovies} />
+            <Route
+              path="/userAccount"
+              render={props => (
+                <UserAccount
+                  {...props}
+                  user={this.state.user}
+                  isLoggedIn={this.state.isLoggedIn}
+                  updateUser={this.updateUser}
+                  notification={this.createNotification}
+                />
+              )}
+            />
+          </AnimatedSwitch>
+        </Switch>
+        <Footer />
+
+        <NotificationContainer />
+      </div>
+    );
+  }
 }
 
 export default App;

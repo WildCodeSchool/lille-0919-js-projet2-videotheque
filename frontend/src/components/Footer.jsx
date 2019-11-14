@@ -4,22 +4,21 @@ import "./style/Footer.css";
 
 function Footer() {
   return (
-    <div className="Footer">
+    <div className="footer">
       <ul>
-        <li>
+        <li className="footer-li">
           <Link to="/">Contact us</Link>
         </li>
-        <li>
+        <li className="footer-li">
           <Link to="/">Terms of use</Link>
         </li>
-        <li>
+        <li className="footer-li">
           <Link to="/">
-            <img src="./pictures/twitter.svg" alt="twitter" />
-          </Link>
-        </li>
-        <li>
-          <Link to="/">
-            <img src="./pictures/copyright.svg" alt="copyright" />
+            <img
+              className="twitter"
+              src="/pictures/twitter.svg"
+              alt="twitter"
+            />
           </Link>
         </li>
       </ul>
