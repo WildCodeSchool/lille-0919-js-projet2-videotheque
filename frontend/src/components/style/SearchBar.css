@@ -30,11 +30,13 @@
   color: #fff;
   padding: 0.5em 2em;
   text-align: center;
+  border-radius: 5px;
 }
 
 /* Desktop */
 @media screen and (min-width: 960px) {
   .search {
     width: 40%;
+    margin: 5px auto;
   }
 }
