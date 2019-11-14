@@ -23,7 +23,7 @@ header #logoUser {
   margin-top: 4px;
 }
 header #pictoLoupe {
-  width: 25px;
+  width: 35px;
   margin-top: 4px;
 }
 header #close {
@@ -36,6 +36,10 @@ header #close {
   align-items: center;
   justify-content: space-around;
   width: 120px;
+}
+
+.topBarLogo a {
+  text-decoration: none;
 }
 
 .topBarLogo .title-Mymovies {
