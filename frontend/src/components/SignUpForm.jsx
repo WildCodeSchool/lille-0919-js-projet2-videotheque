@@ -60,6 +60,15 @@ class SignUpForm extends React.Component {
               this.setState({ password: event.target.value });
             }}
           />
+          <input
+            className="logInInput"
+            type="password"
+            placeholder="Confirm your password"
+            value={this.state.password}
+            onChange={event => {
+              this.setState({ password: event.target.value });
+            }}
+          />
           <p className="signUp" onClick={() => this.props.toggleSignUp()}>
             Already have an account? Sign in!
           </p>
