@@ -47,24 +47,25 @@
 
 .movie-poster {
   background-size: cover;
-  height: 100px;
-  width: 80px;
+  height: 100%;
+  width: 100%;
 }
 .figure {
   width: 80%;
 }
 
-ul {
+#account-wrapper ul {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vh;
 }
-li {
+#account-wrapper .div-poster {
+  width: 20%;
+  height: auto;
+}
+#account-wrapper li {
   display: flex;
-}
-#account-wrapper li img {
-  width: 100%;
-  height: 100%;
 }
 .deletebutton {
   position: absolute;
@@ -95,8 +96,9 @@ hr {
     width: 100%;
   }
 
-  .ul {
-    height: 500px;
+  #account-wrapper ul {
+    width: 80%;
+    margin: 3vh auto;
     text-align: center;
   }
 
