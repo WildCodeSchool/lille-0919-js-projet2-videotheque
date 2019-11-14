@@ -23,19 +23,26 @@ header #logoUser {
   margin-top: 4px;
 }
 header #pictoLoupe {
-  width: 25px;
+  width: 35px;
   margin-top: 4px;
+}
+header #close {
+  width: 30px;
 }
 
 .topBarLogo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 120px;
 }
 
-.topBarLogo h1 {
+.topBarLogo a {
+  text-decoration: none;
+}
+
+.topBarLogo .title-Mymovies {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
@@ -51,9 +58,12 @@ header #pictoLoupe {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
 }
 .topBarNavigationItems li {
   padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .topBarNavigationItems a {
@@ -76,4 +86,21 @@ header #pictoLoupe {
 #logoUser {
   height: 30px;
   width: 12px;
+}
+#avatarPicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+#logOutButton {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+/* Desktop */
+@media screen and (max-width: 960px) {
+  .enterYourSearch .search {
+    margin-left: 15%;
+  }
 }

@@ -16,7 +16,13 @@ class Modal extends React.Component {
     return (
       <>
         <ModalButton toggleModal={this.toggleModal} />
-        {this.state.isOpen && <ModalContent toggleModal={this.toggleModal} />}
+        {this.state.isOpen && (
+          <ModalContent
+            toggleModal={this.toggleModal}
+            handleLogIn={this.props.handleLogIn}
+            notification={this.props.notification}
+          />
+        )}
       </>
     );
   }

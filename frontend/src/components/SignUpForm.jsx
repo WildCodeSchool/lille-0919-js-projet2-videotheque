@@ -1,42 +1,45 @@
 import React from "react";
-import "./style/LogInForm.css";
 import axios from "axios";
 
-class LogInForm extends React.Component {
+class SignUpForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       username: "",
-      password: ""
+      password: "",
+      avatar: ""
     };
   }
   handleSubmit = e => {
     e.preventDefault();
-    axios.get("http://localhost:5000/users").then(arrayOfUsers => {
-      const found = arrayOfUsers.data.find(user => {
-        return user.username === this.state.username;
-      });
-      if (found) {
-        if (found.password === this.state.password) {
-          this.props.handleLogIn(found);
-          this.props.toggleModal();
-        } else {
-          this.props.notification("error", "Wrong password,try again!");
-          this.setState({ username: "", password: "" });
-        }
-      } else {
-        this.props.notification("error", "User not found,please sign up!");
-        this.setState({ username: "", password: "" });
-      }
+    const newUser = {
+      username: this.state.username,
+      password: this.state.password,
+      avatar: this.state.avatar,
+      toWatchMovies: [],
+      favoriteMovies: [],
+      dislikeMovies: []
+    };
+
+    axios({
+      method: "post",
+      url: `http://localhost:5000/users`,
+      headers: { "content-type": "application/json; charset=utf-8" },
+      data: newUser
+    }).then(receipt => {
+      this.props.handleLogIn(receipt.data);
+      this.props.toggleModal();
+      this.props.notification("success", "You have signed up, welcome!");
     });
   };
 
   render() {
     return (
       <div className="logIn">
-        <h1>Log In</h1>             
+        <h1 className="form">Sign up</h1> 
+        <label className="label">Username</label>
+                   
         <form onSubmit={e => this.handleSubmit(e)}>
-          <label className="label">Username</label>
           <input
             className="logInInput"
             type="text"
@@ -47,6 +50,7 @@ class LogInForm extends React.Component {
             }}
           />
           <label className="label">Password</label>
+                    
           <input
             className="logInInput"
             type="password"
@@ -56,8 +60,17 @@ class LogInForm extends React.Component {
               this.setState({ password: event.target.value });
             }}
           />
+          <input
+            className="logInInput"
+            type="password"
+            placeholder="Confirm your password"
+            value={this.state.password}
+            onChange={event => {
+              this.setState({ password: event.target.value });
+            }}
+          />
           <p className="signUp" onClick={() => this.props.toggleSignUp()}>
-            Don't have an account yet? Sign Up!
+            Already have an account? Sign in!
           </p>
                     
           <button type="submit" className="submitButton">
@@ -71,4 +84,4 @@ class LogInForm extends React.Component {
   }
 }
 
-export default LogInForm;
+export default SignUpForm;

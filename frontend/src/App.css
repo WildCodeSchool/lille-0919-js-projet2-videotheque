@@ -6,20 +6,29 @@
 
 .topBar {
   z-index: 1;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.Footer {
+  bottom: 0px;
+  position: fixed;
 }
 
 #movieTrailerContainer {
   z-index: 0;
 }
 
-h2 {
+#account-wrapper {
+  z-index: 5;
+}
+h1,
+h2,
+h3 {
   font-family: "Staatliches", cursive;
 }
 
 p {
   font-family: "Heebo", sans-serif;
-}
-
-h3 {
-  font-family: "Staatliches", cursive;
 }

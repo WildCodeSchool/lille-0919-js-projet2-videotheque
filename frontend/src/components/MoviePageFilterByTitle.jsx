@@ -24,10 +24,11 @@ class MoviePageFilterByTitle extends React.Component {
         results: [""]
       },
       modalIsOpen: false,
-      img: "/pictures/play.png"
+      img: "/pictures/play.png",
+      pictoPlus: "/pictures/plusIcon.png",
+      likeIcon: "/pictures/likeIcon.png",
+      dislikeIcon: "/pictures/dislikeIcon.png"
     };
-
-    this.toggleModal = this.toggleModal.bind(this);
   }
 
   toggleModal = () => {
@@ -51,6 +52,55 @@ class MoviePageFilterByTitle extends React.Component {
     ).then(({ data }) => {
       this.setState({ videoInfo: data });
     });
+  };
+
+  addIconsFunction = iconId => {
+    const { isLoggedIn, user } = this.props;
+
+    if (isLoggedIn) {
+      let iconType = "";
+      let oldArray = [];
+      switch (iconId) {
+        case "toWatch":
+          iconType = "toWatchMovies";
+          oldArray = user.toWatchMovies;
+
+          break;
+        case "favorite":
+          iconType = "favoriteMovies";
+          oldArray = user.favoriteMovies;
+          break;
+        case "dislike":
+          iconType = "dislikeMovies";
+          oldArray = user.dislikeMovies;
+          break;
+        default:
+          break;
+      }
+
+      const movieId = this.props.match.params.id;
+
+      if (oldArray.includes(movieId)) {
+        this.props.notification("warning", "Movie already in the list!");
+        return;
+      }
+
+      const newArray = [...oldArray, movieId];
+
+      Axios({
+        method: "patch",
+        url: `http://localhost:5000/users/${user.id}`,
+        headers: { "content-type": "application/json; charset=utf-8" },
+        data: {
+          [iconType]: newArray
+        }
+      }).then(receipt => {
+        this.props.notification("success", "Movie added in the list");
+        this.props.updateUser(receipt.data);
+      });
+    } else {
+      this.props.notification("warning", "Please, log in or sign up!");
+    }
   };
 
   render() {
@@ -85,7 +135,7 @@ class MoviePageFilterByTitle extends React.Component {
         </Modal>
         <div id="movieTrailerContainer" onClick={this.toggleModal}>
           <img
-            src={`https://image.tmdb.org/t/p/w500/${movieInfo.backdrop_path}`}
+            src={`https://image.tmdb.org/t/p/original/${movieInfo.backdrop_path}`}
             className="trailerThumb"
             alt={movieInfo.title}
           />
@@ -143,23 +193,59 @@ class MoviePageFilterByTitle extends React.Component {
                 {movieInfo.runtime} minutes
               </p>
             </div>
-            <div className="movieIconsContainer">
-              <img
-                id="moviePlusIcons"
-                src="/pictures/plusIcon.png"
-                alt="plusIcon"
-              />
-              <img
-                id="movieLikeIcons"
-                src="/pictures/likeIcon.png"
-                alt="likeIcon"
-              />
-              <img
-                id="movieNavetIcons"
-                src="/pictures/navetIcon.png"
-                alt="navetIcon"
-              />
-            </div>
+
+            {this.props.isLoggedIn && (
+              <div className="movieIconsContainer">
+                <img
+                  id="moviePlusIcons"
+                  alt={this.state.pictoPlus}
+                  onClick={() => this.addIconsFunction("toWatch")}
+                  src={this.state.pictoPlus}
+                  onMouseEnter={() => {
+                    this.setState({
+                      pictoPlus: "/pictures/plusIconHover.png"
+                    });
+                  }}
+                  onMouseOut={() => {
+                    this.setState({
+                      pictoPlus: "/pictures/plusIcon.png"
+                    });
+                  }}
+                />
+                <img
+                  id="movieLikeIcons"
+                  src={this.state.likeIcon}
+                  alt={this.state.likeIcon}
+                  onClick={() => this.addIconsFunction("favorite")}
+                  onMouseEnter={() => {
+                    this.setState({
+                      likeIcon: "/pictures/likeIconHover.png"
+                    });
+                  }}
+                  onMouseOut={() => {
+                    this.setState({
+                      likeIcon: "/pictures/likeIcon.png"
+                    });
+                  }}
+                />
+                <img
+                  id="movieNavetIcons"
+                  src={this.state.dislikeIcon}
+                  alt={this.state.dislikeIcon}
+                  onClick={() => this.addIconsFunction("dislike")}
+                  onMouseEnter={() => {
+                    this.setState({
+                      dislikeIcon: "/pictures/dislikeIconHover.png"
+                    });
+                  }}
+                  onMouseOut={() => {
+                    this.setState({
+                      dislikeIcon: "/pictures/dislikeIcon.png"
+                    });
+                  }}
+                />
+              </div>
+            )}
           </div>
         </div>
         <div id="synopsisContainer">

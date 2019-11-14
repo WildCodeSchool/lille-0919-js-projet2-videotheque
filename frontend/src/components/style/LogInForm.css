@@ -1,96 +1,80 @@
 .logIn {
-  background: black;
   border: solid white 1px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border-radius: 2px;
+  border-radius: 5px;
   position: fixed;
-  width: 80%;
-  height: 80%;
-  left: 10%;
-  top: 10%;
+  width: 80vw;
+  height: 80vh;
+  left: 10vw;
+  top: 60px;
 }
-.logInInput {
-  margin-top: 1%;
-  margin-bottom: 3%;
-  margin-left: 25%;
-  margin-right: 25%;
-  border-radius: 2px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  height: 20px;
-}
-.label {
-  color: white;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  margin-top: 3vh;
-}
-
-.submitButton {
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  color: white;
-  background-color: red;
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 30px;
-}
-.buttonClose {
-  color: white;
-  position: fixed;
-  margin: auto;
-}
-.form {
+.logIn h1 {
   color: red;
-  background-color: black;
+  font-size: 2em;
+  font-family: "Staatliches", cursive;
   display: flex;
   justify-content: center;
   border-radius: 2px;
   font-weight: bold;
-  margin-top: 2vh;
+  margin: 10vh 0 6vh;
 }
-
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label {
+  color: white;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  font-family: "Heebo", sans-serif;
+}
+.logInInput {
+  border-radius: 5px;
+  background-color: white;
+  height: 20px;
+  margin: 2% 5% 3% 5%;
+  width: 90%;
+}
 .signUp {
-  background: black;
+  margin: 5vh 0;
   color: white;
   text-align: center;
   text-decoration: underline;
+  font-family: "Heebo", sans-serif;
 }
-
-@media screen and (min-width: 500px) and (max-width: 700px) {
-  .logIn  {
-    width: 80%;
-  }
+.submitButton {
+  color: white;
+  background-color: rgb(197, 1, 1);
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  height: 30px;
+  width: 100px;
+  margin: auto;
 }
-
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-    .logIn  {
-    width: 70%;
-  }
-
-    .submitButton  {
-    margin-left: 60%;
-    margin-right: 25%;
-    margin-top: 3%;
-  }
+.buttonClose {
+  position: fixed;
+  top: 65px;
+  right: 10vw;
+  width: 55px;
+  border: none;
 }
-@media screen and (min-width: 1000px) {
-   .logIn  {
-    width: 70%;
+.buttonClose img {
+  width: 45px;
+}
+@media screen and (min-width: 700px) {
+  .logIn {
+    width: 50vw;
+    left: 25vw;
   }
-
-  .submitButton  {
-    margin-left: 60%;
-    margin-right: 25%;
-    margin-top: 3%;
+  .logInInput {
+    margin: 2% 30% 3% 30%;
+    width: 40%;
+  }
+  .buttonClose {
+    right: 25vw;
   }
 }

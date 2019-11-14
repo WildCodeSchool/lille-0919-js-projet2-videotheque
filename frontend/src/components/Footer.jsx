@@ -6,13 +6,13 @@ function Footer() {
   return (
     <div className="footer">
       <ul>
-        <li>
+        <li className="footer-li">
           <Link to="/">Contact us</Link>
         </li>
-        <li>
+        <li className="footer-li">
           <Link to="/">Terms of use</Link>
         </li>
-        <li>
+        <li className="footer-li">
           <Link to="/">
             <img
               className="twitter"
