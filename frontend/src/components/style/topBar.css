@@ -97,3 +97,10 @@ header #close {
   color: white;
   border: none;
 }
+
+/* Desktop */
+@media screen and (max-width: 960px) {
+  .enterYourSearch .search {
+    margin-left: 15%;
+  }
+}
