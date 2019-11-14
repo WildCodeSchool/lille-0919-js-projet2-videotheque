@@ -19,9 +19,6 @@ class TopBar extends React.Component {
   };
   onInput = inputValue => {
     this.setState({ inputValue });
-    console.log(
-      inputValue.charAt(0).toUpperCase() + inputValue.substring(1).toLowerCase()
-    );
   };
   render() {
     return (
