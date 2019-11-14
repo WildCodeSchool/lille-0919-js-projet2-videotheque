@@ -75,9 +75,7 @@ class MainPage extends React.Component {
         <div className="main-poster">
           {this.state.movies
             .filter(movie => {
-              return (
-                movie.title.includes !== "porn", movie.poster_path !== null
-              );
+              return (movie.poster_path !== null) & (movie.id !== 399897);
             })
             .sort((a, b) => a.movie1 > b.movie2)
             .map(movie => {
