@@ -9,16 +9,17 @@
       "toWatchMovies": ["218"],
       "favoriteMovies": ["566057"],
       "dislikeMovies": ["384018"],
-      "id": 5
+      "id": 5,
+      "avatar": "pictures/troll.jpg"
     },
-
     {
       "username": "laurent",
       "password": "laurent",
       "toWatchMovies": ["521777", "245891"],
       "favoriteMovies": ["522162", "420817"],
       "dislikeMovies": ["320288"],
-      "id": 8
+      "id": 8,
+      "avatar": "/pictures/viking.jpg"
     },
     {
       "username": "nicolas",
@@ -26,8 +27,8 @@
       "toWatchMovies": ["420818"],
       "favoriteMovies": ["324857"],
       "dislikeMovies": ["245891"],
-
-      "id": 9
+      "id": 9,
+      "avatar": "/pictures/ancylostoma-duodenale.jpg"
     },
     {
       "username": "jeremy",
@@ -35,15 +36,26 @@
       "toWatchMovies": [],
       "favoriteMovies": [],
       "dislikeMovies": [],
-      "id": 10
+      "id": 10,
+      "avatar": "/pictures/jervalles.png"
     },
     {
-      "username": "jeremy",
-      "password": "jeremy",
+      "username": "alimalone",
+      "password": "alimalone",
       "toWatchMovies": [],
       "favoriteMovies": [],
       "dislikeMovies": [],
-      "id": 11
+      "id": 11,
+      "avatar": "pictures/ratel.jpg"
+    },
+    {
+      "username": "philippe",
+      "password": "philippe",
+      "toWatchMovies": [],
+      "favoriteMovies": [],
+      "dislikeMovies": [],
+      "id": 11,
+      "avatar": "pictures/candiru.png"
     }
   ]
 }
