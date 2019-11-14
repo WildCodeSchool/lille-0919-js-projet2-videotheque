@@ -51,10 +51,6 @@
   height: 100%;
   width: 100%;
 }
-.figure {
-  width: 80%;
-}
-
 #account-wrapper ul {
   display: flex;
   width: 82vw;
@@ -138,5 +134,13 @@ hr {
 
   .deletebutton {
     left: -44%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #account-wrapper ul {
+    width: 90vw;
+  }
+  #account-wrapper .div-poster {
+    width: 15vw;
   }
 }
