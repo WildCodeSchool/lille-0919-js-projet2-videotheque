@@ -17,7 +17,7 @@
 
 .search {
   font-size: 1rem;
-  margin: 40px 20px 1em 20px;
+  margin: 50px 20px 1em 20px;
   max-width: 100%;
   width: 70%;
   display: flex;
@@ -37,6 +37,9 @@
 @media screen and (min-width: 960px) {
   .search {
     width: 40%;
-    margin: 5px auto;
+    margin: 0px auto;
+  }
+  .search-container {
+    margin-top: 50px;
   }
 }
