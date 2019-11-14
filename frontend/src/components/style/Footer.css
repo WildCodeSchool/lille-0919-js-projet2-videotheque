@@ -22,3 +22,7 @@
   text-decoration: none;
   font-family: "Heebo", sans-serif;
 }
+
+.footer-li {
+  margin-bottom: 0;
+}

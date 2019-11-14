@@ -1,7 +1,9 @@
 .search-container {
   width: 100%;
+  height: 90px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .search input {
@@ -9,12 +11,18 @@
   font: inherit;
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 40px;
 }
 
 .search {
   font-size: 1rem;
-  margin: 1.5em auto 1.5em;
-  max-width: 80%;
+  margin: 40px 20px 1em 20px;
+  max-width: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .search [type="search"] {
@@ -22,4 +30,13 @@
   color: #fff;
   padding: 0.5em 2em;
   text-align: center;
+  border-radius: 5px;
+}
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+  .search {
+    width: 40%;
+    margin: 5px auto;
+  }
 }

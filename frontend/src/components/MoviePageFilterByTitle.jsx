@@ -24,7 +24,10 @@ class MoviePageFilterByTitle extends React.Component {
         results: [""]
       },
       modalIsOpen: false,
-      img: "/pictures/play.png"
+      img: "/pictures/play.png",
+      pictoPlus: "/pictures/plusIcon.png",
+      likeIcon: "/pictures/likeIcon.png",
+      dislikeIcon: "/pictures/dislikeIcon.png"
     };
   }
 
@@ -195,21 +198,51 @@ class MoviePageFilterByTitle extends React.Component {
               <div className="movieIconsContainer">
                 <img
                   id="moviePlusIcons"
-                  src="/pictures/plusIcon.png"
-                  alt="plusIcon"
+                  alt={this.state.pictoPlus}
                   onClick={() => this.addIconsFunction("toWatch")}
+                  src={this.state.pictoPlus}
+                  onMouseEnter={() => {
+                    this.setState({
+                      pictoPlus: "/pictures/plusIconHover.png"
+                    });
+                  }}
+                  onMouseOut={() => {
+                    this.setState({
+                      pictoPlus: "/pictures/plusIcon.png"
+                    });
+                  }}
                 />
                 <img
                   id="movieLikeIcons"
-                  src="/pictures/likeIcon.png"
-                  alt="likeIcon"
+                  src={this.state.likeIcon}
+                  alt={this.state.likeIcon}
                   onClick={() => this.addIconsFunction("favorite")}
+                  onMouseEnter={() => {
+                    this.setState({
+                      likeIcon: "/pictures/likeIconHover.png"
+                    });
+                  }}
+                  onMouseOut={() => {
+                    this.setState({
+                      likeIcon: "/pictures/likeIcon.png"
+                    });
+                  }}
                 />
                 <img
                   id="movieNavetIcons"
-                  src="/pictures/navetIcon.png"
-                  alt="navetIcon"
+                  src={this.state.dislikeIcon}
+                  alt={this.state.dislikeIcon}
                   onClick={() => this.addIconsFunction("dislike")}
+                  onMouseEnter={() => {
+                    this.setState({
+                      dislikeIcon: "/pictures/dislikeIconHover.png"
+                    });
+                  }}
+                  onMouseOut={() => {
+                    this.setState({
+                      dislikeIcon: "/pictures/dislikeIcon.png"
+                    });
+                  }}
                 />
               </div>
             )}
