@@ -135,4 +135,8 @@ hr {
     padding-top: 2px;
     margin-right: 4px;
   }
+
+  .deletebutton {
+    left: -44%;
+  }
 }
