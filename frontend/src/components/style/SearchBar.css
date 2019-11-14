@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .search input {
@@ -41,5 +42,7 @@
   }
   .search-container {
     margin-top: 50px;
+    margin-bottom: 0px;
+    height: 60px;
   }
 }
