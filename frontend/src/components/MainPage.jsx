@@ -33,7 +33,6 @@ class MainPage extends React.Component {
     if (query) {
       url = `https://api.themoviedb.org/3/search/movie?query=${query}&api_key=495d98b77df65d47fbf7eba028518ed7&language=en-US&include_adult=false`;
       axios.get(url).then(({ data }) => {
-        const { results } = data;
         this.setState({
           movies: data.results
         });
