@@ -2,6 +2,7 @@
 
 #account-wrapper {
   height: auto;
+  min-height: 90vh;
   margin-bottom: 10px;
   margin-top: 80px;
   display: flex;
