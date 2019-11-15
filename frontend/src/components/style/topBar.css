@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches%7CTitillium+Web:400,400i,600,600i,700,700i&display=swap");
+.flex {
+  display: flex;
+}
+.flex img {
+  width: 30px;
+  margin-right: 10px;
+}
+.topBar {
+  position: fixed;
+  width: 100%;
+  background: black;
+  height: 53px;
+}
+.topBarNavigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+header #logoUser {
+  width: 25px;
+  margin-top: 4px;
+}
+header #pictoLoupe {
+  width: 35px;
+  margin-top: 4px;
+}
+header #close {
+  width: 30px;
+}
+
+.topBarLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 120px;
+}
+
+.topBarLogo a {
+  text-decoration: none;
+}
+
+.topBarLogo .title-Mymovies {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Staatliches", cursive;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.topBarNavigationItems ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.topBarNavigationItems li {
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.topBarNavigationItems a {
+  color: white;
+}
+
+.searchBarButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.searchBarButton:focus {
+  outline: none;
+}
+
+.logo {
+  height: 30px;
+}
+
+#logoUser {
+  height: 30px;
+  width: 12px;
+}
+#avatarPicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+#logOutButton {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+/* Desktop */
+@media screen and (max-width: 960px) {
+  .enterYourSearch .search {
+    margin-left: 15%;
+  }
+}

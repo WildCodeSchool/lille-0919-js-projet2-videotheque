@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo|Staatliches&display=swap");
+
+* {
+  background-color: rgb(22, 22, 22);
+}
+
+.topBar {
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.Footer {
+  bottom: 0px;
+  position: fixed;
+}
+
+#movieTrailerContainer {
+  z-index: 0;
+}
+
+#account-wrapper {
+  z-index: 5;
+}
+h1,
+h2,
+h3 {
+  font-family: "Staatliches", cursive;
+}
+
+p {
+  font-family: "Heebo", sans-serif;
+}

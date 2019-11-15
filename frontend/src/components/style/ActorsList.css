@@ -1,0 +1,60 @@
+.actorListContainer {
+  width: 100%;
+}
+.actorsList {
+  color: white;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.actorsList img {
+  width: 100px;
+  margin: 10px;
+}
+
+.actorsList ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actorsList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 205px;
+}
+.actorsList p {
+  text-align: justify;
+  height: 30px;
+  font-size: 12px;
+  font-family: "Heebo", sans-serif;
+}
+
+.actorName {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 960px) {
+  .actorListContainer {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .actorsList img {
+    width: 140px;
+    border: 1px solid white;
+    margin: 10px;
+  }
+
+  .actorsList li {
+    height: 270px;
+  }
+}

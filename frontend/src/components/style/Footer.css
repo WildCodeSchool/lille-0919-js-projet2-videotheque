@@ -1,0 +1,29 @@
+.footer {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  border-top: solid rgb(92, 92, 92) 0.01em;
+  margin-bottom: 0px;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.twitter {
+  width: 30px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+}
+
+.footer-li {
+  margin-bottom: 0;
+}
