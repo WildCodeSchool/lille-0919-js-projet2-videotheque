@@ -6,6 +6,8 @@ import { Switch, Route } from "react-router-dom";
 import MoviePageFilterByTitle from "./components/MoviePageFilterByTitle";
 import "./App.css";
 import ListMovies from "./components/ListMovies";
+import { Provider } from 'react-redux'
+import store from './Store/store'
 
 import UserAccount from "./components/UserAccount";
 import {
@@ -56,6 +58,7 @@ class App extends React.Component {
 
   render() {
     return (
+      <Provider store={store}>
       <div className="App">
         <TopBar
           isLoggedIn={this.state.isLoggedIn}
@@ -104,6 +107,7 @@ class App extends React.Component {
 
         <NotificationContainer />
       </div>
+      </Provider>
     );
   }
 }

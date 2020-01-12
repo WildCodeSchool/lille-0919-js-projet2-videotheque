@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style/UserAccount.css";
 import axios from "axios";
+import { connect } from 'react-redux'
 
 class UserAccount extends React.Component {
   constructor(props) {
@@ -100,6 +101,22 @@ class UserAccount extends React.Component {
       });
     }
   }
+
+  switchTowatchList() {
+    const action = { type: 'SWITCH_TOWATCH_LIST', value: this.state.toWatchMovies }
+    this.props.dispatch(action)
+}
+
+  switchFavoriteList() {
+    const action = { type: 'SWITCH_FAVORITE_LIST', value: this.state.favoriteMovies }
+    this.props.dispatch(action)
+}
+
+  switchDislikeList() {
+    const action = { type: 'SWITCH_DISLIKE_LIST', value: this.state.dislikeMovies }
+    this.props.dispatch(action)
+}
+
 
   render() {
     return (
@@ -205,4 +222,14 @@ class UserAccount extends React.Component {
     );
   }
 }
-export default UserAccount;
+
+
+const mapStateToProps = (state) => {
+  return {
+    toWatchMovies: state.toWatchMovies,
+    favoriteMovies: state.favoriteMovies,
+    dislikeMovies: state.dislikeMovies
+  }
+}
+
+export default connect(mapStateToProps) (UserAccount);

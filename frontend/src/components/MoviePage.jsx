@@ -3,6 +3,7 @@ import "./style/MoviePage.css";
 import "./style/MoviePageModalTrailer.css";
 import Modal from "react-modal";
 import ActorsList from "./ActorsList";
+import { connect } from 'react-redux'
 
 class MoviePage extends React.Component {
   constructor(props) {
@@ -17,6 +18,21 @@ class MoviePage extends React.Component {
   toggleModal() {
     this.setState({ modalIsOpen: !this.state.modalIsOpen });
   }
+
+  switchTowatchList() {
+    const action = { type: 'SWITCH_TOWATCH_LIST', value: this.state.toWatchMovies }
+    this.props.dispatch(action)
+}
+
+  switchFavoriteList() {
+    const action = { type: 'SWITCH_FAVORITE_LIST', value: this.state.favoriteMovies }
+    this.props.dispatch(action)
+}
+
+  switchDislikeList() {
+    const action = { type: 'SWITCH_DISLIKE_LIST', value: this.state.dislikeMovies }
+    this.props.dispatch(action)
+}
 
   render() {
     return (
@@ -92,21 +108,21 @@ class MoviePage extends React.Component {
               </p>
             </div>
             <div className="movieIconsContainer">
-              <img
+              <button onClick={() => this.switchTowatchList()}><img
                 id="moviePlusIcons"
                 alt="Add to my list"
                 src="./pictures/plusIcon.png"
-              />
-              <img
+              /></button>
+              <button onClick={() => this.switchFavoriteList()}><img
                 id="movieLikeIcons"
                 alt="Like this movie"
                 src="./pictures/likeIcon.png"
-              />
-              <img
+              /></button>
+              <button onClick={() => this.switchDislikeList()}><img
                 id="movieNavetIcons"
                 alt="Dislike this movie"
                 src="./pictures/navetIcon.png"
-              />
+              /></button>
             </div>
           </div>
         </div>
@@ -121,4 +137,12 @@ class MoviePage extends React.Component {
   }
 }
 
-export default MoviePage;
+const mapStateToProps = (state) => {
+  return {
+    toWatchMovies: state.toWatchMovies,
+    favoriteMovies: state.favoriteMovies,
+    dislikeMovies: state.dislikeMovies
+  }
+}
+
+export default connect(mapStateToProps) (MoviePage);
